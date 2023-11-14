@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Dialog extends Model
 {
-    use HasFactory;
+    protected $table = 'dialogues';
+    protected $fillable = ['id', 'user_id', 'title', 'content', 'likes'];
+
 }
