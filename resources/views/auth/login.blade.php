@@ -20,7 +20,7 @@
                 </div>
                 <div class="login-req">Password :</div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="inputPassword" placeholder="more than 8 characters">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
                     {{-- <i class="fa fa-lock"></i> --}}
                     <a href="#" class="fa fa-question-circle"></a>
                 </div>
