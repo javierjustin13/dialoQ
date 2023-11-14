@@ -3,11 +3,11 @@
 @endpush
 
 @php
+$totaldata = DB::table('dialogues')->count();
 $posting = DB::table('dialogues')->orderBy('id', 'desc')->get();
 @endphp
 
-
-
+@if ($totaldata != 0)
 
 <div class="p-3 border rounded-4" id="midpane">
     @foreach ($posting as $item)
@@ -44,4 +44,7 @@ $posting = DB::table('dialogues')->orderBy('id', 'desc')->get();
     @endforeach
 </div>
 
+@else
+<h1>There is no discussion.</h1>
 
+@endif
