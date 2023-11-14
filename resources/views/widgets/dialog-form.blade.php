@@ -6,7 +6,7 @@
     <h4>Share your dialog...</h4>
     <input class="form-control" type="text" placeholder="Your Concern">
     <p></p>
-    <div class="form-group">
+    <div class="form-group pt-2">
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tell use more :D"></textarea>
     </div>
     <button class="btn btn-dark mt-2">Send</button>

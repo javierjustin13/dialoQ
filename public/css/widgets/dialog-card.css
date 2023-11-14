@@ -20,7 +20,7 @@
     flex-direction: column;
 }
 
-.card-header{
+.card-footer{
     /* display: flex;
     align-items: center;
     border-bottom-width: 1px;
@@ -29,7 +29,7 @@
     padding-right: .625rem;
     height: 3.5rem;text-transform: uppercase;
     background-color: #fff; */
-    /* border-bottom: 1px solid rgba(26,54,126,0.125) */
+    border-bottom: 1px solid black;
 }
 
 a{
@@ -41,4 +41,11 @@ a:hover{
 }
 p{
     margin-bottom: 0px;
+}
+
+.comments{
+    text-align: center;
+}
+.comments h5{
+    color: #4A4A4A;
 }
