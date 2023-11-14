@@ -1,3 +1,7 @@
+@push('head')
+<link rel="stylesheet" href="{{ asset('css/widgets/search-bar.css') }}"> {{--ini buat nyambungin home.css ke home blade nya --}}
+@endpush
+
 <div class="card border-light mb-3" id="card">
     <div class="card-header pb-0 rounded-3">
         <h5 class="">Search</h5>

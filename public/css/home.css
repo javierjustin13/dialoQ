@@ -7,34 +7,12 @@
     font-family: 'eina';
 }
 
-#card{
-    background-color: #D9D9D9;
-}
 
-.form-control::placeholder{
-    color: #CFCFCF;
-    opacity: 1;
-}
 
-.rounded-3{
-    background-color: #D9D9D9;
-}
 
-#leftpane h4{
-    color: #4A4A4A;
-    margin-bottom: 15px;
-}
 
-#midpane h2{
-    text-align: center;
-}
-#midpane{
-    height: 100%;
-    min-height: 200vh;
-    background-color: #D9D9D9;
-}
 
-#postcard{
-    background-color: white;
-    min-height: 100px;
-}
+
+
+
+

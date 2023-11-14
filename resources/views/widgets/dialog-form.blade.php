@@ -1,3 +1,7 @@
+@push('head')
+<link rel="stylesheet" href="{{ asset('css/widgets/dialog-form.css') }}"> {{--ini buat nyambungin home.css ke home blade nya --}}
+@endpush
+
 <div class="p-3 rounded-3">
     <h4>Share your dialog...</h4>
     <input class="form-control" type="text" placeholder="Your Concern">
