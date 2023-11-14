@@ -8,13 +8,10 @@
         <div class="collapse navbar-collapse ms-5" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/" id="active">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/feeds">Feeds</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
                 </li>
             </ul>
         </div>
