@@ -34,6 +34,27 @@ class AuthController extends Controller
             ]
         );
 
-        return redirect()->route('login');
+        return redirect()->route('login')->with('success', 'Account has been successfully made, login now!');
+    }
+
+    public function authenticate(){
+        $validated = request()->validate(
+            [
+                'email' => 'required|email',
+                'password' => 'required'
+            ] 
+        );
+
+        if(auth()->attempt($validated)){
+            request()->session()->regenerate();
+
+            return redirect()->route('home')->with('success', 'Logged in successfully!');
+        }
+
+        return back()->withErrors(
+            [
+                'email' => 'Invalid credentials'
+            ]
+        );
     }
 }

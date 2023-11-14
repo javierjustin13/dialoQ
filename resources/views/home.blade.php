@@ -14,10 +14,12 @@
         </div>
         <div class="col-6">
             <h2>LOGIN TO START YOUR DIALOG</h2>
+            @include('widgets.success-message')
             @include('widgets.dialog-card')
         </div>
         <div class="col-3">
             @include('widgets.search-bar')
+            @include('widgets.suggested-bar')
         </div>
     </div>
 </div>
