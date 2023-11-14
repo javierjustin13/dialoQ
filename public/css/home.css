@@ -2,6 +2,10 @@
     font-family: 'eina';
     src: url('../fonts/eina.ttf');
 }
+@font-face {
+    font-family: 'eina-bold';
+    src: url(../fonts/Eina-Bold.ttf);
+}
 
 .container{
     font-family: 'eina';
