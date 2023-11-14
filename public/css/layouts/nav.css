@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'eina';
+    src: url('../../fonts/eina.ttf');
+}
+
+nav{
+    background: #545454;
+    font-family: 'eina';
+}
+
+.navbar-brand{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+.nav-link{
+    font-size: 1.25rem;
+    color: #cfcfcf;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+#navbarNav{
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+#active {
+    color: white;
+}
+
+.nav-link:active{
+    color: white;
+}
+
+
+
+
