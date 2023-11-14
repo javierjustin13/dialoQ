@@ -13,7 +13,11 @@
 </head>
 
 <body>
-    @include('layouts.nav')
+    @if (request()->is('login') || request()->is('register'))
+        @include('layouts.nav-login-register')
+    @else
+        @include('layouts.nav')
+    @endif
 
     <div class="container pt-4">
         {{-- Page content goes here --}}
