@@ -27,3 +27,5 @@ Route::get("/login", [AuthController::class, "login"])->name("login");
 Route::post("/login", [AuthController::class, "authenticate"]);
 
 Route::post("/dialogs", [DialogController::class, "store"])->name("dialogs.store")->middleware("auth");
+
+Route::resource('users', UserController::class)->only('show', 'edit', 'update')->middleware('auth');
