@@ -35,6 +35,15 @@ nav{
     color: white;
 }
 
+.logout{
+    cursor: pointer;
+    background-color: transparent;
+    /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); */
+}
+
+
+
+
 
 
 
