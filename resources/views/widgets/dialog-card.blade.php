@@ -44,7 +44,7 @@ $posting = DB::table('dialogues')
                         @php
                             $diff=date_diff(new DateTime($item->created_at), new DateTime());
                         @endphp
-                        {{$diff->format("%d days, %h hours")}}
+                        {{$diff->format("%d days, %h hours ago")}}
                     </span>
                 </span>
             </div>
