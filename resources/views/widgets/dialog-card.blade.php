@@ -7,7 +7,7 @@ $totaldata = DB::table('dialogues')->count();
 $posting = DB::table('dialogues')
             ->join('users', 'dialogues.user_id', '=', 'users.id')
             ->orderBy('dialogues.id', 'desc')
-            ->select('dialogues.*','users.name')
+            ->select('dialogues.*','users.username')
             ->get();
 
 
@@ -21,7 +21,7 @@ $posting = DB::table('dialogues')
     <div class="p-3 border rounded-4 mb-3"  id="postcard">
         <div class="card-header">
             <div class="media flex-wrap w-100 align-items-center"> <img src="image/profile-image.jpeg" class="d-block ui-w-40 rounded-circle" alt="">
-                <div class="media-body ml-3"> <a href="javascript:void(0)" data-abc="true">{{$item->name}}</a>
+                <div class="media-body ml-3"> <a href="javascript:void(0)" data-abc="true">{{$item->username}}</a>
                 </div>
                 <div class="text-muted small ml-3">
                 <a href="">View</a>
