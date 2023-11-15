@@ -15,8 +15,10 @@
             @include('widgets.dialog-form')
         </div>
         <div class="col-6">
-            <h2>LOGIN TO START YOUR DIALOG</h2>
             @include('widgets.success-message')
+            @guest
+            <h2 class="py-3 mb-3" style="background-color: #D9D9D9; color:#4a4a4a; border-radius:10px">LOGIN TO START YOUR DIALOG</h2>
+            @endguest
             @include('widgets.dialog-card')
         </div>
         <div class="col-3">
