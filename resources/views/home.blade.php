@@ -20,6 +20,7 @@
             <h2 class="py-3 mb-3" style="background-color: #D9D9D9; color:#4a4a4a; border-radius:10px">LOGIN TO START YOUR DIALOG</h2>
             @endguest
             @include('widgets.dialog-card')
+            {{ $dialogues->links() }}
         </div>
         <div class="col-3">
             @include('widgets.search-bar')

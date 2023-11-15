@@ -8,25 +8,13 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    // public function show(Request $req)
-    // {
-    //     $data = [
-    //         'title' => $req->title,
-    //         'content' => $req->content,
-    //         'user_id' => 3,
-
-    //         // 'author' => 1,
-    //         // 'likes' => 2,
-
-    //     ];
-    //     $savedata = Dialog::create($data);
-    //     return redirect()->back();
-    // }
-
     public function show(User $user)
     {
-        return view('users.show', compact('user'));
+        $ideas = $user->ideas()->paginate(5);
+
+        return view('users.show', compact('user', 'ideas'));
     }
+
 
     public function edit(User $user)
     {
