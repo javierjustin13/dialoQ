@@ -4,7 +4,14 @@
 
 @php
 $totaldata = DB::table('dialogues')->count();
-$posting = DB::table('dialogues')->orderBy('id', 'desc')->get();
+$posting = DB::table('dialogues')
+            ->join('users', 'dialogues.user_id', '=', 'users.id')
+            ->orderBy('dialogues.id', 'desc')
+            ->select('dialogues.*','users.name')
+            ->get();
+
+
+// dd($posting);
 @endphp
 
 @if ($totaldata != 0)
@@ -14,7 +21,7 @@ $posting = DB::table('dialogues')->orderBy('id', 'desc')->get();
     <div class="p-3 border rounded-4 mb-3"  id="postcard">
         <div class="card-header">
             <div class="media flex-wrap w-100 align-items-center"> <img src="image/profile-image.jpeg" class="d-block ui-w-40 rounded-circle" alt="">
-                <div class="media-body ml-3"> <a href="javascript:void(0)" data-abc="true">Tom Harry</a>
+                <div class="media-body ml-3"> <a href="javascript:void(0)" data-abc="true">{{$item->name}}</a>
                 </div>
                 <div class="text-muted small ml-3">
                 <a href="">View</a>
@@ -29,11 +36,16 @@ $posting = DB::table('dialogues')->orderBy('id', 'desc')->get();
             <div class="pt-3 d-flex justify-content-between">
                 <span class="text-muted d-inline-flex align-items-center align-middle ml-4">
                     <i class="bi bi-heart mr-1"></i>
-                    <span class="align-middle">2</span>
+                    <span class="align-middle">{{$item->likes}}</span>
                 </span>
                 <span class="text-muted d-inline-flex align-items-center align-middle ml-4">
                     <i class="bi bi-clock mr-1"></i>
-                    <span class="align-middle">49 Minutes Ago</span>
+                    <span class="align-middle">
+                        @php
+                            $diff=date_diff(new DateTime($item->created_at), new DateTime());
+                        @endphp
+                        {{$diff->format("%d days, %h hours")}}
+                    </span>
                 </span>
             </div>
         </div>
