@@ -25,19 +25,7 @@ class UserController extends Controller
 
     public function show(User $user)
     {
-<<<<<<< HEAD
-        $data = [
-            'title' => $req->title,
-            'content' => $req->content,
-            'user_id' => Auth::user()->id,
-            'likes' => 0,
-
-        ];
-        $savedata = Dialog::create($data);
-        return redirect()->back();
-=======
         return view('users.show', compact('user'));
->>>>>>> 8282579ddce58eb90b133a718f59d78a9ba3fd32
     }
 
     public function edit(User $user)
