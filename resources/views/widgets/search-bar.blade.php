@@ -1,5 +1,5 @@
 @push('head')
-<link rel="stylesheet" href="{{ asset('css/widgets/search-bar.css') }}"> {{--ini buat nyambungin home.css ke home blade
+    <link rel="stylesheet" href="{{ asset('css/widgets/search-bar.css') }}"> {{-- ini buat nyambungin home.css ke home blade
 nya --}}
 @endpush
 
@@ -20,12 +20,12 @@ nya --}}
     <div class="p-1 rounded rounded-pill shadow-sm mb-4 ml-1" id="searchbar">
         <div class="input-group">
             <div class="input-group-prepend">
-                <button id="button-addon2" type="submit" class="btn btn-link text-warning" >
+                <button id="button-addon2" type="submit" class="btn btn-link text-warning">
                     <i class="bi bi-search" id="magnifying"></i>
                 </button>
             </div>
             <input type="search" placeholder="Search dialoQ" aria-describedby="button-addon2"
-                class="form-control border-0 rounded-pill" >
+                class="form-control border-0 rounded-pill">
         </div>
     </div>
 </form>

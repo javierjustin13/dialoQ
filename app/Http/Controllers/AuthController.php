@@ -7,15 +7,18 @@ use App\Models\User;
 
 class AuthController extends Controller
 {
-    public function register(){
+    public function register()
+    {
         return view('auth.register');
     }
 
-    public function login(){
+    public function login()
+    {
         return view('auth.login');
     }
 
-    public function store(){
+    public function store()
+    {
         $validated = request()->validate(
             [
                 'name' => 'required|min:2|max:50',
@@ -37,15 +40,16 @@ class AuthController extends Controller
         return redirect()->route('login')->with('success', 'Account has been successfully made, login now!');
     }
 
-    public function authenticate(){
+    public function authenticate()
+    {
         $validated = request()->validate(
             [
                 'email' => 'required|email',
                 'password' => 'required'
-            ] 
+            ]
         );
 
-        if(auth()->attempt($validated)){
+        if (auth()->attempt($validated)) {
             request()->session()->regenerate();
 
             return redirect()->route('home')->with('success', 'Logged in successfully!');
@@ -56,5 +60,16 @@ class AuthController extends Controller
                 'email' => 'Invalid credentials'
             ]
         );
+    }
+
+    public function logout()
+    {
+        auth()->logout();
+
+        request()->session()->invalidate();
+
+        request()->session()->regenerateToken();
+
+        return redirect()->route('home')->with('success', 'Logged out successfully!');
     }
 }

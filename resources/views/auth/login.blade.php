@@ -1,14 +1,14 @@
 @extends('layouts.app')
 
 @push('head')
-<link rel="stylesheet" href="{{ asset('css/auth/login.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/auth/login.css') }}">
 @endpush
 
 @section('title', 'Login')
 
 @section('content')
-<div class="form-login">
-    <div class="container-md-offset-3 row-md-6">
+    <div class="form-login">
+        <div class="container-md-offset-3 row-md-6">
             @include('widgets.success-message')
             <form class="form-horizontal" action="{{ route('login') }}" method="POST">
                 @csrf
@@ -38,6 +38,6 @@
                 </div>
                 <div class="question">Don't have an account yet? <a href="/register">Register here</a></div>
             </form>
+        </div>
     </div>
-</div>
 @endsection
