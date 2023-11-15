@@ -22,8 +22,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/profile">{{ Auth::user()->username }}</a>
                     </li>
-                    <li class="logout-btn">
-                        <a href="/login">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">
                             <img src="/image/logout_icon.png" alt="logout">
                         </a>
                     </li>
