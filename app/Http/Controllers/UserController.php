@@ -13,7 +13,9 @@ class UserController extends Controller
             'title' => $req->title,
             'content' => $req->content,
             'user_id' => 3,
-            'likes' => $req->likes,
+
+            // 'author' => 1,
+            // 'likes' => 2,
 
         ];
         $savedata = Dialog::create($data);

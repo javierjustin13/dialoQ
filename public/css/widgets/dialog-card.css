@@ -1,26 +1,27 @@
-#midpane h2{
+#midpane h2 {
     text-align: center;
 }
-#midpane{
+#midpane {
     height: 100%;
     min-height: 200vh;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
 }
-#postcard{
+#postcard {
     background-color: white;
     min-height: 100px;
 }
 
-.media img{
-    width: 40px;height: auto
+.media img {
+    width: 40px;
+    height: auto;
 }
 
-#header{
+#header {
     display: flex;
     flex-direction: column;
 }
 
-.card-footer{
+.card-footer {
     /* display: flex;
     align-items: center;
     border-bottom-width: 1px;
@@ -32,20 +33,20 @@
     border-bottom: 1px solid black;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
-a:hover{
+a:hover {
     color: black;
 }
-p{
+p {
     margin-bottom: 0px;
 }
 
-.comments{
+.comments {
     text-align: center;
 }
-.comments h5{
-    color: #4A4A4A;
+.comments h5 {
+    color: #4a4a4a;
 }

@@ -13,9 +13,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/feeds">Feeds</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/login">Login</a>
-                </li>
+                @guest
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li>
+                @endguest
+                @auth
+                    <li class="nav-item">
+                        <a class="nav-link" href="/profile">{{ Auth::user()->username }}</a>
+                    </li>
+                @endauth
             </ul>
         </div>
     </div>

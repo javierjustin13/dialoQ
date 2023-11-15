@@ -53,7 +53,8 @@
 
                 <div class="login-req">Confirm password :</div>
                 <div class="form-group">
-                    <input type="password" class="form-control" name="password_confirmation" placeholder="enter your password">
+                    <input type="password" class="form-control" name="password_confirmation"
+                        placeholder="enter your password">
                     {{-- <i class="fa fa-lock"></i> --}}
                     {{-- <a href="#" class="fa fa-question-circle"></a> --}}
                 </div>
