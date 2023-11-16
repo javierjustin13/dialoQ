@@ -36,9 +36,6 @@
                     </span>
                 </div>
             </div>
-            <div class="comments pt-3">
-                <h5>No Comments Found.</h5>
-            </div>
         </div>
     @empty
         <h1>There is no discussion.</h1>
