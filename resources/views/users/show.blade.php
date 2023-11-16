@@ -15,10 +15,9 @@
                         <div class="profile-picture flex-wrap w-100 align-items-center"> <img src="{{ $user->getImageURL() }}"
                                 class="d-block ui-w-40 rounded-circle" alt="">
                         </div>
-
                         <div class="identity ml-3 w-10">
                             <div class="username-edit">
-                                <h3 class="username">{{ $user->name }}</h3>
+                                <h3 class="username">{{ $user->username }}</h3>
                                 <a href="#">
                                     <button type="submit">Edit profile</button>
                                 </a>

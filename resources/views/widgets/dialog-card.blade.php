@@ -8,7 +8,7 @@
             <div class="card-header">
                 <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
                         class="d-block ui-w-40 rounded-circle" alt="">
-                    <div class="media-body ml-3"> <a href="javascript:void(0)" data-abc="true">{{ $dialog->user->username }}</a>
+                    <div class="media-body ml-3"> <a href="{{ route('users.show', $dialog->user->id)}}" data-abc="true">{{ $dialog->user->username }}</a>
                     </div>
                     <div class="text-muted small ml-3">
                         <a href="">View</a>

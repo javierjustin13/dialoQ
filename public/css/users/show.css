@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'eina';
-    src: url('../fonts/eina.ttf');
+    src: url('../../fonts/eina.ttf');
 }
 @font-face {
     font-family: 'eina-bold';
-    src: url(../fonts/Eina-Bold.ttf);
+    src: url('../../fonts/Eina-Bold.ttf');
 }
 
 body {
@@ -19,6 +19,10 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 5vh;
+}
+
+.card p{
+    font-family: "eina-bold";
 }
 
 .upper {
