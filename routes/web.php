@@ -31,4 +31,6 @@ Route::post("/logout", [AuthController::class, "logout"])->name("logout");
 
 Route::post("/dialogs", [DialogController::class, "store"])->name("dialogs.store")->middleware("auth");
 
-Route::resource('users', UserController::class)->only('show', 'edit', 'update')->middleware('auth');
+Route::resource('users', UserController::class)->only('edit', 'update')->middleware('auth');
+
+Route::resource('users', UserController::class)->only('show');
