@@ -34,3 +34,5 @@ Route::post("/dialogs", [DialogController::class, "store"])->name("dialogs.store
 Route::resource('users', UserController::class)->only('edit', 'update')->middleware('auth');
 
 Route::resource('users', UserController::class)->only('show');
+
+Route::get('profile', [UserController::class, 'profile'])->middleware('auth')->name('profile');

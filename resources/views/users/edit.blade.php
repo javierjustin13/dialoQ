@@ -11,7 +11,7 @@
         <div class="left-side">
             <div class="top">
                 <div class="profile-picture">
-                    <img class="profile-img p-4" src="{{ $user->getImageURL()}}" alt="profile picture">
+                    <img class="profile-img p-4" src="{{ $user->getImageURL() }}" alt="profile picture">
                 </div>
                 <div class="data-req">
                     <div class="data">
@@ -38,8 +38,7 @@
                 </div>
                 <div class="edit-bio">
                     <div class="your-input">BIO :</div>
-                    <textarea class="input-bio p-3" type="text" id="editBIO" name="bio"
-                        placeholder="Halo! Aku lahir bulan Januari"></textarea>
+                    <textarea class="input-bio p-3" type="text" id="editBIO" name="bio" placeholder="{{ $user->bio }}"></textarea>
                 </div>
                 <div class="button-save">
                     <button class="button" type="submit">SAVE CHANGES</button>
@@ -47,34 +46,9 @@
             </div>
         </div>
 
-        <div class="right-side pl-5">
-            <form action="">
-                <div class="p-1 rounded rounded-pill shadow-sm mb-4 ml-1" id="searchbar">
-                    <div class="input-group">
-                        <div class="input-group-prepend">
-                            <button id="button-addon2" type="submit" class="btn btn-link text-warning">
-                                <i class="bi bi-search" id="magnifying"></i>
-                            </button>
-                        </div>
-                        <input type="search" placeholder="Search dialoQ" aria-describedby="button-addon2"
-                            class="form-control border-0 rounded-pill">
-                    </div>
-                </div>
-            </form>
-            <div class="card mb-3" style="max-width: 18rem;background-color: #D9D9D9">
-                <div class="card-body ">
-                    <div class="card mb-2" style="background-color:white" id="suggestedtext">
-                        <p>
-                            SUGGESTED FOR YOU
-                        </p>
-                    </div>
-                    <div class="suggestedpeople">
-                        {{-- <img src="image/profile-image.jpeg" alt=""> --}}
-                        <p>nama</p>
-                    </div>
-
-                </div>
-            </div>
+        <div class="right-content col-3">
+            @include('widgets.search-bar')
+            @include('widgets.suggested-bar')
         </div>
     </div>
 @endsection
