@@ -10,7 +10,9 @@ class UserController extends Controller
 {
     public function show(User $user)
     {
-        return view('users.show', compact('user'));
+        $dialogues = $user->dialogues()->get();
+
+        return view('users.show', compact('user', 'dialogues'));
     }
 
 
@@ -20,6 +22,7 @@ class UserController extends Controller
             return redirect()->back();
         }
         return view('users.edit', compact('user'));
+
     }
 
     public function update(User $user){

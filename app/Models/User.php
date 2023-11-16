@@ -46,6 +46,11 @@ class User extends Authenticatable
         // 'password' => 'hashed',
     ];
 
+    public function dialogues()
+    {
+        return $this->hasMany(Dialog::class)->latest();
+    }
+
     public function getImageURL()
     {
         if ($this->image) {
