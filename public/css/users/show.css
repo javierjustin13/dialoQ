@@ -30,6 +30,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    width: 75vw;
 
 }
 
@@ -38,53 +39,41 @@ body {
     justify-content: center;
 }
 
-.card {
-    /* width: 500px; */
+.card-profile {
+    width: 55vw;
     border: none;
     border-radius: 10px;
     background-color: #d9d9d9;
 }
 
-.profile-picture img {
-    width: 155px;
-    height: auto;
+.pp-identity{
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-left: 5vw;
-
+    width: 50vw;
 }
+
+.profile-picture{
+    width: 50vw;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.profile-picture img {
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
 
 .identity {
     display: flex;
     flex-direction: column;
-    margin-right: 10vw;
-}
-
-.box{
-    width: 50vw;
-}
-
-.stats {
-    /* background: #f2f5f8 !important; */
-    color: #000 !important;
-}
-
-.articles {
-    font-size: 10px;
-    color: black;
-}
-
-.username{
-    font-size: 30px;
-    color: black;
-    text-decoration: underline;
-    width: 20vw;
-}
-
-.username-edit{
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
+    margin-right: 5vw;
+    width: 50%;
+    /* gap: 2px; */
 }
 
 .identity button{
@@ -100,30 +89,68 @@ body {
     margin-left: -1vw;
 }
 
+.stats {
+    /* background: #f2f5f8 !important; */
+    color: #000 !important;
+    margin: 5px;
+}
+
+.username{
+    font-size: 35px;
+    color: black;
+    text-decoration: underline;
+    width: 20vw;
+}
+
+.username-edit{
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
 .email{
-    margin-top: -1vh;
+    margin-top: -2vh;
+    color: #545454;
+}
+
+.articles {
+    font-size: 20px;
+    color: black;
 }
 
 .number1 {
+    font-size: 20px;
     font-weight: 500;
 }
 
 .followers {
-    font-size: 10px;
+    font-size: 20px;
     color: black;
 }
 
 .number2 {
+    font-size: 20px;
     font-weight: 500;
 }
 
 .rating {
-    font-size: 10px;
+    font-size: 20px;
     color: black;
 }
 
 .number3 {
+    font-size: 20px;
     font-weight: 500;
+}
+
+.bio p{
+    font-family: "eina";
+    color: #545454;
+    font-size: 20px;
+}
+
+.name{
+    font-size: 20px;
 }
 
 
@@ -138,7 +165,7 @@ body {
 #postcard {
     background-color: white;
     min-height: 100px;
-    width: 30vw;
+    width: 50vw;
 }
 
 .media img {
@@ -187,11 +214,11 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 5vw;
+    gap: 2vw;
     background-color: #d9d9d9;
-    padding: 20px;
+    padding: 2vw;
     border-radius: 10px;
     width: 75vw;
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 

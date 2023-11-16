@@ -10,12 +10,14 @@
         <div class="upper">
             <div class="left-content">
 
-                <div class="card p-3">
-                    <div class="box d-flex align-items-center">
-                        <div class="profile-picture flex-wrap w-100 align-items-center"> <img src="{{ $user->getImageURL() }}"
-                                class="d-block ui-w-40 rounded-circle" alt="">
+                <div class="card-profile p-3">
+                    <div class="pp-identity d-flex align-items-center">
+                        <div class="profile-picture flex-wrap align-items-center">
+                            <img src="{{ $user->getImageURL() }}"
+                            class="d-block ui-w-40 rounded-circle" alt="">
                         </div>
-                        <div class="identity ml-3 w-10">
+
+                        <div class="identity ">
                             <div class="username-edit">
                                 <h3 class="username">{{ $user->username }}</h3>
                                 <a href="#">
@@ -25,30 +27,30 @@
 
                             <span class="email">{{ $user->email }} </span>
 
-                            <div class="p-2 mt-2 d-flex justify-content-between rounded text-BLACK stats">
-                                <div class="d-flex flex-column">
+                            <div class="details d-flex justify-content-between rounded text-BLACK stats">
+                                <div class="d-flex flex-column align-items-center">
                                     <span class="articles">Dialogs</span>
                                     <span class="number1">38</span>
                                 </div>
 
-                                <div class="d-flex flex-column">
+                                <div class="d-flex flex-column align-items-center">
                                     <span class="followers">Followers</span>
                                     <span class="number2">980</span>
                                 </div>
 
-                                <div class="d-flex flex-column">
+                                <div class="d-flex flex-column align-items-center">
                                     <span class="rating">Following</span>
                                     <span class="number3">300</span>
                                 </div>
                             </div>
 
-                            <div class="button mt-2 d-flex flex-row align-items-center">
+                            <div class="button d-flex flex-row align-items-center">
                                 <span class="name">{{ $user->name }} </span>
                             </div>
 
-                            <div class="px-2 mt-2">
-                                <p class="fs-6 fw-light">
-                                    {{ $user->bio }}
+                            <div class="bio">
+                                <p class="">
+                                    halo nama saya {{ $user->name }} :){{-- {{ $user->bio }} --}}
                                 </p>
                             </div>
                         </div>
