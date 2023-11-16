@@ -78,6 +78,7 @@ body {
     font-size: 30px;
     color: black;
     text-decoration: underline;
+    width: 20vw;
 }
 
 .username-edit{
@@ -88,7 +89,7 @@ body {
 
 .identity button{
     padding: 5px;
-    /* width: 10vw; */
+    width: 5vw;
     background-color: white;
     color: black;
     border-style:solid;
