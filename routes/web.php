@@ -36,3 +36,5 @@ Route::resource('users', UserController::class)->only('edit', 'update')->middlew
 Route::resource('users', UserController::class)->only('show');
 
 Route::get('profile', [UserController::class, 'profile'])->middleware('auth')->name('profile');
+
+Route::resource('ideas', IdeaController::class)->only(['show']);

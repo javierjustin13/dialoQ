@@ -10,9 +10,11 @@
                 <div class="identity ">
                     <div class="username-edit">
                         <h3 class="username">{{ $user->username }}</h3>
-                        <a href="#">
-                            <button type="submit">Edit profile</button>
-                        </a>
+                        @if (Auth::user()->id == $user->id)
+                            <a href="{{ route('users.edit', $user->id) }}">
+                                <button type="submit">Edit profile</button>
+                            </a>
+                        @endif  
                     </div>
 
                     <span class="email">{{ $user->email }} </span>
