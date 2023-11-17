@@ -114,6 +114,12 @@ body {
     gap: 2vw;
 }
 
+.username-edit a button:hover{
+    background-color: #545454;
+    border-color: black;
+    transition: all .3s ease-in-out;
+}
+
 .email{
     margin-top: -2vh;
     color: #545454;
@@ -152,6 +158,17 @@ body {
 .bio{
     vertical-align: bottom;
     overflow-wrap: break-word;
+}
+
+.follow button{
+    background-color: #8DD6FF;
+    border-color:black;
+}
+
+.follow a button:hover{
+    background-color: #545454;
+    border-color: black;
+    transition: all .3s ease-in-out;
 }
 
 

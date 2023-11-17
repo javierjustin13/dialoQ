@@ -28,6 +28,14 @@
                     <div class="bio">
                         <p>{{ $user->bio }}</p>
                     </div>
+
+                    @if (Auth::user()->id != $user->id)
+                    <div class="follow ml-3">
+                        <a href="{{ route('users.edit', $user->id) }}">
+                            <button type="submit">Follow</button>
+                        </a>
+                    </div>
+                    @endif
                 </div>
             </div>
         </div>
