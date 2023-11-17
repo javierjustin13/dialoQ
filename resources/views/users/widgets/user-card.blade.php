@@ -14,10 +14,10 @@
                             <a href="{{ route('users.edit', $user->id) }}">
                                 <button type="submit">Edit profile</button>
                             </a>
-                        @endif  
+                        @endif
                     </div>
 
-                    <span class="email">{{ $user->email }} </span>
+                    <span class="email pt-2">{{ $user->email }} </span>
 
                     @include('users.widgets.user-stats')
 
@@ -26,9 +26,7 @@
                     </div>
 
                     <div class="bio">
-                        <p>
-                            {{ $user->bio }}
-                        </p>
+                        <p>{{ $user->bio }}</p>
                     </div>
                 </div>
             </div>

@@ -67,7 +67,6 @@ body {
     align-items: center;
 }
 
-
 .identity {
     display: flex;
     flex-direction: column;
@@ -143,17 +142,15 @@ body {
     font-weight: 500;
 }
 
-.bio p{
-    font-family: "eina";
-    color: #545454;
-    font-size: 20px;
+.bio{
+    vertical-align: bottom;
+    overflow-wrap: break-word;
 }
+
 
 .name{
     font-size: 20px;
 }
-
-
 
 #midpane h2 {
     text-align: center;
@@ -212,7 +209,7 @@ p {
 .dialogs{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     gap: 2vw;
     background-color: #d9d9d9;
@@ -221,4 +218,10 @@ p {
     width: 75vw;
     margin-bottom: 5vh;
 }
+
+/* #postcard {
+    width: 350px;
+    min-height: 100px;
+    height: auto
+  } */
 
