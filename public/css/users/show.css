@@ -34,6 +34,13 @@ body {
 
 }
 
+.right-content{
+    height: 247.33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .left-content {
     direction: flex;
     justify-content: center;
