@@ -7,3 +7,19 @@
     font-family: "eina-bold";
     padding-top: 2.5px;
 }
+
+.suggestedpeople{
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestedpeople p{
+    color: #4a4a4a;
+    font-family: "eina-bold";
+}
+
+.suggestedname{
+    display: flex
+}
+
+

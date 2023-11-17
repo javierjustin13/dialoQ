@@ -25,6 +25,7 @@
         <div class="col-3">
             @include('widgets.search-bar')
             @include('widgets.suggested-bar')
+            @include('widgets.copyright')
         </div>
     </div>
 </div>
