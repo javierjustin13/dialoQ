@@ -22,7 +22,7 @@
                     <li class="nav-item">
                         <div class="border-profile">
                             {{-- <<img src="{{ $dialog->user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt=""> --}}
-                            <div class="profile-picture ml-2">
+                            <div class="profile-pict ml-2">
                                 <img src="/image/profile-image.jpeg" alt="profile picture">
                             </div>
                             <div class="username-nav">
