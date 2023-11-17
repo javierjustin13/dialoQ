@@ -11,7 +11,7 @@
                     <div class="media-body ml-3"> <a href="{{ route('users.show', $dialog->user->id)}}" data-abc="true">{{ $dialog->user->username }}</a>
                     </div>
                     <div class="text-muted small ml-3">
-                        <a href="">View</a>
+                        <a href="{{ route('dialogues.show', $dialog->id) }}">View</a>
                     </div>
                 </div>
             </div>

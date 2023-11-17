@@ -17,19 +17,21 @@ use App\Http\Controllers\DialogController;
 |
 */
 
-Route::get("/", [HomeController::class, "index"])->name("home");
+Route::get("", [HomeController::class, "index"])->name("home");
 
-Route::get("/register", [AuthController::class, "register"])->name("register");
+Route::get("register", [AuthController::class, "register"])->name("register");
 
-Route::post("/register", [AuthController::class, "store"]);
+Route::post("register", [AuthController::class, "store"]);
 
-Route::get("/login", [AuthController::class, "login"])->name("login");
+Route::get("login", [AuthController::class, "login"])->name("login");
 
-Route::post("/login", [AuthController::class, "authenticate"]);
+Route::post("login", [AuthController::class, "authenticate"]);
 
-Route::post("/logout", [AuthController::class, "logout"])->name("logout");
+Route::post("logout", [AuthController::class, "logout"])->name("logout");
 
-Route::post("/dialogs", [DialogController::class, "store"])->name("dialogs.store")->middleware("auth");
+Route::resource('dialogues', DialogController::class)->except(['index', 'create', 'show'])->middleware('auth');
+
+Route::resource('dialogues', DialogController::class)->only(['show']);
 
 Route::resource('users', UserController::class)->only('edit', 'update')->middleware('auth');
 
@@ -37,4 +39,5 @@ Route::resource('users', UserController::class)->only('show');
 
 Route::get('profile', [UserController::class, 'profile'])->middleware('auth')->name('profile');
 
-Route::resource('ideas', IdeaController::class)->only(['show']);
+
+

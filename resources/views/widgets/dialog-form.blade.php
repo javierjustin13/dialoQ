@@ -4,7 +4,7 @@
 
 <div class="p-3 rounded-3">
     <h4>Share your dialog...</h4>
-    <form action="{{ route('dialogs.store') }}" method="POST">
+    <form action="{{ route('dialogues.store') }}" method="POST">
         @csrf
         <input class="form-control" name = "title" type="text" placeholder="Your Concern">
         @error('title')

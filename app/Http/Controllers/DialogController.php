@@ -18,6 +18,11 @@ class DialogController extends Controller
 
         return redirect()->route('home')->with('success', 'Dialog created successfully !');
     }
+
+    public function show(Dialog $dialog)
+    {
+        return view('dialogues.show', compact('dialog'));
+    }
 }
 
 
