@@ -13,6 +13,26 @@ nav{
     font-size: 2.5rem;
 }
 
+.border-profile{
+    box-sizing: content-box;
+    width: 90%;
+    height: 100%;
+    border: solid white;
+    padding: 5px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.username-nav{
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-link{
     font-size: 1.25rem;
     color: #cfcfcf;

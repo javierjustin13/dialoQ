@@ -20,7 +20,15 @@
                 @endguest
                 @auth
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('profile') }}">{{ Auth::user()->username }}</a>
+                        <div class="border-profile">
+                            {{-- <<img src="{{ $dialog->user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt=""> --}}
+                            <div class="profile-picture ml-2">
+                                <img src="/image/profile-image.jpeg" alt="profile picture">
+                            </div>
+                            <div class="username-nav">
+                                <a class="nav-link" href="{{ route('profile') }}">{{ Auth::user()->username }}</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <form action="{{ route('logout') }}" method="POST">
