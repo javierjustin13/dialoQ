@@ -10,11 +10,13 @@
                 <div class="identity ">
                     <div class="username-edit">
                         <h3 class="username">{{ $user->username }}</h3>
-                        @if (Auth::user()->id == $user->id)
-                            <a href="{{ route('users.edit', $user->id) }}">
-                                <button type="submit">Edit profile</button>
-                            </a>
-                        @endif
+                        @auth
+                            @if (Auth::user()->id == $user->id)
+                                <a href="{{ route('users.edit', $user->id) }}">
+                                    <button type="submit">Edit profile</button>
+                                </a>
+                            @endif
+                        @endauth
                     </div>
 
                     <span class="email pt-2">{{ $user->email }} </span>
@@ -29,13 +31,15 @@
                         <p>{{ $user->bio }}</p>
                     </div>
 
-                    @if (Auth::user()->id != $user->id)
-                    <div class="follow ml-3">
-                        <a href="{{ route('users.edit', $user->id) }}">
-                            <button type="submit">Follow</button>
-                        </a>
-                    </div>
-                    @endif
+                    @auth
+                        @if (Auth::user()->id != $user->id)
+                            <div class="follow ml-3">
+                                <a href="{{ route('users.edit', $user->id) }}">
+                                    <button type="submit">Follow</button>
+                                </a>
+                            </div>
+                        @endif
+                    @endauth
                 </div>
             </div>
         </div>
