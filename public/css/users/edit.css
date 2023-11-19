@@ -137,6 +137,17 @@ input[type="file"]{
     border-radius: 5px;
 }
 
+.button a{
+    margin-top: 18px;
+    width: 165px;
+    height: 33px;
+    font-family: 'eina';
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+
 .right-side{
     width: 600px;
     height: 750px;

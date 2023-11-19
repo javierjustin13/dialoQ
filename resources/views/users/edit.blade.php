@@ -36,10 +36,8 @@
                 <div class="bottom p-4">
                     <div class="edit-pp">
                         <div class="your-input">Profile Picture :</div>
-                        <form class="upload-pp" action="">
-                            <input class="input-pp" type="file" id="editPP" name="profile-picture"
-                                placeholder="Choose a file!">
-                        </form>
+                        <input name="image" class="input-pp form-control" type="file" id="editPP"
+                            placeholder="Choose a file!">
                     </div>
                     <div class="edit-bio">
                         <div class="your-input">BIO :</div>
@@ -47,7 +45,7 @@
                     </div>
                     <div class="button-save">
                         <button class="button">SAVE CHANGES</button>
-                        {{-- <button class="button ms-3 bg-danger">CANCEL</button> --}}
+                        <button class="button ms-3 bg-danger"> <a href="{{ route('users.show', $user->id) }}">CANCEL</a></button>
                     </div>
                 </div>
             </form>

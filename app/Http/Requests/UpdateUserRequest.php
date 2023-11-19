@@ -22,9 +22,9 @@ class UpdateUserRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'username' => 'required|min:3|max:40',
-            'name' => 'required|min:3|max:40',
-            'bio' => 'nullable|min:1|max:255',
+            'username' => 'required|min:3|max:20|alpha_dash|unique:users,username,' . auth()->user()->id,
+            'name' => 'required|min:2|max:20',
+            'bio' => 'nullable|max:150',
             'image' => 'image'
         ];
     }
