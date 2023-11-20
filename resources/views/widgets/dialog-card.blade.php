@@ -8,7 +8,8 @@
             <div class="card-header">
                 <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
                         class="d-block ui-w-40 rounded-circle" alt="">
-                    <div class="media-body ml-3"> <a href="{{ route('users.show', $dialog->user->id)}}" data-abc="true">{{ $dialog->user->username }}</a>
+                    <div class="media-body ml-3"> <a href="{{ route('users.show', $dialog->user->id) }}"
+                            data-abc="true">{{ $dialog->user->username }}</a>
                     </div>
                     <div class="text-muted small ml-3">
                         <a href="{{ route('dialogues.show', $dialog->id) }}">View</a>
@@ -19,19 +20,40 @@
                 <h4>{{ $dialog->title }}</h4>
                 <p>{{ $dialog->content }}</p>
             </div>
+            <hr>
             <div class="card-footer align-items-center px-0 pt-0 pb-3">
-                <div class="pt-3 d-flex justify-content-between">
-                    <span class="text-muted d-inline-flex align-items-center align-middle ml-4">
-                        <i class="bi bi-heart mr-1"></i>
-                        <span class="align-middle">{{ $dialog->likes }}</span>
-                    </span>
-                    <span class="text-muted d-inline-flex align-items-center align-middle ml-4">
-                        <i class="bi bi-clock mr-1"></i>
-                        <span class="align-middle">
+                <div class="d-flex justify-content-between">
+                    <div class="text-muted">
+                        <span>
+                            <i class="bi bi-heart"></i>
+                            <span>{{ $dialog->likes }}</span>
+                        </span>
+                        <span class="ms-3">
+                            <i class="bi bi-chat-dots"></i>
+                            <span>100</span> {{-- $dialog->comments->count() --}}
+                        </span>
+                    </div>
+                    <span class="text-muted">
+                        <i class="bi bi-clock me-1"></i>
+                        <span>
                             @php
                                 $diff = date_diff(new DateTime($dialog->created_at), new DateTime());
                             @endphp
-                            {{ $diff->format('%d days, %h hours ago') }}
+                            @if ( $diff->format('%s') <= 5)
+                                Just now
+                            @elseif ( $diff->format('%d') == 0 && $diff->format('%h') == 0 && $diff->format('%i') == 0)
+                                {{ $diff->format('%s seconds ago') }}
+                            @elseif ( $diff->format('%d') == 0 && $diff->format('%h') == 0)
+                                {{ $diff->format('%i minutes ago') }}
+                            @elseif ( $diff->format('%d') == 0)
+                                {{ $diff->format('%h hours ago') }}
+                            @elseif ( $diff->format('%d') > 0)
+                                {{ $diff->format('%d days ago') }}
+                            @elseif ( $diff->format('%d') > 30)
+                                {{ $diff->format('%m months ago') }}
+                            @elseif ( $diff->format('%d') > 365)
+                                {{ $diff->format('%y years ago') }}
+                            @endif
                         </span>
                     </span>
                 </div>
