@@ -14,3 +14,64 @@
 .col-6 h2{
     text-align: center;
 }
+
+#midpane h2 {
+    text-align: center;
+}
+#midpane {
+    background-color: #d9d9d9;
+}
+#postcard {
+    background-color: white;
+    min-height: 100px;
+}
+
+.media img {
+    width: 40px;
+    height: auto;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: black;
+}
+p {
+    margin-bottom: 0px;
+}
+
+.comments {
+    text-align: center;
+}
+.comments h5 {
+    color: #4a4a4a;
+}
+
+#formGroupExampleInput{
+    background-color: #F5F5F5;
+}
+
+.btn-secondary{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#timing{
+    display: flex;
+}
+
+#textcomment{
+    overflow-wrap: break-word;
+
+}
+
+.card-body{
+    overflow-wrap: break-word;
+}
