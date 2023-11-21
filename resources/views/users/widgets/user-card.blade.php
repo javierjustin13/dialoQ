@@ -4,7 +4,7 @@
         <div class="card-profile p-3">
             <div class="pp-identity d-flex align-items-center">
                 <div class="profile-picture flex-wrap align-items-center">
-                    <img class="rounded-pill" src="{{ $user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt="">
+                    <img class="" style="border-radius: 50%; height: 200px; width:200px" src="{{ $user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt="">
                 </div>
 
                 <div class="identity ">

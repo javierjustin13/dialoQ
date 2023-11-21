@@ -16,7 +16,7 @@
                         <div class="p-3 border rounded-4 mb-3" id="postcard">
                             <div class="card-header">
                                 <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $user->getImageURL() }}"
-                                        class="d-block ui-w-40 rounded-circle" alt="">
+                                        class="d-block ui-w-40 rounded-circle" style="border-radius: 50%; height:35px; width:35px" alt="">
                                     <div class="media-body ml-3"> <a href="{{ route('users.show', $user->id) }}"
                                             data-abc="true">{{ $user->username }}</a>
                                     </div>
@@ -61,7 +61,7 @@
                         <div class="p-3 border rounded-4 mb-3" id="postcard">
                             <div class="card-header">
                                 <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $user->getImageURL() }}"
-                                        class="d-block ui-w-40 rounded-circle" alt="">
+                                        class="d-block ui-w-40 rounded-circle" style="border-radius: 50%; height:35px; width:35px" alt="">
                                     <div class="media-body ml-3"> <a href="{{ route('users.show', $user->id) }}"
                                             data-abc="true">{{ $user->username }}</a>
                                     </div>

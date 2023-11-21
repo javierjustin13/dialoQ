@@ -14,7 +14,7 @@
                 @method('PUT')
                 <div class="top">
                     <div class="profile-picture">
-                        <img class="profile-img p-4" src="{{ $user->getImageURL() }}" alt="profile picture">
+                        <img class="profile-img p-4" style="border-radius: 50%; height:300px; width:300px" src="{{ $user->getImageURL() }}" alt="profile picture">
                     </div>
                     <div class="data-req">
                         <div class="data">
