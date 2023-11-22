@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('likes', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('dialog_id')->constrained()->cascadeOnDelete()->references('dialog_id')->on('dialogues');
+            $table->foreignId('dialog_id')->constrained()->cascadeOnDelete()->references('id')->on('dialogues');
             $table->timestamps();
         });
     }

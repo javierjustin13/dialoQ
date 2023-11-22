@@ -12,7 +12,7 @@
                             data-abc="true">{{ $dialog->user->username }}</a>
                     </div>
                     <div class="text-muted small ml-3">
-                        <a href="">View</a>
+                        <a href="{{ route('dialogues.show', $dialog->id) }}">View</a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                         </span>
                         <span class="ms-3">
                             <i class="bi bi-chat-dots"></i>
-                            <span>100</span> {{-- $dialog->comments->count() --}}
+                            <span>{{ $dialog->comments->count() }}</span>
                         </span>
                     </div>
                     <span class="text-muted">
@@ -39,20 +39,20 @@
                             @php
                                 $diff = date_diff(new DateTime($dialog->created_at), new DateTime());
                             @endphp
-                            @if ( $diff->format('%s') <= 5)
+                            @if ($diff->format('%s') <= 5 && $diff->format('%i') == 0 && $diff->format('%h') == 0 && $diff->format('%d') == 0)
                                 Just now
-                            @elseif ( $diff->format('%d') == 0 && $diff->format('%h') == 0 && $diff->format('%i') == 0)
-                                {{ $diff->format('%s seconds ago') }}
-                            @elseif ( $diff->format('%d') == 0 && $diff->format('%h') == 0)
-                                {{ $diff->format('%i minutes ago') }}
-                            @elseif ( $diff->format('%d') == 0)
-                                {{ $diff->format('%h hours ago') }}
-                            @elseif ( $diff->format('%d') > 0)
-                                {{ $diff->format('%d days ago') }}
-                            @elseif ( $diff->format('%d') > 30)
-                                {{ $diff->format('%m months ago') }}
-                            @elseif ( $diff->format('%d') > 365)
-                                {{ $diff->format('%y years ago') }}
+                            @elseif ($diff->format('%d') == 0 && $diff->format('%h') == 0 && $diff->format('%i') == 0)
+                                {{ $diff->format('%s second(s) ago') }}
+                            @elseif ($diff->format('%d') == 0 && $diff->format('%h') == 0)
+                                {{ $diff->format('%i minute(s) ago') }}
+                            @elseif ($diff->format('%d') == 0)
+                                {{ $diff->format('%h hour(s) ago') }}
+                            @elseif ($diff->format('%d') > 0)
+                                {{ $diff->format('%d day(s) ago') }}
+                            @elseif ($diff->format('%d') > 30)
+                                {{ $diff->format('%m month(s) ago') }}
+                            @elseif ($diff->format('%d') > 365)
+                                {{ $diff->format('%y year(s) ago') }}
                             @endif
                         </span>
                     </span>
