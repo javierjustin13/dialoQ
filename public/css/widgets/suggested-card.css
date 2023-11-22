@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'eina';
+    src: url('../../fonts/eina.ttf');
+}
+@font-face {
+    font-family: 'eina-bold';
+    src: url('../../fonts/Eina-Bold.ttf');
+}
+
 #suggestedtext {
     text-align: center;
     border-radius: 10px;

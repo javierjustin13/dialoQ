@@ -4,7 +4,7 @@
 }
 @font-face {
     font-family: 'eina-bold';
-    src: url(../fonts/Eina-Bold.ttf);
+    src: url('../fonts/Eina-Bold.ttf');
 }
 
 .container{
