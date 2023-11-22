@@ -21,14 +21,14 @@
                             <input name="username" class="input-box" type="text" id="editUsername" name="username"
                                 placeholder={{ $user->username }}>
                             @error('username')
-                                <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
+                                <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="data">
                             <input name="name" class="input-box" type="text" id="editName" name="name"
                                 placeholder={{ $user->name }}>
                             @error('name')
-                                <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
+                                <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                             @enderror
                         </div>
                     </div>

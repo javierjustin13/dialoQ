@@ -21,7 +21,7 @@
                     {{-- <i class="fa fa-user"></i> --}}
                 </div>
                 @error('email')
-                    <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
+                    <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                 @enderror
 
                 <div class="login-req">Password :</div>
@@ -31,7 +31,7 @@
                     <a href="#" class="fa fa-question-circle"></a>
                 </div>
                 @error('password')
-                    <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
+                    <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                 @enderror
                 <div class="submit-btn">
                     <button type="submit" class="button">SUBMIT</button>

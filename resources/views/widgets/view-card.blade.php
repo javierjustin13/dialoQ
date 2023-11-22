@@ -27,7 +27,7 @@
                     </span>
                     <span class="ms-3">
                         <i class="bi bi-chat-dots"></i>
-                        <span>100</span> {{-- $dialog->comments->count() --}}
+                        <span>{{ $dialog->comments->count() }}</span>
                     </span>
                 </div>
                 <span class="text-muted">
