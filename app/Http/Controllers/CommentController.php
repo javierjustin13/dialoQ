@@ -12,6 +12,7 @@ class CommentController extends Controller
     public function store(CreateCommentRequest $request, Dialog $dialog)
     {
         $validated = $request->validated();
+        $validated['content'] = $request->comment;
 
         $validated['user_id'] = auth()->id();
         $validated['dialog_id'] = $dialog->id;
