@@ -12,7 +12,7 @@
                             data-abc="true">{{ $dialog->user->username }}</a>
                     </div>
                     <div class="text-muted small ml-3">
-                        <a href="{{ route('dialogues.show', $dialog->id) }}">View</a>
+                        <a href="">View</a>
                     </div>
                 </div>
             </div>
