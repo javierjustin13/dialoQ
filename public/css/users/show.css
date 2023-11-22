@@ -249,3 +249,15 @@ p {
     height: auto
   } */
 
+@media screen and (max-width: 767px) {
+
+    .dialogs {
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    .suggested-card {
+        display: none;
+    }
+}
+

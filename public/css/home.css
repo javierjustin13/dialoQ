@@ -15,6 +15,36 @@
     text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+    #leftpane {
+        order: 1;
+    }
+
+    .col-6 {
+        order: 2;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .col-3 {
+        order: 3;
+        display: none;
+    }
+
+    #leftpane {
+        order: 4;
+    }
+
+    .col-6 #search-bar,
+    .col-6 #dialog-form {
+        order: -1;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
 
 
 

@@ -36,3 +36,19 @@ p {
 .comments h5 {
     color: #4a4a4a;
 }
+
+@media screen and (max-width: 767px) {
+    #postcard {
+        padding: 10px;
+    }
+
+    .media img {
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #postcard {
+        padding: 12px; 
+    }
+}
