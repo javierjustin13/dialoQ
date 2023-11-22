@@ -31,7 +31,9 @@ Route::post("logout", [AuthController::class, "logout"])->name("logout");
 
 Route::resource('dialogues', DialogController::class)->except(['index', 'create', 'show'])->middleware('auth');
 
-Route::resource('dialogues', DialogController::class)->only(['show']);
+// Route::resource('dialogues', DialogController::class)->only(['show']);
+
+Route::get("dialogues/{dialog}", [DialogController::class, "show"])->name("dialogues.show");
 
 Route::resource('users', UserController::class)->only('edit', 'update')->middleware('auth');
 
