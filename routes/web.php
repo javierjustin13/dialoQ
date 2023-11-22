@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DialogController;
@@ -41,5 +42,6 @@ Route::resource('users', UserController::class)->only('show');
 
 Route::get('profile', [UserController::class, 'profile'])->middleware('auth')->name('profile');
 
+Route::post("/dialogues/{dialog}/comments", [CommentController::class, "store"])->name('dialogues.comments.store')->middleware('auth');
 
 
