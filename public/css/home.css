@@ -1,4 +1,4 @@
-@font-face {
+ @font-face {
     font-family: 'eina';
     src: url('../fonts/eina.ttf');
 }
@@ -28,7 +28,7 @@
         order: 3;
     }
     .col-6 {
-        order: 4; 
+        order: 4;
         width: 100%;
         /* margin-right: 0; */
         display: grid;
@@ -58,14 +58,13 @@
         order: 0;
         width: 100%;
     }
-    
+
     #myInput {
         width: 100%;
         width: 80vw;
         max-width: 435px;
         min-width: 100px;
     }
-
 
     .copyright {
         display: none;
@@ -79,6 +78,33 @@
     p{
         display: block;
     }
+
+    .pagination-container {
+        order: 6; /* Menempatkan pagination di bawah elemen lainnya */
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+    }
+
+    .pagination ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 5px;
+    }
+
+    .pagination li {
+        margin: 0;
+    }
+
+    .pagination a {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
@@ -86,11 +112,6 @@
         max-width: 67vw;
     }
 }
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-
-}
-
 
 
 
