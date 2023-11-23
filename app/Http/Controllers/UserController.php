@@ -26,7 +26,6 @@ class UserController extends Controller
             return redirect()->back();
         }
         return view('users.edit', compact('user'));
-
     }
 
     public function update(UpdateUserRequest $request, User $user)
@@ -50,5 +49,23 @@ class UserController extends Controller
     public function profile()
     {
         return $this->show(auth()->user());
+    }
+
+    public function follow(User $user)
+    {
+        $follower = auth()->user();
+
+        $follower->followings()->attach($user);
+
+        return redirect()->route('users.show', $user->id)->with('success', "followed successfully!");
+    }
+
+    public function unfollow(User $user)
+    {
+        $follower = auth()->user();
+
+        $follower->followings()->detach($user);
+
+        return redirect()->route('users.show', $user->id)->with('success', "unfollowed successfully!");
     }
 }

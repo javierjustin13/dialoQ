@@ -6,11 +6,11 @@
 
     <div class="d-flex flex-column align-items-center">
         <span class="followers">Followers</span>
-        <span class="number2">980</span>
+        <span class="number2">{{ $user->followers->count() }}</span>
     </div>
 
     <div class="d-flex flex-column align-items-center">
         <span class="rating">Following</span>
-        <span class="number3">300</span>
+        <span class="number3">{{ $user->followings->count() }}</span>
     </div>
 </div>

@@ -1,4 +1,4 @@
-@forelse ($dialog->comments->reverse() as $comment)
+@forelse ($dialog->comments as $comment)
     <div class="card-header mb-3 comment-item">
         <style>
             .comment-item {
