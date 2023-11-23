@@ -186,7 +186,6 @@ body {
 .dialogs{
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: center;
     gap: 2vw;
     background-color: #d9d9d9;
@@ -197,14 +196,14 @@ body {
 }
 
 @media screen and (max-width: 767px) {
-
     .dialogs {
         flex-direction: column;
         width: 100%;
     }
 
-    .suggested-card {
+    .right-content {
         display: none;
     }
+    
 }
 
