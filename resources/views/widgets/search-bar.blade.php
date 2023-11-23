@@ -24,11 +24,11 @@ nya --}}
                     <i class="bi bi-search" id="magnifying"></i>
                 </button>
             </div>
-            <input type="search" placeholder="Search dialoQ" aria-describedby="button-addon2"
-                class="form-control border-0 rounded-pill">
-            <div class="dropdown">
+            {{-- <input type="search" placeholder="Search dialoQ" aria-describedby="button-addon2"
+            class="form-control border-0 rounded-pill"> --}}
+            <div class="dropdown m-0">
                 <input type="search" placeholder="Search dialoQ" id="myInput" onkeyup="filterFunction()"
-                    class="form-control ml-3 border-0 rounded-pill" aria-describedby="button-addon2">
+                    class="form-control border-0 rounded-pill" aria-describedby="button-addon2">
                 <div id="myDropdown" class="dropdown-content">
                     <div class="percontent">
                         <a href="">
@@ -100,7 +100,6 @@ nya --}}
 
     document.getElementById("myInput").addEventListener("input", myFunction);
 
-    // make the dropdown menu appear when the input is have value
 
         
 

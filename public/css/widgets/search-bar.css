@@ -57,4 +57,9 @@
 
   .dropdown:focus-within .dropdown-content {display: block;}
 
+  .input-group{
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
 
