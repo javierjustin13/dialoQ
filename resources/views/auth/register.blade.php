@@ -11,6 +11,7 @@
         <div class="container-md-offset-3 row-md-6">
             <form class="form-horizontal" action="{{ route('register') }}" method="POST">
                 @csrf
+                @honeypot
                 <div class="heading">
                     <div class="register">REGISTER</div>
                 </div>

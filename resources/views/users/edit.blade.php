@@ -11,6 +11,7 @@
         <div class="left-side">
             <form enctype="multipart/form-data" method="POST" action="{{ route('users.update', $user->id) }}">
                 @csrf
+                @honeypot
                 @method('PUT')
                 <div class="top">
                     <div class="profile-picture">

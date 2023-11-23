@@ -37,11 +37,13 @@
                                 @if (Auth::user()->follows($user))
                                     <form method="POST" action="{{ route('users.unfollow', $user->id) }}">
                                         @csrf
+                                        @honeypot
                                         <button type="submit" class="btn btn-danger btn-sm"> Unfollow </button>
                                     </form>
                                 @else
                                     <form method="POST" action="{{ route('users.follow', $user->id) }}">
                                         @csrf
+                                        @honeypot
                                         <button type="submit" class="btn btn-primary btn-sm"> Follow </button>
                                     </form>
                                 @endif

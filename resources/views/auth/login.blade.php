@@ -12,6 +12,7 @@
             @include('widgets.success-message')
             <form class="form-horizontal" action="{{ route('login') }}" method="POST">
                 @csrf
+                @honeypot
                 <div class="heading">
                     <div class="login">LOGIN</div>
                 </div>
@@ -34,7 +35,7 @@
                     <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                 @enderror
                 <div class="submit-btn">
-                    <button type="submit" class="button">SUBMIT</button>
+                    <button type="submit" class="button" onclick="disable(this)">SUBMIT</button>
                 </div>
                 <div class="question">Don't have an account yet? <a href="/register">Register here</a></div>
             </form>

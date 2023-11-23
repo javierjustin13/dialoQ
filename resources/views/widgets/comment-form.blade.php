@@ -1,6 +1,7 @@
 @auth
     <form action="{{ route('dialogues.comments.store', $dialog->id) }}" method="POST">
         @csrf
+        @honeypot
         <div class="form-group" id="commentbox">
             <input name="comment" type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Comments...">
         </div>
