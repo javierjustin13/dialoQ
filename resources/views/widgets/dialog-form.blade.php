@@ -17,6 +17,6 @@
                 <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
             @enderror
         </div>
-        <button class="btn btn-dark my-2" type="submit">Share7</button>
+        <button class="btn btn-dark my-2" type="submit">Share</button>
     </form>
 </div>
