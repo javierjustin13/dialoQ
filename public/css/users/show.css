@@ -183,41 +183,6 @@ body {
     background-color: #d9d9d9;
 }
 
-#postcard {
-    background-color: white;
-    min-height: 100px;
-    width: 500px;
-}
-
-.media img {
-    width: 40px;
-    height: auto;
-}
-
-#header {
-    display: flex;
-    flex-direction: column;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    color: black;
-}
-
-p {
-    margin-bottom: 0px;
-}
-
-.comments {
-    text-align: center;
-}
-.comments h5 {
-    color: #4a4a4a;
-}
-
 .dialogs{
     display: flex;
     flex-direction: row;
@@ -230,12 +195,6 @@ p {
     width: 75vw;
     margin-bottom: 5vh;
 }
-
-/* #postcard {
-    width: 350px;
-    min-height: 100px;
-    height: auto
-  } */
 
 @media screen and (max-width: 767px) {
 
