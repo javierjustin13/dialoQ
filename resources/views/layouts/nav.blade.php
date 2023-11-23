@@ -8,14 +8,14 @@
         <div class="collapse navbar-collapse ms-5" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/" id="active">Home</a>
+                    <a class="nav-link" href="/" id="{{ (Route::currentRouteName('home')) ? 'active' : '' }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/feeds">Feeds</a>
+                    <a class="nav-link" href="/feeds" id="{{ (Route::is('feeds')) ? 'active' : '' }}">Feeds</a>
                 </li>
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}">Login</a>
+                        <a class="nav-link" href="{{ route('login') }}" id="{{ (Route::is('login')) ? 'active' : '' }}">Login</a>
                     </li>
                 @endguest
                 @auth
@@ -26,7 +26,7 @@
                                 <img class="rounded-5" src="{{ Auth::user()->getImageUrl() }}" alt="profile picture">
                             </div>
                             <div class="username-nav">
-                                <a class="nav-link" href="{{ route('profile') }}">{{ Auth::user()->username }}</a>
+                                <a class="nav-link" href="{{ route('profile') }}" id="{{ (Route::is('profile')) ? 'active' : '' }}">{{ Auth::user()->username }}</a>
                             </div>
                         </div>
                     </li>

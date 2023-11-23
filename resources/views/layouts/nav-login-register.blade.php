@@ -8,10 +8,10 @@
         <div class="collapse navbar-collapse ms-5" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">Login</a>
+                    <a class="nav-link" href="{{ route('login') }}" id="{{ (Route::is('login')) ? 'active' : '' }}">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">Register</a>
+                    <a class="nav-link" href="{{ route('register') }}" id="{{ (Route::is('register')) ? 'active' : '' }}">Register</a>
                 </li>
             </ul>
         </div>
