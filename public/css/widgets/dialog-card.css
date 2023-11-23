@@ -37,13 +37,6 @@ p {
     color: #4a4a4a;
 }
 
-/* ini gatau kenapa gamau masuk */
-/* .comment-item {
-    border-bottom: 1px solid black;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-} */
-
 @media screen and (max-width: 767px) {
     #postcard {
         padding: 10px;
