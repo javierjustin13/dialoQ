@@ -8,7 +8,10 @@
         <div class="collapse navbar-collapse ms-5" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/" id="{{ (Route::currentRouteName('home')) ? 'active' : '' }}">Home</a>
+                    @php
+                        $route = Route::currentRouteName();
+                    @endphp
+                    <a class="nav-link" href="/" id="{{ $route === 'home' ? 'active' : '' }}">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/feeds" id="{{ (Route::is('feeds')) ? 'active' : '' }}">Feeds</a>
