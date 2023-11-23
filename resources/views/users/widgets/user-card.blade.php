@@ -42,7 +42,7 @@
                                 @else
                                     <form method="POST" action="{{ route('users.follow', $user->id) }}">
                                         @csrf
-                                        <button type="submit" class="btn btn-primary btn-sm"> Follow </button>
+                                        <button type="submit" class="btn btn-primary btn-sm ms-1"> Follow </button>
                                     </form>
                                 @endif
                             </div>
