@@ -1,12 +1,5 @@
 @forelse ($dialog->comments as $comment)
     <div class="card-header mb-3 comment-item">
-        <style>
-            .comment-item {
-                border-bottom: 1px solid #d9d9d9;
-                padding-bottom: 10px;
-                margin-bottom: 10px;
-            }
-        </style>
         <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $comment->user->getImageURL() }}"
                 class="d-block ui-w-40 rounded-circle" alt="">
             <div class="media-body ml-3"> <a href="">{{ $comment->user->username }}</a>
@@ -37,6 +30,7 @@
         </div>
         <p class=" ms-5 pl-2" id="textcomment">{{ $comment->content }}</p>
     </div>
+    <hr>
 @empty
     <p class="text-center mt-4">No Comments Found.</p>
 @endforelse
