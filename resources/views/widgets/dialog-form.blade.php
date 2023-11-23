@@ -6,7 +6,6 @@
     <h4>Share your dialog...</h4>
     <form action="{{ route('dialogues.store') }}" method="POST">
         @csrf
-        @honeypot
         <input class="form-control" name = "title" type="text" placeholder="Dialog Title">
         @error('title')
             <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>

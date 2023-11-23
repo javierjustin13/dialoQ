@@ -33,7 +33,6 @@
                     <li class="nav-item">
                         <form action="{{ route('logout') }}" method="POST">
                             @csrf
-                            @honeypot
                             <button class="nav-link">
                                 <img src="/image/logout_icon.png" alt="logout">
                             </button>

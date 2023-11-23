@@ -12,7 +12,6 @@
             @include('widgets.success-message')
             <form class="form-horizontal" action="{{ route('login') }}" method="POST">
                 @csrf
-                @honeypot
                 <div class="heading">
                     <div class="login">LOGIN</div>
                 </div>
