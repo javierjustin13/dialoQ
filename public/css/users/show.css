@@ -47,39 +47,44 @@ body {
 }
 
 .card-profile {
-    width: 55vw;
+    width: 850px;
+    height: 350px;
     border: none;
     border-radius: 10px;
     background-color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
 }
 
-.pp-identity{
+.upper-profile{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 50vw;
 }
 
 .profile-picture{
-    width: 50vw;
+    width: 300px;
+    height: 250px;
     display: flex;
-    flex-direction:column;
+    justify-content: center;
     align-items: center;
 }
 
-.profile-picture img {
+.pp-image{
     width: 200px;
-    height: auto;
+    height: 200px;
     align-items: center;
+    border-radius: 50%;
+    margin-left: -50px;
 }
 
 .identity {
     display: flex;
     flex-direction: column;
-    margin-right: 5vw;
-    width: 50%;
-    /* gap: 2px; */
+    width: 400px;
+    height: 250px;
+    justify-content: center;
 }
 
 .identity button{
@@ -95,23 +100,35 @@ body {
     margin-left: -1vw;
 }
 
+
 .stats {
-    /* background: #f2f5f8 !important; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
     color: #000 !important;
-    margin: 5px;
+    gap: 3vw;
+
 }
 
+.details-stats{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .username{
-    font-size: 35px;
+    font-size: 2vw;
     color: black;
     text-decoration: underline;
     width: 20vw;
+    margin: 0;
 }
 
 .username-edit{
     display: flex;
     flex-direction: row;
-    gap: 2vw;
 }
 
 .username-edit a button:hover{
@@ -125,39 +142,23 @@ body {
     color: #545454;
 }
 
-.articles {
+.stats-style{
     font-size: 20px;
     color: black;
 }
 
-.number1 {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.followers {
-    font-size: 20px;
-    color: black;
-}
-
-.number2 {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.rating {
-    font-size: 20px;
-    color: black;
-}
-
-.number3 {
-    font-size: 20px;
-    font-weight: 500;
+.name-bio{
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15vw;
 }
 
 .bio{
     vertical-align: bottom;
     overflow-wrap: break-word;
+    color: #545454;
 }
 
 .follow button{
@@ -170,7 +171,6 @@ body {
     border-color: black;
     transition: all .3s ease-in-out;
 }
-
 
 .name{
     font-size: 20px;
@@ -196,6 +196,11 @@ body {
 }
 
 @media screen and (max-width: 767px) {
+    .container{
+        display: flex;
+        align-items: center;
+    }
+
     .dialogs {
         flex-direction: column;
         width: 100%;
@@ -204,6 +209,75 @@ body {
     .right-content {
         display: none;
     }
-    
+
+    .profile-picture{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    .profile-picture img{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        margin-left: 0;
+    }
+
+    .card-profile{
+        width: 85vw;
+        margin-left: -18px;
+        height: 165px;
+    }
+
+    .username-edit{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .username{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+    .identity{
+        width: 200px;
+        height: 100px;
+        font-size: 12px;
+    }
+
+    .identity button{
+        width: 18vw;
+        font-size: 8px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 0;
+    }
+
+    .stats{
+        gap: 7px;
+    }
+
+    .stats-style{
+        font-size: 12px;
+    }
+
+    .name{
+        font-size: 12px;
+    }
+
+    .bio{
+        font-size: 12px;
+    }
+
+    .name-bio{
+        margin-left: -40px;
+        margin-top: 5px;
+    }
+
+
+
+
+
+
 }
 

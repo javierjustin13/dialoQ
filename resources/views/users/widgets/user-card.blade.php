@@ -1,10 +1,10 @@
 <div class="upper">
     <div class="left-content">
 
-        <div class="card-profile p-3">
-            <div class="pp-identity d-flex align-items-center">
-                <div class="profile-picture flex-wrap align-items-center">
-                    <img class="" style="border-radius: 50%; height: 200px; width:200px"
+        <div class="card-profile">
+            <div class="upper-profile">
+                <div class="profile-picture">
+                    <img class="pp-image" style=""
                         src="{{ $user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt="">
                 </div>
 
@@ -24,31 +24,35 @@
 
                     @include('users.widgets.user-stats')
 
-                    <div class="button d-flex flex-row align-items-center">
-                        <span class="name">{{ $user->name }} </span>
-                    </div>
-
-                    <div class="bio">
-                        <p>{{ $user->bio }}</p>
-                    </div>
-                    @auth()
-                        @if (Auth::user()->isNot($user))
-                            <div class="mt-3">
-                                @if (Auth::user()->follows($user))
-                                    <form method="POST" action="{{ route('users.unfollow', $user->id) }}">
-                                        @csrf
-                                        <button type="submit" class="btn btn-danger btn-sm"> Unfollow </button>
-                                    </form>
-                                @else
-                                    <form method="POST" action="{{ route('users.follow', $user->id) }}">
-                                        @csrf
-                                        <button type="submit" class="btn btn-primary btn-sm ms-1"> Follow </button>
-                                    </form>
-                                @endif
-                            </div>
-                        @endif
-                    @endauth
                 </div>
+            </div>
+
+
+            <div class="name-bio">
+                <div class="">
+                    <span class="name">{{ $user->name }} </span>
+                </div>
+
+                <div class="bio">
+                    <p>{{ $user->bio }}</p>
+                </div>
+                @auth()
+                    @if (Auth::user()->isNot($user))
+                        <div class="mt-3">
+                            @if (Auth::user()->follows($user))
+                                <form method="POST" action="{{ route('users.unfollow', $user->id) }}">
+                                    @csrf
+                                    <button type="submit" class="btn btn-danger btn-sm"> Unfollow </button>
+                                </form>
+                            @else
+                                <form method="POST" action="{{ route('users.follow', $user->id) }}">
+                                    @csrf
+                                    <button type="submit" class="btn btn-primary btn-sm"> Follow </button>
+                                </form>
+                            @endif
+                        </div>
+                    @endif
+                @endauth
             </div>
         </div>
     </div>
@@ -58,3 +62,4 @@
         @include('widgets.suggested-bar')
     </div>
 </div>
+
