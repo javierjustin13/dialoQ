@@ -28,7 +28,7 @@ nya --}}
                 class="form-control border-0 rounded-pill"> --}}
             <div class="dropdown m-0">
                 <input type="search" placeholder="Search people" id="myInput" onkeyup="filterFunction()"
-                    class="form-control border-0 rounded-pill" aria-describedby="button-addon2">
+                    class="form-control border-0 rounded-pill" aria-describedby="button-addon2" autocomplete="off">
                 <div id="myDropdown" class="dropdown-content">
                     @foreach ($users as $user)
                     <div class="percontent">
