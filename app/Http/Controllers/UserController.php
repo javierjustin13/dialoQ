@@ -13,8 +13,9 @@ class UserController extends Controller
     public function show(User $user)
     {
         $dialogues = $user->dialogues()->get();
+        $users = User::all();
 
-        return view('users.show', compact('user', 'dialogues'));
+        return view('users.show', compact('user', 'dialogues', 'users'));
     }
 
 
@@ -22,10 +23,12 @@ class UserController extends Controller
     {
         $this->authorize('update', $user);
 
+        $users = User::all();
+
         if (auth()->user()->id !== $user->id) {
             return redirect()->back();
         }
-        return view('users.edit', compact('user'));
+        return view('users.edit', compact('user', 'users'));
     }
 
     public function update(UpdateUserRequest $request, User $user)

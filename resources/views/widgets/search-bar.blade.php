@@ -16,7 +16,7 @@ nya --}}
     </div>
 </div> --}}
 
-<form action="">
+<form action="" id="search">
     <div class="p-1 rounded rounded-pill shadow-sm mb-4 ml-1" id="searchbar">
         <div class="input-group">
             <div class="input-group-prepend">
@@ -25,37 +25,21 @@ nya --}}
                 </button>
             </div>
             {{-- <input type="search" placeholder="Search dialoQ" aria-describedby="button-addon2"
-            class="form-control border-0 rounded-pill"> --}}
+                class="form-control border-0 rounded-pill"> --}}
             <div class="dropdown m-0">
-                <input type="search" placeholder="Search dialoQ" id="myInput" onkeyup="filterFunction()"
+                <input type="search" placeholder="Search people" id="myInput" onkeyup="filterFunction()"
                     class="form-control border-0 rounded-pill" aria-describedby="button-addon2">
                 <div id="myDropdown" class="dropdown-content">
+                    @foreach ($users as $user)
                     <div class="percontent">
-                        <a href="">
+                        <a href="{{ route('users.show', $user->id) }}">
                             <div class="media flex-wrap w-100 align-items-center">
-                                <img src="../image/profile-image.jpeg" class="d-block ui-w-40 rounded-circle" alt="">
-                                <p class="ml-2">About</p>
+                                <img src="{{ $user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt="">
+                                <p class="ml-2">{{ $user->username }}</p>
                             </div>
                         </a>
                     </div>
-                    <div class="percontent">
-                      <a href="">
-                          <div class="media flex-wrap w-100 align-items-center">
-                              <img src="../image/profile-image.jpeg" class="d-block ui-w-40 rounded-circle" alt="">
-                              <p class="ml-2">Base</p>
-                          </div>
-                      </a>
-                  </div>
-                    <a href="#blog">Blog</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#custom">Custom</a>
-                    <a href="#support">Support</a>
-                    <a href="#tools">Tools</a>
-                    <a href="#support">Delvin</a>
-                    <a href="#tools">kezia</a>
-                    <a href="#support">Justin</a>
-                    <a href="#tools">Ferren</a>
-                    <a href="#tools">gladys</a>
+                    @endforeach
                 </div>
             </div>
         </div>
@@ -63,15 +47,13 @@ nya --}}
 </form>
 
 <script>
-
     function myFunction() {
       document.getElementById("myDropdown").classList.toggle("show");
       event.preventDefault();
     }
 
-
     function filterFunction() {
-      var input, filter, ul, li, a, i;
+      var input, filter, div, a, i;
       input = document.getElementById("myInput");
       filter = input.value.toUpperCase();
       div = document.getElementById("myDropdown");
@@ -84,28 +66,21 @@ nya --}}
           a[i].style.display = "none";
         }
       }
+
+      // Show/hide the dropdown based on whether there is text input
+      div.style.display = filter.length > 0 ? "block" : "none";
     }
 
-    // make the dropdown menu disappear when the input is clicked outside
     window.onclick = function(event) {
       if (!event.target.matches('.form-control')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
           var openDropdown = dropdowns[i];
-            openDropdown.classList.remove('show');
+            openDropdown.style.display = 'none';
         }
       }
     }
 
-    document.getElementById("myInput").addEventListener("input", myFunction);
-
-
-        
-
-
-
-
-
-    
+    document.getElementById("myInput").addEventListener("input", filterFunction);
 </script>

@@ -27,7 +27,7 @@
                     <span>{{ $dialog->likes }}</span>
                 </span>
                 <span class="ms-3">
-                    <i class="bi bi-chat-dots"></i>
+                    <a class="bi bi-chat-dots" href="{{ route('dialogues.show', $dialog->id)}}"></a>
                     <span>{{ $dialog->comments->count() }}</span>
                 </span>
             </div>

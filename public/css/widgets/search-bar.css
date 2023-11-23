@@ -55,7 +55,6 @@
   .show {display: block;}
   .hide {display: none;}
 
-  .dropdown:focus-within .dropdown-content {display: block;}
 
   .input-group{
     display: flex;

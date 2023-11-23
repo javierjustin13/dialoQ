@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
 @endpush
 
+
+
 @section('title', 'Home')
 
 @section('content')
@@ -12,7 +14,7 @@
             <div class="col-3 " id="leftpane">
                 @include('widgets.dialog-form')
             </div>
-            <div class="col-6">
+            <div class="col-6" id="midborder">
                 @include('widgets.success-message')
                 @guest
                     <h2 class="py-3 mb-3" style="background-color: #D9D9D9; color:#4a4a4a; border-radius:10px">LOGIN TO START YOUR
@@ -28,7 +30,7 @@
                 </div>
                 {{ $dialogues->links() }}
             </div>
-            <div class="col-3">
+            <div class="col-3" id="rightpane">
                 @include('widgets.search-bar')
                 @include('widgets.suggested-bar')
                 @include('widgets.copyright')
