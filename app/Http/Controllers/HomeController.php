@@ -14,7 +14,7 @@ class HomeController extends Controller
             [
                 'dialogues' => $dialogues->paginate(10),
                 'users' => User::all()
-            ]); 
+            ]);
     }
 
 }

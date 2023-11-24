@@ -11,6 +11,8 @@ class Dialog extends Model
 
     protected $table = 'dialogues';
 
+    protected $with = ['user','comments', 'likes'];
+
     protected $fillable = [
         'user_id',
         'title',
