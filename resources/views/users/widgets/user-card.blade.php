@@ -36,7 +36,7 @@
                 <div class="bio">
                     <p>{{ $user->bio }}</p>
                 </div>
-                @auth()
+                @auth
                     @if (Auth::user()->isNot($user))
                         <div class="mt-3">
                             @if (Auth::user()->follows($user))

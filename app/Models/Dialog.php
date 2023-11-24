@@ -13,6 +13,8 @@ class Dialog extends Model
 
     protected $with = ['user','comments', 'likes'];
 
+    protected $withCount = 'likes';
+
     protected $fillable = [
         'user_id',
         'title',
