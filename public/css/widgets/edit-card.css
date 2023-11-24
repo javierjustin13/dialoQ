@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'eina';
+    src: url('../fonts/eina.ttf');
+}
+@font-face {
+    font-family: 'eina-bold';
+    src: url('../fonts/Eina-Bold.ttf');
+}
+
+#midpane h2 {
+    text-align: center;
+}
+#midpane {
+    background-color: #d9d9d9;
+}
+#postcard {
+    background-color: white;
+    min-height: 100px;
+}
+
+.media img {
+    width: 40px;
+    height: 40px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: 'eina';
+}
+a:hover {
+    color: black;
+}
+p {
+    margin-bottom: 0px;
+}
+
+.container{
+    font-family: 'eina';
+}
+
+.col-6 h2{
+    text-align: center;
+}
+
+#mytextarea{
+    /* font-weight: Bold 10rem (80px); */
+    font-family: 'eina';
+    /* font-weight: 1000; */
+    resize: none;
+    font-size: 1.5em;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
+}

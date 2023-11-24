@@ -11,17 +11,17 @@
         </div>
         <div class="suggestedpeople pb-3">
             <div class="suggestedname">
-                <img src="../image/profile-image.jpeg" alt="">
+                <img src="../../image/profile-image.jpeg" alt="">
                 <p class="pl-2">Javier Justin</p>
             </div>
-            <img src="../image/add-user.png" alt="">
+            <img src="../../image/add-user.png" alt="">
         </div>
         <div class="suggestedpeople">
             <div class="suggestedname">
-                <img src="../image/profile-image.jpeg" alt="">
+                <img src="../../image/profile-image.jpeg" alt="">
                 <p class="pl-2">Kezia revalina</p>
             </div>
-            <img src="../image/add-user.png" alt="">
+            <img src="../../image/add-user.png" alt="">
         </div>
 
     </div>

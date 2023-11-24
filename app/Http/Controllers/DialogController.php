@@ -34,7 +34,7 @@ class DialogController extends Controller
         $editing = true;
 
         $users = User::all();
-        return view('dialogues.show', compact('dialog', 'users', 'editing'));
+        return view('dialogues.edit', compact('dialog', 'users', 'editing'));
     }
 
     public function update(UpdateDialogRequest $request, Dialog $dialog)

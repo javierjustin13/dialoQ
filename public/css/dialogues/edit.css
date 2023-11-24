@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'eina';
+    src: url('../fonts/eina.ttf');
+}
+@font-face {
+    font-family: 'eina-bold';
+    src: url(../fonts/Eina-Bold.ttf);
+}
+
+.container{
+    font-family: 'eina';
+}
+
+.col-6 h2{
+    text-align: center;
+}
