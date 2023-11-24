@@ -21,7 +21,7 @@
                         <a class="nav-link" href="{{ route('login') }}" id="{{ (Route::is('login')) ? 'active' : '' }}">Login</a>
                     </li>
                 @endguest
-                @auth
+                @auth()
                     <li class="nav-item">
                         <div class="border-profile">
                             {{-- <<img src="{{ $dialog->user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt=""> --}}

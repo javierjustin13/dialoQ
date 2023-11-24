@@ -11,7 +11,7 @@
                 <div class="identity ">
                     <div class="username-edit">
                         <h3 class="username">{{ $user->username }}</h3>
-                        @auth
+                        @auth()
                             @if (Auth::user()->id == $user->id)
                                 <a href="{{ route('users.edit', $user->id) }}">
                                     <button type="submit">Edit profile</button>
@@ -36,7 +36,7 @@
                 <div class="bio">
                     <p>{{ $user->bio }}</p>
                 </div>
-                @auth
+                @auth()
                     @if (Auth::user()->isNot($user))
                         <div class="mt-3">
                             @if (Auth::user()->follows($user))

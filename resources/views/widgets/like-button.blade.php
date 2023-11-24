@@ -1,5 +1,5 @@
 <span>
-    @auth
+    @auth()
         @if (Auth::user()->hasLiked($dialog))
             <form action="{{ route('dialogues.unlike', $dialog->id) }}" method="POST" style="width:30px">
                 @csrf

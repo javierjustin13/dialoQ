@@ -1,4 +1,4 @@
-@auth
+@auth()
     <form action="{{ route('dialogues.comments.store', $dialog->id) }}" method="POST">
         @csrf
         <div class="form-group" id="commentbox">
