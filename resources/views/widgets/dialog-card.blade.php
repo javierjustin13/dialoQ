@@ -9,8 +9,18 @@
             <div class="media-body ml-3"> <a href="{{ route('users.show', $dialog->user->id) }}"
                     data-abc="true">{{ $dialog->user->username }}</a>
             </div>
-            <div class="text-muted small ml-3">
+            <div class="text-muted small ml-3 d-flex align-items-center">
                 <a href="{{ route('dialogues.show', $dialog->id) }}">View</a>
+                @auth()
+                    @can('update', $dialog)
+                        <a class="mx-2" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
+                        <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
+                            @csrf
+                            @method('delete')
+                            <button class="ms-1 btn btn-danger btn-sm"> X </button>
+                        </form>
+                    @endcan
+                @endauth
             </div>
         </div>
     </div>

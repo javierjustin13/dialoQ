@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Auth;
 
 class DialogController extends Controller
 {
+    public function show(Dialog $dialog)
+    {
+        $users = User::all();
+        return view('dialogues.show', compact('dialog', 'users'));
+    }
+
     public function store(CreateDialogRequest $request){
         $validated = $request->validated();
 
@@ -20,10 +26,23 @@ class DialogController extends Controller
         return redirect()->route('home')->with('success', 'Dialog created successfully !');
     }
 
-    public function show(Dialog $dialog)
+    public function edit(Dialog $dialog)
     {
-        $users = User::all();
-        return view('dialogues.show', compact('dialog', 'users'));
+        $this->authorize('update', $dialog);
+
+        $editing = true;
+
+        return view('dialogues.show', compact('dialog', 'editing'));
+    }
+
+    public function update(CreateDialogRequest $request, Dialog $dialog)
+    {
+
+    }
+
+    public function destroy(Dialog $dialog)
+    {
+
     }
 }
 
