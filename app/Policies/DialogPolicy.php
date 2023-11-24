@@ -13,7 +13,8 @@ class DialogPolicy
      */
     public function update(User $user, Dialog $dialog): bool
     {
-        return $user->is($dialog->user);
+        // edit / update
+        return ($user->is_admin || $user->is($dialog->user));
     }
 
     /**
@@ -21,7 +22,7 @@ class DialogPolicy
      */
     public function delete(User $user, Dialog $dialog): bool
     {
-        return $user->is($dialog->user);
+        // destroy
+        return ($user->is_admin || $user->is($dialog->user));
     }
-
 }

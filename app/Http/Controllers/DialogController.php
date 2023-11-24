@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\CreateDialogRequest;
+use App\Http\Requests\UpdateDialogRequest;
 use App\Models\Dialog;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -32,17 +33,28 @@ class DialogController extends Controller
 
         $editing = true;
 
-        return view('dialogues.show', compact('dialog', 'editing'));
+        $users = User::all();
+        return view('dialogues.show', compact('dialog', 'users', 'editing'));
     }
 
-    public function update(CreateDialogRequest $request, Dialog $dialog)
+    public function update(UpdateDialogRequest $request, Dialog $dialog)
     {
+        $this->authorize('update', $dialog);
 
+        $validated = $request->validated();
+
+        $dialog->update($validated);
+
+        return redirect()->route('dialogues.show', $dialog)->with('success', 'Dialog updated successfully !');
     }
 
     public function destroy(Dialog $dialog)
     {
+        $this->authorize('delete', $dialog);
 
+        $dialog->delete();
+
+        return redirect()->route('home')->with('success', 'Dialog deleted successfully !');
     }
 }
 

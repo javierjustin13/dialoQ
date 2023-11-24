@@ -32,8 +32,13 @@ Route::post("login", [AuthController::class, "authenticate"]);
 
 Route::post("logout", [AuthController::class, "logout"])->name("logout");
 
-Route::resource('dialogues', DialogController::class)->except(['index', 'create', 'show'])->middleware('auth');
 Route::get("dialogues/{dialog}", [DialogController::class, "show"])->name("dialogues.show");
+Route::get("dialogues/{dialog}/edit", [DialogController::class, "edit"])->name("dialogues.edit")->middleware('auth');
+Route::post("dialogues", [DialogController::class, "store"])->name("dialogues.store")->middleware('auth');
+Route::put("dialogues/{dialog}", [DialogController::class, "update"])->name("dialogues.update")->middleware('auth');
+Route::delete("dialogues/{dialog}", [DialogController::class, "destroy"])->name("dialogues.destroy")->middleware('auth');
+
+
 // Route::resource('dialogues', DialogController::class)->only(['show']);
 
 Route::resource('users', UserController::class)->only('edit', 'update')->middleware('auth');
