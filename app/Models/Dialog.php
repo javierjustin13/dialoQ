@@ -15,7 +15,6 @@ class Dialog extends Model
         'user_id',
         'title',
         'content',
-        'likes'
     ];
 
     public function comments()
@@ -30,6 +29,6 @@ class Dialog extends Model
 
     public function likes()
     {
-        return $this->belongsToMany(User::class, 'idea_like')->withTimestamps();
+        return $this->belongsToMany(User::class, 'likes')->withTimestamps();
     }
 }

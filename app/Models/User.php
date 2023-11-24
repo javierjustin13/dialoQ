@@ -73,4 +73,14 @@ class User extends Authenticatable
     {
         return $this->followings()->where('user_id', $user->id)->exists();
     }
+
+    public function likes()
+    {
+        return $this->belongsToMany(Dialog::class, 'likes')->withTimestamps();
+    }
+
+    public function hasLiked(Dialog $dialog)
+    {
+        return $this->likes()->where('dialog_id', $dialog->id)->exists();
+    }
 }

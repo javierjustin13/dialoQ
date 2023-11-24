@@ -7,6 +7,8 @@ use App\Http\Controllers\CommentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DialogController;
+use App\Http\Controllers\LikeController;
+use App\Models\Dialog;
 use App\Models\User;
 
 /*
@@ -44,4 +46,6 @@ Route::post("/dialogues/{dialog}/comments", [CommentController::class, "store"])
 Route::post('users/{user}/follow', [UserController::class, 'follow'])->middleware('auth')->name('users.follow');
 Route::post('users/{user}/unfollow', [UserController::class, 'unfollow'])->middleware('auth')->name('users.unfollow');
 
+Route::post('dialogues/{dialog}/like', [LikeController::class, 'like'])->middleware('auth')->name('dialogues.like');
+Route::post('dialogues/{dialog}/unlike', [LikeController::class, 'unlike'])->middleware('auth')->name('dialogues.unlike');
 
