@@ -19,17 +19,24 @@
         </div>
     </div>
     <div class="card-body pt-3">
-        <form action="">
-            <textarea id="mytextarea" cols="35">{{ $dialog->title }}</textarea>
-
+        <form method="POST" action="{{ route('dialogues.update', $dialog->id)}}">
+            <textarea id="titlearea" cols="35" oninput="auto_grow(this)">{{ $dialog->title }}</textarea>
+            <textarea id="contentarea" cols="35" oninput="auto_grow(this)">{{ $dialog->content }}</textarea>
             <div class="card-footer align-items-center px-0 pt-0 pb-3">
-                <button class="btn btn-success mt-3" type="submit">UPDATE</button>
-                <button class="btn btn-danger mt-3" type="submit">CANCEL</button>
+                <button class="btn btn-success mt-3 me-2" type="submit">UPDATE</button>
+                <button class="btn btn-danger mt-3" type="button" onclick="window.history.back()">CANCEL</button>
             </div>
         </form>
-
-        <h4>{{ $dialog->title }}</h4>
-        <p>{{ $dialog->content }}</p>
     </div>
 
 </div>
+
+
+<script>
+    
+    function auto_grow(element) {
+        element.style.height = "5px";
+        element.style.height = (element.scrollHeight) + "px";
+    }
+
+</script>
