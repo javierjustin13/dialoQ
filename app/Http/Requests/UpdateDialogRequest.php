@@ -22,8 +22,8 @@ class UpdateDialogRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|min:1|max:50',
-            'content' => 'required|min:1|max:200'
+            'new_title' => 'required|min:1|max:50',
+            'new_content' => 'required|min:1|max:200'
         ];
     }
 }

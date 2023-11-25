@@ -44,8 +44,8 @@
                         <textarea class="input-bio p-3" type="text" id="editBIO" name="bio" placeholder="{{ $user->bio }}"></textarea>
                     </div>
                     <div class="button-save">
-                        <button class="button">SAVE CHANGES</button>
-                        <button class="button ms-3 bg-danger"> <a href="{{ route('users.show', $user->id) }}">CANCEL</a></button>
+                        <button class="button" type="submit">SAVE CHANGES</button>
+                        <button class="button ms-3 bg-danger" type="button" onclick="window.history.back()">CANCEL</button>
                     </div>
                 </div>
             </form>

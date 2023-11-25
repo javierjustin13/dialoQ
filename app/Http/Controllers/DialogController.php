@@ -31,10 +31,8 @@ class DialogController extends Controller
     {
         $this->authorize('update', $dialog);
 
-        $editing = true;
-
         $users = User::all();
-        return view('dialogues.edit', compact('dialog', 'users', 'editing'));
+        return view('dialogues.edit', compact('dialog', 'users'));
     }
 
     public function update(UpdateDialogRequest $request, Dialog $dialog)
@@ -42,6 +40,9 @@ class DialogController extends Controller
         $this->authorize('update', $dialog);
 
         $validated = $request->validated();
+
+        $validated['title'] = $request->new_title;
+        $validated['content'] = $request->new_content;
 
         $dialog->update($validated);
 
