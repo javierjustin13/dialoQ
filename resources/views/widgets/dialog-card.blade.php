@@ -4,7 +4,7 @@
 
 <div class="p-3 border rounded-4 mb-3" id="postcard">
     <div class="card-header">
-        <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
+        <div class="media w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
                 class="d-block ui-w-40 rounded-circle" alt="">
             <div class="media-body ml-3"> <a href="{{ route('users.show', $dialog->user->id) }}"
                     data-abc="true">{{ $dialog->user->username }}</a>

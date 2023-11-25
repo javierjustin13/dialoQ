@@ -37,6 +37,16 @@ p {
     color: #4a4a4a;
 }
 
+.card-body h4 {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.card-body p {
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
 @media screen and (max-width: 767px) {
     #postcard {
         padding: 10px;
@@ -57,4 +67,3 @@ p {
         padding: 12px;
     }
 }
-

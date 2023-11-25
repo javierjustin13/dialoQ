@@ -34,7 +34,6 @@
         display: grid;
     }
     .d-flex {
-        margin-top: -11px;
         order: 5;
     }
 
