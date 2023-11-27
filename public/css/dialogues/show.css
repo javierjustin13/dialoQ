@@ -67,10 +67,7 @@ p {
     display: flex;
 }
 
-#textcomment{
-    overflow-wrap: break-word;
 
-}
 
 .card-body{
     overflow-wrap: break-word;

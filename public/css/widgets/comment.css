@@ -1,0 +1,8 @@
+.commentfooter{
+    display: flex;
+}
+
+#textcomment{
+    overflow-wrap: break-word;
+    width: 65%;
+}

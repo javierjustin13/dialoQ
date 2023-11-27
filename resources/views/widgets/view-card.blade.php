@@ -55,6 +55,7 @@
             @include('widgets.comment-form')
             <hr>
             @include('widgets.comment')
+            
         </div>
     </div>
 
