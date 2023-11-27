@@ -21,4 +21,13 @@ class CommentController extends Controller
 
         return redirect()->route('dialogues.show', $dialog->id)->with('success', "Comment posted successfully!");
     }
+
+    public function destroy(Comment $comment)
+    {
+        $this->authorize('delete', $comment);
+
+        $comment->delete();
+
+        return redirect()->back()->with('success', "Comment deleted successfully!");
+    }
 }

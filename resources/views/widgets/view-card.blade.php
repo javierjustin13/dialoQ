@@ -18,7 +18,9 @@
                         <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
                             @csrf
                             @method('delete')
-                            <button class="ms-1 btn btn-danger btn-sm"> X </button>
+                            @can('delete', $dialog)
+                                <button class="ms-1 btn btn-danger btn-sm"> X </button>
+                            @endcan
                         </form>
                     @endcan
                 @endauth
@@ -67,7 +69,7 @@
             @include('widgets.comment-form')
             <hr>
             @include('widgets.comment')
-            
+
         </div>
     </div>
 

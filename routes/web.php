@@ -41,7 +41,8 @@ Route::delete("dialogues/{dialog}", [DialogController::class, "destroy"])->name(
 Route::post('dialogues/{dialog}/like', [LikeController::class, 'like'])->middleware('auth')->name('dialogues.like');
 Route::post('dialogues/{dialog}/unlike', [LikeController::class, 'unlike'])->middleware('auth')->name('dialogues.unlike');
 
-Route::post("/dialogues/{dialog}/comments", [CommentController::class, "store"])->name('dialogues.comments.store')->middleware('auth');
+Route::post("dialogues/{dialog}/comments", [CommentController::class, "store"])->name('dialogues.comments.store')->middleware('auth');
+Route::delete("dialogues/{dialog}/comments/{comment}", [CommentController::class, "destroy"])->name('dialogues.comments.destroy')->middleware('auth');
 
 Route::get('profile', [UserController::class, 'profile'])->middleware('auth')->name('profile');
 

@@ -1,5 +1,5 @@
 @push('head')
-<link rel="stylesheet" href="{{ asset('css/widgets/comment.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/widgets/comment.css') }}">
 @endpush
 
 @forelse ($dialog->comments as $comment)
@@ -8,11 +8,15 @@
                 class="d-block ui-w-40 rounded-circle" alt="">
             <div class="media-body ml-3"> <a href="">{{ $comment->user->username }}</a>
             </div>
-            <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
-                @csrf
-                @method('delete')
-                <button class="ms-1 btn btn-danger btn-sm"> X </button>
-            </form>
+            @auth()
+                @can('delete', $comment)
+                    <form method="POST" action="{{ route('dialogues.comments.destroy',[$dialog->id, $comment->id]) }}">
+                        @csrf
+                        @method('delete')
+                        <button class="ms-1 btn btn-danger btn-sm"> X </button>
+                    </form>
+                @endcan
+            @endauth
         </div>
         <div class="commentfooter">
             <p class=" ms-5 pl-2" id="textcomment">{{ $comment->content }}</p>
