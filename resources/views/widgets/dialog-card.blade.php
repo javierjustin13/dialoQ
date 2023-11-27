@@ -43,24 +43,7 @@
             <span class="text-muted">
                 <i class="bi bi-clock me-1"></i>
                 <span>
-                    @php
-                        $diff = date_diff(new DateTime($dialog->created_at), new DateTime());
-                    @endphp
-                    @if ($diff->format('%s') <= 5 && $diff->format('%i') == 0 && $diff->format('%h') == 0 && $diff->format('%d') == 0)
-                        Just now
-                    @elseif ($diff->format('%d') == 0 && $diff->format('%h') == 0 && $diff->format('%i') == 0)
-                        {{ $diff->format('%s second(s) ago') }}
-                    @elseif ($diff->format('%d') == 0 && $diff->format('%h') == 0)
-                        {{ $diff->format('%i minute(s) ago') }}
-                    @elseif ($diff->format('%d') == 0)
-                        {{ $diff->format('%h hour(s) ago') }}
-                    @elseif ($diff->format('%d') > 0)
-                        {{ $diff->format('%d day(s) ago') }}
-                    @elseif ($diff->format('%d') > 30)
-                        {{ $diff->format('%m month(s) ago') }}
-                    @elseif ($diff->format('%d') > 365)
-                        {{ $diff->format('%y year(s) ago') }}
-                    @endif
+                    {{ $dialog->created_at->diffForHumans() }}
                 </span>
             </span>
         </div>
