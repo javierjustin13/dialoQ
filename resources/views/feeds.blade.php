@@ -22,7 +22,7 @@
                     @forelse ($dialogues as $dialog)
                         @include('widgets.dialog-card')
                     @empty
-                        <h1>There are no dialogues</h1>
+                        <h1>The people you follow haven't started any dialogues.</h1>
                     @endforelse
 
                 </div>

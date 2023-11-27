@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class HomeController extends Controller
 {
     public function index(){
-        $dialogues = Dialog::orderBy('created_at', 'desc');
+        $dialogues = Dialog::latest();
         return view('home',
             [
                 'dialogues' => $dialogues->paginate(10),
