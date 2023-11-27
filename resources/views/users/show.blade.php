@@ -5,7 +5,7 @@
 @endpush
 
 @section('content')
-    <div class="container">
+    <div class="container" >
         @include('users.widgets.user-card')
         <div class="dialogs">
             <div class="col">

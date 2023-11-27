@@ -4,7 +4,7 @@
         <div class="card-profile">
             <div class="upper-profile">
                 <div class="profile-picture">
-                    <img class="pp-image" style=""
+                    <img class="pp-image"
                         src="{{ $user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt="">
                 </div>
 
@@ -20,39 +20,40 @@
                         @endauth
                     </div>
 
-                    <span class="email pt-2">{{ $user->email }} </span>
+                    <span class="email pt-3">{{ $user->email }} </span>
 
                     @include('users.widgets.user-stats')
 
                 </div>
             </div>
 
+            <div class="bottom-profile">
+                <div class="name-bio">
+                    <div class="name">
+                        <span class="name">{{ $user->name }} </span>
+                    </div>
 
-            <div class="name-bio">
-                <div class="">
-                    <span class="name">{{ $user->name }} </span>
+                    <div class="bio">
+                        <p>{{ $user->bio }}</p>
+                    </div>
+                    @auth()
+                        @if (Auth::user()->isNot($user))
+                            <div class="foll-button">
+                                @if (Auth::user()->follows($user))
+                                    <form method="POST" action="{{ route('users.unfollow', $user->id) }}">
+                                        @csrf
+                                        <button type="submit" class="btn-unfoll"> Unfollow </button>
+                                    </form>
+                                @else
+                                    <form method="POST" action="{{ route('users.follow', $user->id) }}">
+                                        @csrf
+                                        <button type="submit" class="btn-follow"> Follow </button>
+                                    </form>
+                                @endif
+                            </div>
+                        @endif
+                    @endauth
                 </div>
-
-                <div class="bio">
-                    <p>{{ $user->bio }}</p>
-                </div>
-                @auth()
-                    @if (Auth::user()->isNot($user))
-                        <div class="mt-3">
-                            @if (Auth::user()->follows($user))
-                                <form method="POST" action="{{ route('users.unfollow', $user->id) }}">
-                                    @csrf
-                                    <button type="submit" class="btn btn-danger btn-sm"> Unfollow </button>
-                                </form>
-                            @else
-                                <form method="POST" action="{{ route('users.follow', $user->id) }}">
-                                    @csrf
-                                    <button type="submit" class="btn btn-primary btn-sm"> Follow </button>
-                                </form>
-                            @endif
-                        </div>
-                    @endif
-                @endauth
             </div>
         </div>
     </div>

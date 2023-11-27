@@ -18,7 +18,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 5vh;
+    gap: 3vh;
 }
 
 .card p{
@@ -48,7 +48,7 @@ body {
 
 .card-profile {
     width: 850px;
-    height: 350px;
+    height: auto;
     border: none;
     border-radius: 10px;
     background-color: #d9d9d9;
@@ -148,20 +148,21 @@ body {
 }
 
 .name-bio{
-    width: 55vw;
+    width: 45vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 15vw;
+    margin-left: 5vw;
 }
 
 .bio{
+    width: 40vw;
     vertical-align: bottom;
     overflow-wrap: break-word;
     color: #545454;
 }
 
-.follow button{
+/* .follow button{
     background-color: #8DD6FF;
     border-color:black;
 }
@@ -170,8 +171,47 @@ body {
     background-color: #545454;
     border-color: black;
     transition: all .3s ease-in-out;
+} */
+
+.foll-button{
+    display: flex;
+    justify-content: flex-start;
 }
 
+/* .follow button{
+    background-color: #8DD6FF;
+    border-color: black;
+    width: 146px;
+    height: 43px;
+} */
+
+.btn-follow{
+    width: 70px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    background: #8DD6FF;
+    font-size: 12px;
+    text-align: center;
+}
+
+.btn-unfoll{
+    width: 70px;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #000;
+    background: red;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+}
+
+.btn-follow:hover{
+    background-color: blue;
+    color: white;
+    border-color: black;
+    transition: all .3s ease-in-out;
+}
 .name{
     font-size: 20px;
 }
@@ -226,7 +266,7 @@ body {
     .card-profile{
         width: 85vw;
         margin-left: -18px;
-        height: 165px;
+        height: auto;
     }
 
     .username-edit{
@@ -261,23 +301,41 @@ body {
         font-size: 12px;
     }
 
+
+    .name-bio{
+        /* margin-left: -40px; */
+        margin-top:15px;
+        width: 280px;
+    }
+
     .name{
         font-size: 12px;
+        width: 275px;
+        height: 20px;
+        color: #000;
+        /* background-color: white;
+        opacity: 0.5; */
+        margin-bottom: 2px;
     }
 
     .bio{
         font-size: 12px;
+        width: 275px;
+        height: auto;
+        /* background-color: white; */
+        /* opacity: 0.5; */
+        margin-bottom: 2px;
     }
 
-    .name-bio{
-        margin-left: -40px;
-        margin-top: 5px;
+    .btn-follow{
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
-
-
-
-
+    .btn-unfoll{
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
 
 }
 
