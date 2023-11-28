@@ -76,6 +76,22 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
+.read-more-button {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f2f2f2;
+    color: #757575;
+    padding: 5px 10px;
+    border: 1px solid #757575;
+    border-radius: 17px;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 
 
 

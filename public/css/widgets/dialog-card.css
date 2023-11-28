@@ -45,12 +45,10 @@ p {
 .card-body p {
     word-wrap: break-word;
     word-break: break-all;
-    /* min-height: 100px;
-    display: flex;
-    align-items: center; */
+    min-height: 50px;
 }
 
-.more {display: none;}
+.more {display: none};
 
 @media screen and (max-width: 767px) {
     #postcard {
