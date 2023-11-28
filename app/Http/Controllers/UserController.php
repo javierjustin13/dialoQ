@@ -60,7 +60,7 @@ class UserController extends Controller
 
         $follower->followings()->attach($user);
 
-        return redirect()->route('users.show', $user->id)->with('success', "followed successfully!");
+        return redirect()->back()->with('success', "You've started following $user->username!");
     }
 
     public function unfollow(User $user)
@@ -69,6 +69,6 @@ class UserController extends Controller
 
         $follower->followings()->detach($user);
 
-        return redirect()->route('users.show', $user->id)->with('success', "unfollowed successfully!");
+        return redirect()->back()->with('success', "You've unfollowed $user->username!");
     }
 }
