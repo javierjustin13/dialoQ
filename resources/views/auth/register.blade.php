@@ -6,67 +6,53 @@
 
 @section('title', 'Register')
 
-@section('content')
-    <div class="form-register">
-        <div class="container-md-offset-3 row-md-6">
-            <form class="form-horizontal" action="{{ route('register') }}" method="POST">
-                @csrf
-                <div class="heading">
-                    <div class="register">dialoQ</div>
-                </div>
-                <div class="login-req">Name : </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="name" placeholder="ex. Delvin Setiamin">
-                    {{-- <i class="fa fa-user"></i> --}}
-                </div>
+@section('register')
+    <section class="register">
+        <div class="registerimg"><img src="/image/dialoQ-register.png" alt="Image"></div>
+        <form name="registerform" action="{{ route('register')}}" method="POST">
+            @csrf
+            <div class="container">
+                <div class="registertitle">Register</div>
+
+                <div class="inputtitle">Name</div>
+                <div class="form-group"><input class="inputbox" type="text" name="name"
+                        placeholder="ex. Delvin Setiamin"></div>
                 @error('name')
                     <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                 @enderror
 
-                <div class="login-req">Username : </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="username" placeholder="ex. delvin88">
-                    {{-- <i class="fa fa-user"></i> --}}
+                <div class="inputtitle">Username</div>
+                <div class="form-group"><input class="inputbox" type="text" name="username" placeholder="ex. @delvin88">
                 </div>
                 @error('username')
                     <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                 @enderror
 
-                <div class="login-req">Email : </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" name="email" placeholder="example@gmail.com">
-                    {{-- <i class="fa fa-user"></i> --}}
-                </div>
+                <div class="inputtitle">Email</div>
+                <div class="form-group"><input class="inputbox" type="email" name="email"
+                        placeholder="example@gmail.com"></div>
                 @error('email')
                     <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                 @enderror
 
-                <div class="login-req">Password :</div>
-                <div class="form-group">
-                    <input type="password" class="form-control" name="password" placeholder="more than 8 characters">
-                    {{-- <i class="fa fa-lock"></i> --}}
-                    {{-- <a href="#" class="fa fa-question-circle"></a> --}}
-                </div>
+                <div class="inputtitle">Password</div>
+                <div class="form-group"><input class="inputbox" type="password" name="password"
+                        placeholder="more than 8 characters"></div>
                 @error('password')
                     <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                 @enderror
 
-                <div class="login-req">Confirm password :</div>
-                <div class="form-group">
-                    <input type="password" class="form-control" name="password_confirmation"
-                        placeholder="enter your password">
-                    {{-- <i class="fa fa-lock"></i> --}}
-                    {{-- <a href="#" class="fa fa-question-circle"></a> --}}
-                </div>
+                <div class="inputtitle">Confirm Password</div>
+                <div class="form-group"><input class="inputbox" type="password" name="password_confirmation"
+                        placeholder="more than 8 characters"></div>
                 @error('password_confirmation')
-                    <span class="d-block fs-6 text-danger mt-2">{{ $message }}</span>
+                    <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                 @enderror
 
-                <div class="submit-btn">
-                    <button type="submit" name="submit" class="button" value="submit">SUBMIT</button>
-                </div>
-                <div class="question">Have an account? <a href="/login">Login here</a></div>
-            </form>
-        </div>
-    </div>
+                <button class="submitbtn" type="submit">Submit</button>
+                <p class="error submit-error"></p>
+                <p class="success register-success"></p>
+            </div>
+        </form>
+    </section>
 @endsection

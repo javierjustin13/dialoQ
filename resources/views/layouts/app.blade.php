@@ -26,6 +26,7 @@
         @include('layouts.nav-login-register')
     @else
         @include('layouts.nav')
+<<<<<<< Updated upstream
     @endif
 
     <div class="container pt-4">
@@ -37,6 +38,40 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
 
+=======
+    @endif
+
+    @if (Route::currentRouteName() == 'register')
+        <div class="register-container">
+            @yield('register')
+        </div>
+    @elseif (Route::currentRouteName() == 'login')
+        <div class="login-container">
+            @yield('login')
+        </div>
+    @else
+        <div class="container pt-4">
+            @yield('content')
+        </div>
+    @endif
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script>
+        document.querySelectorAll('form').forEach((form) => {
+            form.addEventListener('submit', (e) => {
+                if (form.classList.contains('is-submitting')) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    return false;
+                };
+
+                form.classList.add('is-submitting');
+            });
+        });
+    </script>
+>>>>>>> Stashed changes
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
