@@ -235,6 +235,18 @@ body {
     margin-bottom: 5vh;
 }
 
+.modal-header .close {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.percontent{
+    display: flex;
+    justify-content: space-between;
+
+}
+
 @media screen and (max-width: 767px) {
     .container{
         display: flex;

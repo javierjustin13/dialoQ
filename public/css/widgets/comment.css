@@ -8,3 +8,7 @@
     word-wrap: break-word;
     width: 60%;
 }
+
+#timing {
+    align-items: end;
+}
