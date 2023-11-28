@@ -12,7 +12,7 @@
             <form class="form-horizontal" action="{{ route('register') }}" method="POST">
                 @csrf
                 <div class="heading">
-                    <div class="register">REGISTER</div>
+                    <div class="register">dialoQ</div>
                 </div>
                 <div class="login-req">Name : </div>
                 <div class="form-group">

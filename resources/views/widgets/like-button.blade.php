@@ -1,13 +1,13 @@
 <span>
     @auth()
         @if (Auth::user()->hasLiked($dialog))
-            <form action="{{ route('dialogues.unlike', $dialog->id) }}" method="POST" style="width:30px">
+            <form action="{{ route('dialogues.unlike', $dialog->id) }}" method="POST">
                 @csrf
                 <button type="submit"><i class="bi bi-heart-fill"></i></button>
                 <span>{{ $dialog->likes_count }}</span>
             </form>
         @else
-            <form action="{{ route('dialogues.like', $dialog->id) }}" method="POST" style="width:30px">
+            <form action="{{ route('dialogues.like', $dialog->id) }}" method="POST">
                 @csrf
                 <button type="submit"><i class="bi bi-heart"></i></button>
                 <span>{{ $dialog->likes_count }}</span>

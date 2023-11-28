@@ -13,7 +13,7 @@
             <form class="form-horizontal" action="{{ route('login') }}" method="POST">
                 @csrf
                 <div class="heading">
-                    <div class="login">LOGIN</div>
+                    <div class="login">dialoQ</div>
                 </div>
                 <div class="login-req">Email : </div>
                 <div class="form-group">
