@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'eina-bold';
+    font-family: 'eina';
 }
 
 @font-face {
@@ -21,9 +21,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* background-color: rebeccapurple; */
 }
-
-
 
 .register{
     margin-top: 80px;
@@ -52,20 +51,20 @@
     padding-left: 63px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding-top: 39px;
+    justify-content: flex-start;
 }
 
 .registertitle{
-    margin-bottom: 20px;
+    margin-top: 20px;
+    /* margin-bottom: 18px; */
     width: 520px;
-    margin-bottom: 30px;
     font-weight: 400;
     font-size: 30px;
-    line-height: 35px;
+    /* line-height: 35px; */
 }
 
 .inputtitle{
+    margin-top: 10px;
     font-weight: 400;
     font-size: 18px;
     line-height: 21px;
@@ -93,11 +92,24 @@ input[type]{
     padding-left: 32px;
 }
 
+.question{
+    width: 520px;
+    font-family: 'eina';
+    font-size: 15px;
+    color: black;
+}
+
+.question a{
+    color: black;
+    text-align: center;
+}
+
 .submitbtn{
+    margin-top: 15px;
     background-color: black;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
     background: #000000;
     opacity: 0.7;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -157,7 +169,7 @@ input[type]{
 @media (max-width: 1250px){
     .registerimg{
         display:none;
-        transition: all. ease-in 0.5s;
+        transition: all ease-in 0.5s;
     }
     .register{
         scale: 0.8;
@@ -166,7 +178,7 @@ input[type]{
         margin-top: 112px;
         margin-bottom: 0;
         box-shadow: none;
-        transition: all. ease-in 0.5s;
+        transition: all ease-in 0.5s;
     }
     .container{
         box-shadow: 0px 7px 10px #000000;
@@ -182,10 +194,14 @@ input[type]{
         scale: 0.5;
         margin-bottom: -120px;
         margin-top: 0;
-        transition: all. ease-in 0.5s;
+        transition: all ease-in 0.5s;
     }
     .success{
         scale: 0.8;
+    }
+
+    .container{
+        transform: translateY(-20%);
     }
 }
 
