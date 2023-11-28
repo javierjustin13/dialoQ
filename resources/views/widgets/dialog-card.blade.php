@@ -28,15 +28,29 @@
     </div>
     <div class="card-body pt-3">
         <h4>{{ $dialog->title }}</h4>
-        <p>{{ $dialog->content }}</p>
+        @php
+            $content = $dialog->content;
+            $contentLength = Str::length($content);
+        @endphp
+        @if ($contentLength > 80)
+            @php
+                $content1 = Str::substr($content, 0, 80);
+                $content2 = Str::substr($content, 81, $contentLength);
+            @endphp
+            <p>{{ $content1 }} <span class="dots">...</span>    <span class="more">{{ $content2 }}</span></p>
+            <button onclick="readMore(this)" class="read-more-button">Read more</button>
+        @else
+            <p>{{ $dialog->content }}</p>
+        @endif
     </div>
+
     <hr>
     <div class="card-footer align-items-center px-0 pt-0 pb-3">
         <div class="d-flex justify-content-between">
             <div class="text-muted d-flex">
                 @include('widgets.like-button')
                 <span class="ms-3">
-                    <a class="bi bi-chat-dots" href="{{ route('dialogues.show', $dialog->id)}}"></a>
+                    <a class="bi bi-chat-dots" href="{{ route('dialogues.show', $dialog->id) }}"></a>
                     <span>{{ $dialog->comments->count() }}</span>
                 </span>
             </div>
