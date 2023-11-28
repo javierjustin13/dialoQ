@@ -45,6 +45,7 @@ p {
 .card-body p {
     word-wrap: break-word;
     word-break: break-all;
+    min-height: 50px;
 }
 
 @media screen and (max-width: 767px) {
