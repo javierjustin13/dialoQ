@@ -22,8 +22,8 @@ class CreateDialogRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|min:1|max:25',
-            'content' => 'required|min:1|max:200'
+            'title' => 'required|min:1|max:50',
+            'content' => 'required|min:1|max:10000'
         ];
     }
 }
