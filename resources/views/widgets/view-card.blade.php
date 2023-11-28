@@ -11,20 +11,21 @@
                 <div class="media-body ml-3"> <a href="{{ route('users.show', $dialog->user->id) }}"
                         data-abc="true">{{ $dialog->user->username }}</a>
                 </div>
+                @include('widgets.follow-button')
                 <div class="text-muted small ml-3 d-flex align-items-center">
-                @auth()
-                    @can('update', $dialog)
-                        <a class="mx-2" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
-                        <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
-                            @csrf
-                            @method('delete')
-                            @can('delete', $dialog)
-                                <button class="ms-1 btn btn-danger btn-sm"> X </button>
-                            @endcan
-                        </form>
-                    @endcan
-                @endauth
-            </div>
+                    @auth()
+                        @can('update', $dialog)
+                            <a class="mx-2" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
+                            <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
+                                @csrf
+                                @method('delete')
+                                @can('delete', $dialog)
+                                    <button class="ms-1 btn btn-danger btn-sm"> X </button>
+                                @endcan
+                            </form>
+                        @endcan
+                    @endauth
+                </div>
             </div>
         </div>
         <div class="card-body pt-3">
