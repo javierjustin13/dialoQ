@@ -18,6 +18,10 @@
     <link rel="stylesheet" href="{{ asset('css/layouts/nav.css') }}">
     <link rel="stylesheet" href="{{ asset('css/layouts/responsive.css') }}">
 
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@multiavatar/multiavatar/multiavatar.min.js"></script>
+
     @stack('head')
 </head>
 
@@ -45,19 +49,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
     </script>
-    <script>
-        document.querySelectorAll('form').forEach((form) => {
-            form.addEventListener('submit', (e) => {
-                if (form.classList.contains('is-submitting')) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    return false;
-                };
 
-                form.classList.add('is-submitting');
-            });
-        });
-    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>
@@ -70,13 +62,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
 
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@multiavatar/multiavatar/multiavatar.min.js"></script>
-
-    <script src="{{ asset('js/formSubmit.js') }}"></script>
-
     <script src="{{ asset('js/readMore.js') }}"></script>
+    <script src="{{ asset('js/formSubmit.js') }}"></script>
 </body>
 
 </html>
