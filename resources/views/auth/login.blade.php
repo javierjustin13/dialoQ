@@ -7,9 +7,13 @@
 @section('title', 'Login')
 
 @section('login')
+// aku belom bisa atur cssnyaa
+{{-- <div class="success-message">
+    @include('widgets.success-message')
+</div> --}}
 <section class="login">
     <div class="loginimg"><img src="/image/dialoQ-register.png" alt="Image"></div>
-    <form name="registerform" action="{{ route('register') }}" method="POST">
+    <form name="loginform" action="{{ route('login') }}" method="POST">
         @csrf
         <div class="container">
             <div class="logintitle">Login</div>
