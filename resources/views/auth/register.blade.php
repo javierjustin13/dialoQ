@@ -49,7 +49,7 @@
                     <span class="error text-danger">{{ $message }}</span>
                 @enderror
 
-                <div class="question">Have an account? <a href="/login">Login here</a></div>
+                <div class="question">Already have an account? <a href="/login">Login here</a></div>
                 <button class="submitbtn" type="submit">Submit</button>
                 <p class="error submit-error"></p>
                 <p class="success register-success"></p>

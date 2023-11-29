@@ -180,20 +180,23 @@ input[type]{
 }
 
 @media (max-width: 575px){
+    .register-container{
+        max-height: 575px;
+    }
+
     .register{
         scale: 0.5;
-        margin-bottom: -120px;
+        /* margin-bottom: -px; */
+        /* margin-right: 160px; */
+        /* transform: translateY(-20%); */
         margin-top: 0;
+        transform: translateX(-42%);
         transition: all ease-in 0.5s;
-    }
-    .success{
-        scale: 0.8;
     }
 
     .container{
         width: 694px;
         height: 700px;
-        transform: translateY(-20%);
     }
 
     .registertitle{
@@ -203,7 +206,6 @@ input[type]{
 
     .inputtitle{
         margin-top: 10px;
-        font-weight: 400;
         font-size: 18px;
         line-height: 21px;
         margin-bottom: 9px;

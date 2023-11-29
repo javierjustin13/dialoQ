@@ -35,8 +35,9 @@
         <div class="register-container">
             @yield('register')
         </div>
-    @elseif (Route::currentRouteName() == 'login')
+        @elseif (Route::currentRouteName() == 'login')
         <div class="login-container">
+            @yield('success')
             @yield('login')
         </div>
     @else
