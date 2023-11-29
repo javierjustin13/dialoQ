@@ -22,6 +22,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@multiavatar/multiavatar/multiavatar.min.js"></script>
 
     @stack('head')
+
+    @livewireStyles
 </head>
 
 <body>
@@ -64,6 +66,7 @@
 
     <script src="{{ asset('js/readMore.js') }}"></script>
     <script src="{{ asset('js/formSubmit.js') }}"></script>
+    @livewireScripts
 </body>
 
 </html>
