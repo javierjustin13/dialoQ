@@ -28,9 +28,9 @@
 
 <body>
     @if (request()->is('login') || request()->is('register'))
-        @include('layouts.nav-login-register')
+        <livewire:nav.nav-bar-login-register />
     @else
-        @include('layouts.nav')
+        <livewire:nav.nav />
     @endif
 
     @if (Route::currentRouteName() == 'register')
