@@ -247,6 +247,18 @@ body {
 
 }
 
+.modal-footer .btn-secondary:focus{
+    background-color: #545454;
+    border-color: black;
+    transition: all .3s ease-in-out;
+
+}
+.btn-secondary{
+    background-color: #545454;
+    border-color: black;
+    transition: all .3s ease-in-out;
+}
+
 @media screen and (max-width: 767px) {
     .container{
         display: flex;

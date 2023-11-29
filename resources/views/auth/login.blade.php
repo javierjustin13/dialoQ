@@ -8,9 +8,9 @@
 
 @section('login')
 {{-- aku belom bisa atur cssnyaa --}}
-{{-- <div class="success-message">
+<div class="success-message">
     @include('widgets.success-message')
-</div> --}}
+</div>
 <section class="login">
     <div class="loginimg"><img src="/image/dialoQ-register.png" alt="Image"></div>
     <form name="loginform" action="{{ route('login') }}" method="POST">
