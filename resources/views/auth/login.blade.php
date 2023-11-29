@@ -7,7 +7,7 @@
 @section('title', 'Login')
 
 @section('login')
-// aku belom bisa atur cssnyaa
+{{-- aku belom bisa atur cssnyaa --}}
 {{-- <div class="success-message">
     @include('widgets.success-message')
 </div> --}}
