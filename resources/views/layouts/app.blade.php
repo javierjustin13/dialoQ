@@ -28,7 +28,7 @@
 
 <body>
     @if (request()->is('login') || request()->is('register'))
-        <livewire:nav.nav-bar-login-register />
+        <livewire:nav.nav-login-register />
     @else
         <livewire:nav.nav />
     @endif
