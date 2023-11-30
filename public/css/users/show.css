@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'eina';
-    src: url('../../fonts/eina.ttf');
+    font-family: "eina";
+    src: url("../../fonts/eina.ttf");
 }
 @font-face {
-    font-family: 'eina-bold';
-    src: url('../../fonts/Eina-Bold.ttf');
+    font-family: "eina-bold";
+    src: url("../../fonts/Eina-Bold.ttf");
 }
 
 body {
-    background-color: white;
+    background-color: #241b35;
     border-radius: 10px;
 }
 
@@ -21,7 +21,7 @@ body {
     gap: 3vh;
 }
 
-.card p{
+.card p {
     font-family: "eina-bold";
 }
 
@@ -31,10 +31,9 @@ body {
     align-items: center;
     justify-content: space-between;
     width: 75vw;
-
 }
 
-.right-content{
+.right-content {
     height: 247.33px;
     display: flex;
     flex-direction: column;
@@ -51,19 +50,19 @@ body {
     height: auto;
     border: none;
     border-radius: 10px;
-    background-color: #d9d9d9;
+    background: linear-gradient(270deg,#6c35de 0%,rgba(108, 53, 222, 0) 110.65%);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1vw;
 }
 
-.upper-profile{
+.upper-profile {
     display: flex;
     flex-direction: row;
 }
 
-.profile-picture{
+.profile-picture {
     width: 300px;
     height: 250px;
     display: flex;
@@ -71,7 +70,7 @@ body {
     align-items: center;
 }
 
-.pp-image{
+.pp-image {
     width: 200px;
     height: 200px;
     align-items: center;
@@ -87,19 +86,19 @@ body {
     justify-content: center;
 }
 
-.identity button{
+.identity button {
     padding: 5px;
     width: 5vw;
-    background-color: white;
-    color: black;
-    border-style:solid;
+    background-color: #4D425F;
+    color: #FFFFFF;
+    border-style: solid;
+    border-color: black;
     border-radius: 5px;
     border-width: 1px;
     font-size: 10px;
     margin-top: 2vh;
     margin-left: -1vw;
 }
-
 
 .stats {
     display: flex;
@@ -108,46 +107,44 @@ body {
     justify-content: flex-start;
     color: #000 !important;
     gap: 3vw;
-
 }
 
-.details-stats{
+.details-stats {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-.username{
+.username {
     font-size: 2vw;
-    color: black;
+    color: #FCEAFC;
     text-decoration: underline;
     width: 20vw;
     margin: 0;
 }
 
-.username-edit{
+.username-edit {
     display: flex;
     flex-direction: row;
 }
 
-.username-edit a button:hover{
-    background-color: #545454;
+.username-edit a button:hover {
+    background-color: #342A45;
     border-color: black;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.email{
+.email {
     margin-top: -2vh;
-    color: #545454;
+    color: #E0E0E0;
 }
 
-.stats-style{
+.stats-style {
     font-size: 20px;
-    color: black;
+    color: #FCEAFC;
 }
 
-.name-bio{
+.name-bio {
     width: 45vw;
     display: flex;
     flex-direction: column;
@@ -155,11 +152,11 @@ body {
     margin-left: 5vw;
 }
 
-.bio{
+.bio {
     width: 40vw;
     vertical-align: bottom;
     overflow-wrap: break-word;
-    color: #545454;
+    color: #FCEAFC;
 }
 
 /* .follow button{
@@ -173,7 +170,7 @@ body {
     transition: all .3s ease-in-out;
 } */
 
-.foll-button{
+.foll-button {
     display: flex;
     justify-content: flex-start;
 }
@@ -185,17 +182,17 @@ body {
     height: 43px;
 } */
 
-.btn-follow{
+.btn-follow {
     width: 70px;
     height: 25px;
     border-radius: 3px;
     border: 1px solid #000;
-    background: #8DD6FF;
+    background: #8dd6ff;
     font-size: 12px;
     text-align: center;
 }
 
-.btn-unfoll{
+.btn-unfoll {
     width: 70px;
     height: 25px;
     border-radius: 3px;
@@ -206,13 +203,13 @@ body {
     color: white;
 }
 
-.btn-follow:hover{
+.btn-follow:hover {
     background-color: blue;
     color: white;
     border-color: black;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-.name{
+.name {
     font-size: 20px;
 }
 
@@ -223,14 +220,14 @@ body {
     background-color: #d9d9d9;
 }
 
-.dialogs{
+.dialogs {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2vw;
-    background-color: #d9d9d9;
-    padding: 2vw;
     border-radius: 10px;
+    background: #342A45;
+    padding: 2vw;
     width: 75vw;
     margin-bottom: 5vh;
 }
@@ -241,26 +238,24 @@ body {
     box-shadow: none;
 }
 
-.percontent{
+.percontent {
     display: flex;
     justify-content: space-between;
-
 }
 
-.modal-footer .btn-secondary:focus{
+.modal-footer .btn-secondary:focus {
     background-color: #545454;
     border-color: black;
-    transition: all .3s ease-in-out;
-
+    transition: all 0.3s ease-in-out;
 }
-.btn-secondary{
+.btn-secondary {
     background-color: #545454;
     border-color: black;
-    transition: all .3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
-    .container{
+    .container {
         display: flex;
         align-items: center;
     }
@@ -274,42 +269,42 @@ body {
         display: none;
     }
 
-    .profile-picture{
+    .profile-picture {
         width: 100px;
         height: 100px;
         border-radius: 50%;
     }
 
-    .profile-picture img{
+    .profile-picture img {
         width: 70px;
         height: 70px;
         border-radius: 50%;
         margin-left: 0;
     }
 
-    .card-profile{
+    .card-profile {
         width: 85vw;
         margin-left: -18px;
         height: auto;
     }
 
-    .username-edit{
+    .username-edit {
         display: flex;
         flex-direction: column;
     }
 
-    .username{
+    .username {
         font-size: 18px;
         margin-top: 20px;
     }
 
-    .identity{
+    .identity {
         width: 200px;
         height: 100px;
         font-size: 12px;
     }
 
-    .identity button{
+    .identity button {
         width: 18vw;
         font-size: 8px;
         margin-top: 5px;
@@ -317,22 +312,21 @@ body {
         margin-left: 0;
     }
 
-    .stats{
+    .stats {
         gap: 7px;
     }
 
-    .stats-style{
+    .stats-style {
         font-size: 12px;
     }
 
-
-    .name-bio{
+    .name-bio {
         /* margin-left: -40px; */
-        margin-top:15px;
+        margin-top: 15px;
         width: 280px;
     }
 
-    .name{
+    .name {
         font-size: 12px;
         width: 275px;
         height: 20px;
@@ -342,7 +336,7 @@ body {
         margin-bottom: 2px;
     }
 
-    .bio{
+    .bio {
         font-size: 12px;
         width: 275px;
         height: auto;
@@ -351,15 +345,13 @@ body {
         margin-bottom: 2px;
     }
 
-    .btn-follow{
+    .btn-follow {
         margin-top: 4px;
         margin-bottom: 4px;
     }
 
-    .btn-unfoll{
+    .btn-unfoll {
         margin-top: 4px;
         margin-bottom: 4px;
     }
-
 }
-
