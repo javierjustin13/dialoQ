@@ -2,8 +2,8 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/copyright.css') }}">
 @endpush
 
-<div class="copyright">
-    <div class="copyright-header">
+<div class="copyright" style="color: #FCEAFC">
+    <div class="copyright-header" style="color: #FCEAFC">
         <a href="">Terms</a>
         <p>&nbsp|&nbsp</p>
         <a href="">About Us</a>

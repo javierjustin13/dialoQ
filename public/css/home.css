@@ -6,13 +6,18 @@
     font-family: 'eina-bold';
     src: url('../fonts/Eina-Bold.ttf');
 }
+body{
+    background-color: #241B35;
+    color: #FCEAFC;
+}
 
 .container{
     font-family: 'eina';
 }
 
-.col-6 h2{
+.col-6 h1{
     text-align: center;
+    /* color: #FCEAFC; */
 }
 
 @media screen and (max-width: 767px) {

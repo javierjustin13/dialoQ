@@ -1,5 +1,4 @@
 #leftpane h4{
-    color: #4A4A4A;
     margin-bottom: 15px;
 }
 
@@ -9,5 +8,29 @@
 }
 
 .rounded-3{
-    background-color: #D9D9D9;
+    background-color: #342A45;
+}
+
+.rounded-3 h4{
+    color: #FCEAFC;
+}
+
+.form-control::placeholder{
+    color: #FCEAFC;
+    opacity: 1;
+}
+
+.form-control{
+    background-color: #241B35;
+    color: #FCEAFC;
+}
+
+.form-control:focus{
+    background-color: #241B35;
+    color: #FCEAFC;
+}
+
+.form-control:focus::placeholder{
+    color: #FCEAFC;
+    opacity: 1;
 }

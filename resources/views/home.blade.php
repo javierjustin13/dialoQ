@@ -15,10 +15,10 @@
             <div class="col-6" id="midborder">
                 @include('widgets.success-message')
                 @guest
-                    <h2 class="py-3 mb-3" style="background-color: #D9D9D9; color:#4a4a4a; border-radius:10px">LOGIN TO START YOUR
-                        DIALOG</h2>
+                    <h1 class="py-3 mb-3" style="background-color: #241B35; color:#FCEAFC; border-radius:10px">LOGIN TO START YOUR
+                        DIALOG</h1>
                 @endguest
-                <div class="p-3 border rounded-4" id="midpane">
+                <div class="p-3 border rounded-4 border-0" id="midpane">
                     @forelse ($dialogues as $dialog)
                         @include('widgets.dialog-card')
                     @empty

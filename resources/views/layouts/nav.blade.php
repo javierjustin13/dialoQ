@@ -1,4 +1,4 @@
-<nav class="navbar sticky-top navbar-expand-lg ">
+<nav class="navbar sticky-top navbar-expand-lg" style="background-color: #4D425F">
     <div class="container-fluid">
         <a class="navbar-brand ms-5" href="/">dialoQ</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

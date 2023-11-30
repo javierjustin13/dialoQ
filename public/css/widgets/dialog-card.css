@@ -2,8 +2,17 @@
     text-align: center;
 }
 #midpane {
-    background-color: #d9d9d9;
+    background-color: #342A45;
 }
+
+#midpane a, span {
+    color: #FCEAFC;
+}
+
+hr{
+    border: 1px solid #FCEAFC;
+}
+
 #postcard {
     background-color: white;
     min-height: 100px;
@@ -47,6 +56,7 @@ p {
     word-break: break-all;
     min-height: 50px;
 }
+
 
 .more {display: none};
 
