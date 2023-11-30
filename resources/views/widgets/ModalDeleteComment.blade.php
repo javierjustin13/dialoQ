@@ -4,8 +4,8 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header d-flex flex-column">
-                <h3 class="modal-title mb-2" id="staticBackdropLabel">Delete Blabla</h3>
-                <p class="modal-title font-weight-bold"> Are you sure want to delete blabla ? </p>
+                <h3 class="modal-title mb-2" id="staticBackdropLabel">Delete Dialoq</h3>
+                <p class="modal-title font-weight-bold"> Are you sure want to delete your dialoq ? </p>
             </div>
             <div class="modal-body" style="padding:5%">
                 <div class="warning-body" style="background-color: #FFE9D9;padding:2%">
@@ -14,7 +14,7 @@
                         <p class="font-weight-bold" style="color: #771505">Warning</p>
                     </div>
                     <div class="warning-text" style="color: #BC4C2E">
-                        <p>Deleting blabla will permanently delete the blabla and all of its data.</p>
+                        <p>Deleting dialog will permanently delete the dialog and all of its comment.</p>
                     </div>
                 </div>
             </div>
