@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
 @endpush
 
-@section('title', 'Feeds')
+@section('title', 'Home')
 
 @section('content')
     <div class="container">
@@ -13,20 +13,16 @@
                 <livewire:shared.dialog-form />
             </div>
             <div class="col-6" id="midborder">
-                <livewire:shared.success-message />
+                @include('widgets.success-message')
                 @guest
-                    <h2 class="py-3 mb-3" style="background-color: #D9D9D9; color:#4a4a4a; border-radius:10px">LOGIN TO START YOUR
-                        DIALOG</h2>
+                    <h2 class="py-3 mb-3" style="background-color: #D9D9D9; color:#4a4a4a; border-radius:10px">LOGIN TO START YOUR DIALOG</h2>
                 @endguest
-                <div class="p-3 border rounded-4" id="midpane">
-                    @forelse ($dialogues as $dialog)
-                        <livewire:shared.dialog-card :dialog="$dialog" />
-                    @empty
-                        <h1>The people you follow haven't started any dialogues.</h1>
-                    @endforelse
 
-                </div>
-                {{ $dialogues->links() }}
+                @auth
+                    <livewire:shared.dialog-list />
+                    {{ $dialogues->links() }}
+                @endauth
+
             </div>
             <div class="col-3" id="rightpane">
                 @include('widgets.search-bar')
@@ -35,4 +31,7 @@
             </div>
         </div>
     </div>
+
+
 @endsection
+
