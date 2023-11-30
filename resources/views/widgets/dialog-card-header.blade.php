@@ -1,4 +1,4 @@
-@include('widgets.ModalDeleteComment')
+@include('widgets.modal-delete-dialog')
 <div class="card-header">
     <div class="media w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
             class="d-block ui-w-40 rounded-circle" alt="Profile Picture">

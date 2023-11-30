@@ -4,8 +4,8 @@
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header d-flex flex-column">
-                <h3 class="modal-title mb-2" id="staticBackdropLabel">Delete Dialoq</h3>
-                <p class="modal-title font-weight-bold"> Are you sure want to delete your dialoq ? </p>
+                <h3 class="modal-title mb-2" id="staticBackdropLabel">Delete Dialog</h3>
+                <p class="modal-title font-weight-bold"> Are you sure want to delete your dialog ? </p>
             </div>
             <div class="modal-body" style="padding:5%">
                 <div class="warning-body" style="background-color: #FFE9D9;padding:2%">

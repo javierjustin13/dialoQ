@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/edit-card.css') }}">
 @endpush
 
-@include('widgets.ModalDeleteComment')
+@include('widgets.modal-delete-dialog')
 
 <div class="p-3 border rounded-4 mb-3" id="postcard">
     <div class="card-header">
