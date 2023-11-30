@@ -2,6 +2,8 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/edit-card.css') }}">
 @endpush
 
+@include('widgets.ModalDeleteComment')
+
 <div class="p-3 border rounded-4 mb-3" id="postcard">
     <div class="card-header">
         <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
@@ -10,11 +12,7 @@
                     data-abc="true">{{ $dialog->user->username }}</a>
             </div>
             <div class="text-muted small ml-3 d-flex align-items-center">
-                <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
-                    @csrf
-                    @method('delete')
-                    <button class="ms-1 btn btn-danger btn-sm"> X </button>
-                </form>
+                <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> X </button>
             </div>
         </div>
     </div>

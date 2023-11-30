@@ -2,6 +2,7 @@
     <link rel="stylesheet" href="{{ asset('css/dialogues/show.css') }}">
 @endpush
 
+@include('widgets.ModalDeleteComment')
 
 <div class="p-3 border rounded-4" id="midpane">
     <div class="p-3 border rounded-4 mb-3" id="postcard">
@@ -16,13 +17,7 @@
                     @auth()
                         @can('update', $dialog)
                             <a class="mx-2" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
-                            <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
-                                @csrf
-                                @method('delete')
-                                @can('delete', $dialog)
-                                    <button class="ms-1 btn btn-danger btn-sm"> X </button>
-                                @endcan
-                            </form>
+                            <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> X </button>
                         @endcan
                     @endauth
                 </div>
