@@ -10,17 +10,17 @@
     <div class="container">
         <div class="row gx-4">
             <div class="col-3 " id="leftpane">
-                @include('widgets.dialog-form')
+                <livewire:shared.dialog-form />
             </div>
             <div class="col-6" id="midborder">
-                @include('widgets.success-message')
+                <livewire:shared.success-message />
                 @guest
                     <h2 class="py-3 mb-3" style="background-color: #D9D9D9; color:#4a4a4a; border-radius:10px">LOGIN TO START YOUR
                         DIALOG</h2>
                 @endguest
                 <div class="p-3 border rounded-4" id="midpane">
                     @forelse ($dialogues as $dialog)
-                        @include('widgets.dialog-card')
+                        <livewire:shared.dialog-card :dialog="$dialog" />
                     @empty
                         <h1>The people you follow haven't started any dialogues.</h1>
                     @endforelse
