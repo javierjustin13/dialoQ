@@ -22,7 +22,7 @@ class CommentController extends Controller
         return redirect()->route('dialogues.show', $dialog->id)->with('success', "Comment posted successfully!");
     }
 
-    public function destroy(Comment $comment)
+    public function destroy(Dialog $dialog, Comment $comment)
     {
         $this->authorize('delete', $comment);
 
