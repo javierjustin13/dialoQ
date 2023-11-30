@@ -55,7 +55,7 @@ class DialogController extends Controller
 
         $dialog->delete();
 
-        return redirect()->back()->with('success', 'Dialog deleted successfully !');
+        return redirect()->route('home')->with('success', 'Dialog deleted successfully !');
     }
 }
 
