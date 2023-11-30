@@ -17,16 +17,6 @@ class DialogController extends Controller
         return view('dialogues.show', compact('dialog', 'users'));
     }
 
-    public function store(CreateDialogRequest $request){
-        $validated = $request->validated();
-
-        $validated['user_id'] = auth()->id();
-
-        Dialog::create($validated);
-
-        return redirect()->route('home')->with('success', 'Dialog created successfully !');
-    }
-
     public function edit(Dialog $dialog)
     {
         $this->authorize('update', $dialog);

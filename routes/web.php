@@ -9,6 +9,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\DialogController;
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\LikeController;
+use App\Livewire\Page\HomePage;
 use App\Models\Dialog;
 use App\Models\User;
 
@@ -36,7 +37,7 @@ Route::post('login', [AuthController::class, 'authenticate']);
 
 Route::post('logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::post('dialogues', [DialogController::class, 'store'])->name('dialogues.store')->middleware('auth');
+// Route::post('dialogues', [DialogController::class, 'store'])->name('dialogues.store')->middleware('auth');
 Route::get('dialogues/{dialog}', [DialogController::class, 'show'])->name('dialogues.show');
 Route::get('dialogues/{dialog}/edit', [DialogController::class, 'edit'])->name('dialogues.edit')->middleware('auth');
 Route::put('dialogues/{dialog}', [DialogController::class, 'update'])->name('dialogues.update')->middleware('auth');
