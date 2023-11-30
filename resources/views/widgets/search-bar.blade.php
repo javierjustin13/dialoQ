@@ -15,7 +15,7 @@
             <div class="dropdown m-0">
                 <input type="search" placeholder="Search people" id="myInput" onkeyup="filterFunction()"
                     class="form-control border-0 rounded-pill" aria-describedby="button-addon2" autocomplete="off">
-                <div id="myDropdown" class="dropdown-content">
+                <div id="myDropdown" class="dropdown-content" style="display: block; background-color: rgb(77, 66, 95);border-top:0px">
                     @foreach ($users as $user)
                     <div class="percontent">
                         <a href="{{ route('users.show', $user->id) }}">
