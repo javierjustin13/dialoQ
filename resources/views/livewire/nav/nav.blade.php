@@ -1,6 +1,6 @@
 <nav class="navbar sticky-top navbar-expand-lg" style="background-color: #4D425F">
     <div class="container-fluid">
-        <a class="navbar-brand ms-5" href="/">dialoQ</a>
+        <a class="navbar-brand ms-5" href="{{ route('home') }}" wire:navigate>dialoQ</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -11,15 +11,14 @@
                     @php
                         $route = Route::currentRouteName();
                     @endphp
-                    <a class="nav-link" href="/" id="{{ $route === 'home' ? 'active' : '' }}">Home</a>
+                    <a class="nav-link" href="{{ route('home') }}" id="{{ $route === 'home' ? 'active' : '' }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/feeds" id="{{ Route::is('feeds') ? 'active' : '' }}">Feeds</a>
+                    <a class="nav-link" href="{{ route('feeds') }}" id="{{ Route::is('feeds') ? 'active' : '' }}">Feeds</a>
                 </li>
                 @guest
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('login') }}"
-                            id="{{ Route::is('login') ? 'active' : '' }}">Login</a>
+                        <a class="nav-link" href="{{ route('login') }}" wire:navigate id="{{ Route::is('login') ? 'active' : '' }}">Login</a>
                     </li>
                 @endguest
                 @auth()
@@ -30,7 +29,7 @@
                                 <img class="rounded-5" src="{{ Auth::user()->getImageUrl() }}" alt="profile picture">
                             </div>
                             <div class="username-nav">
-                                <a class="nav-link" href="{{ route('profile') }}"
+                                <a class="nav-link" href="{{ route('profile') }}" wire:navigate
                                     id="{{ Route::is('profile') ? 'active' : '' }}">{{ Auth::user()->username }}</a>
                             </div>
                         </div>

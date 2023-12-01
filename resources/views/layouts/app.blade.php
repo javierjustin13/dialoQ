@@ -22,13 +22,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@multiavatar/multiavatar/multiavatar.min.js"></script>
 
     @stack('head')
+
+    @livewireStyles
+
 </head>
 
 <body>
     @if (request()->is('login') || request()->is('register'))
-        @include('layouts.nav-login-register')
+        <livewire:nav.nav-login-register />
     @else
-        @include('layouts.nav')
+        <livewire:nav.nav />
     @endif
 
     @if (Route::currentRouteName() == 'register')
@@ -64,6 +67,7 @@
 
     <script src="{{ asset('js/readMore.js') }}"></script>
     <script src="{{ asset('js/formSubmit.js') }}"></script>
+    @livewireScripts
 </body>
 
 </html>

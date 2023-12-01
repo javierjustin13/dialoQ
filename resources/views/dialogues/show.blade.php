@@ -10,7 +10,7 @@
 <div class="container">
     <div class="row gx-4">
         <div class="col-3 " id="leftpane">
-            @include('widgets.dialog-form')
+            <livewire:shared.dialog-form />
         </div>
         <div class="col-6">
             @include('widgets.success-message')

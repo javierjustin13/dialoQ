@@ -31,7 +31,7 @@
         <div class="card-footer align-items-center px-0 pt-0 pb-3">
             <div class="d-flex justify-content-between">
                 <div class="text-muted d-flex">
-                    @include('widgets.like-button')
+                    <livewire:shared.like-button :dialog="$dialog" :key="$dialog->id"/>
                     <span class="ms-3">
                         <a class="bi bi-chat-dots" href="{{ route('dialogues.show', $dialog->id) }}"></a>
                         <span class="count-comment">{{ $dialog->comments->count() }}</span>

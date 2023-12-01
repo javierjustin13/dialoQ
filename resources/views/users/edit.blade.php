@@ -19,15 +19,14 @@
                     </div>
                     <div class="data-req">
                         <div class="data">
-                            <input name="username" class="input-box" type="text" id="editUsername" name="username"
-                                placeholder={{ $user->username }}>
+                            <input name="username" class="input-box" type="text" id="editUsername" name="username" value="{{ $user->username }}">
                             @error('username')
                                 <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="data">
                             <input name="name" class="input-box" type="text" id="editName" name="name"
-                                placeholder={{ $user->name }}>
+                                value={{ $user->name }}>
                             @error('name')
                                 <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                             @enderror
@@ -41,7 +40,7 @@
                     </div>
                     <div class="edit-bio">
                         <div class="your-input">BIO :</div>
-                        <textarea class="input-bio p-3" type="text" id="editBIO" name="bio" placeholder="{{ $user->bio }}"></textarea>
+                        <textarea class="input-bio p-3" type="text" id="editBIO" name="bio">{{ $user->bio }}</textarea>
                     </div>
                     <div class="button-save">
                         <button class="button" type="submit">SAVE CHANGES</button>
