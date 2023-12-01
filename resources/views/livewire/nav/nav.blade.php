@@ -11,10 +11,10 @@
                     @php
                         $route = Route::currentRouteName();
                     @endphp
-                    <a class="nav-link" href="{{ route('home') }}" wire:navigate id="{{ $route === 'home' ? 'active' : '' }}">Home</a>
+                    <a class="nav-link" href="{{ route('home') }}" id="{{ $route === 'home' ? 'active' : '' }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('feeds') }}" wire:navigate id="{{ Route::is('feeds') ? 'active' : '' }}">Feeds</a>
+                    <a class="nav-link" href="{{ route('feeds') }}" id="{{ Route::is('feeds') ? 'active' : '' }}">Feeds</a>
                 </li>
                 @guest
                     <li class="nav-item">
