@@ -30,10 +30,10 @@ hr{
 
 a {
     text-decoration: none;
-    color: black;
+    color: #FCEAFC;
 }
 a:hover {
-    color: black;
+    color: #FCEAFC;
 }
 p {
     margin-bottom: 0px;
@@ -49,12 +49,14 @@ p {
 .card-body h4 {
     word-wrap: break-word;
     word-break: break-all;
+    color: #FCEAFC;
 }
 
 .card-body p {
     word-wrap: break-word;
     word-break: break-all;
     min-height: 50px;
+    color: #FCEAFC;
 }
 
 
