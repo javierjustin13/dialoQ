@@ -1,6 +1,6 @@
-<nav class="navbar sticky-top navbar-expand-lg" style="background-color: #4D425F">
+<nav class="navbar sticky-top navbar-expand-lg border-bottom" style="background-color: #4D425F">
     <div class="container-fluid">
-        <a class="navbar-brand ms-5" href="{{ route('home') }}" wire:navigate>dialoQ</a>
+        <a class="navbar-brand ms-5" href="{{ route('home') }}">dialoQ</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

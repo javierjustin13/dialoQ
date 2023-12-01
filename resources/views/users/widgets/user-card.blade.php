@@ -1,7 +1,7 @@
 <div class="upper">
     <div class="left-content">
 
-        <div class="card-profile">
+        <div class="card-profile border">
             <div class="upper-profile">
                 <div class="profile-picture">
                     <img class="pp-image" src="{{ $user->getImageURL() }}" class="d-block ui-w-40 rounded-circle"

@@ -3,11 +3,11 @@
 @endpush
 
 <form action="" id="search">
-    <div class="p-1 rounded rounded-pill shadow-sm mb-4 ml-1" id="searchbar">
+    <div class="p-1 border rounded rounded-pill shadow-sm mb-4 ml-1" id="searchbar">
         <div class="input-group">
             <div class="input-group-prepend">
                 <button id="button-addon2" type="submit" class="btn btn-link text-warning">
-                    <i class="bi bi-search" id="magnifying"></i>
+                    <i class="bi bi-search" id="magnifying" style="color: #FCEAFC"></i>
                 </button>
             </div>
             {{-- <input type="search" placeholder="Search dialoQ" aria-describedby="button-addon2"

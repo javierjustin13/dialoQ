@@ -4,8 +4,8 @@
 
 @include('widgets.modal-delete-dialog')
 
-<div class="p-3 border rounded-4 border-0" id="midpane">
-    <div class="p-3 border rounded-4 mb-3 border-0" id="postcard">
+<div class="p-3 border rounded-4" id="midpane">
+    <div class="p-3 border rounded-4 mb-3" id="postcard">
         <div class="card-header">
             <div class="media w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
                     class="d-block ui-w-40 rounded-circle" alt="">

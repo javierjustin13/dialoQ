@@ -2,16 +2,16 @@
     @auth()
         @if (Auth::user()->hasLiked($dialog))
             <button wire:loading.attr="disabled" wire:click="toggleLike()" type="submit">
-                <i wire:loading.delay.remove class="bi bi-heart-fill"></i>
+                <i wire:loading.delay.remove class="bi bi-heart-fill" style="color: #FCEAFC"></i>
             </button>
-            <div wire:loading.delay class="spinner-grow spinner-grow-sm text-danger" role="status"></div>
-            <span>{{ $count }}</span>
+            <div wire:loading.delay class="spinner-grow spinner-grow-sm text-white" role="status"></div>
+            <span style="color: #FCEAFC">{{ $count }}</span>
         @else
             <button wire:loading.attr="disabled" wire:click="toggleLike()" type="submit">
-                <i wire:loading.delay.remove class="bi bi-heart"></i>
+                <i wire:loading.delay.remove class="bi bi-heart" style="color: #FCEAFC"></i>
             </button>
-            <div wire:loading.delay class="spinner-grow spinner-grow-sm text-danger" role="status"></div>
-            <span>{{ $count }}</span>
+            <div wire:loading.delay class="spinner-grow spinner-grow-sm text-white" role="status"></div>
+            <span style="color: #FCEAFC">{{ $count }}</span>
         @endif
     @endauth
 

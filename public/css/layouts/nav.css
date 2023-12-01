@@ -21,11 +21,11 @@ nav{
     box-sizing: content-box;
     width: 90%;
     height: 100%;
-    border: solid #FCEAFC;
+    border: #FCEAFC 2px solid;
     padding: 5px;
     height: 30px;
     background-color: transparent;
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;

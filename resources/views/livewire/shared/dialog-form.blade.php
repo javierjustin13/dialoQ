@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/dialog-form.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
 @endpush
 
-<div class="p-3 rounded-3">
+<div class="p-3 border rounded-3">
     <h4>Share your dialog...</h4>
     <form>
         <input wire:model="title" class="form-control" name = "title" type="text" placeholder="Dialog Title">
@@ -18,6 +18,6 @@
         </div>
         <button wire.loading.attr="disabled " wire:click.prevent="storeDialog" class="btn btn-dark my-2"
             type="submit">Share</button>
-        <div wire:loading.delay class="ms-3 spinner-grow spinner-grow-sm text-danger" role="status"></div>
+        <div wire:loading.delay class="ms-3 spinner-grow spinner-grow-sm text-white" role="status"></div>
     </form>
 </div>
