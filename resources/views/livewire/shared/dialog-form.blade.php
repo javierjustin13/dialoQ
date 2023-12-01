@@ -16,9 +16,8 @@
                 <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
             @enderror
         </div>
-        <button wire.loading.attr="disabled " wire:click.prevent="storeDialog" class="btn btn-dark my-2" type="submit">Share</button>
-        <div wire:loading class="ms-3">
-            <span class="text-green-500">Sharing...</span>
-        </div>
+        <button wire.loading.attr="disabled " wire:click.prevent="storeDialog" class="btn btn-dark my-2"
+            type="submit">Share</button>
+        <div wire:loading.delay class="ms-3 spinner-grow spinner-grow-sm text-danger" role="status"></div>
     </form>
 </div>

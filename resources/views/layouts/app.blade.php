@@ -24,6 +24,7 @@
     @stack('head')
 
     @livewireStyles
+
 </head>
 
 <body>

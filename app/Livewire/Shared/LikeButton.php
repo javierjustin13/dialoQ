@@ -4,10 +4,12 @@ namespace App\Livewire\Shared;
 
 use App\Models\Dialog;
 use App\Models\User;
+use Livewire\Attributes\Reactive;
 use Livewire\Component;
 
 class LikeButton extends Component
 {
+    #[Reactive]
     public Dialog $dialog;
     public int $count;
 
