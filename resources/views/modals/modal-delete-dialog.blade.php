@@ -24,9 +24,7 @@
                 <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
                     @csrf
                     @method('delete')
-                    @can('delete', $dialog)
-                        <button class="btn btn-primary" data-bs-dismiss="modal" style="border-color: black">Yes, Delete</button>
-                    @endcan
+                    <button class="btn btn-primary" data-bs-dismiss="modal" style="border-color: black">Yes, Delete</button>
                 </form>
                 </button>
             </div>

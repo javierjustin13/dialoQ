@@ -2,9 +2,9 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/edit-card.css') }}">
 @endpush
 
-@include('widgets.modal-delete-dialog')
+@include('modals.modal-delete-dialog')
 
-<div class="p-3 border rounded-4 mb-3 border-0" id="postcard">
+<div class="p-3 border rounded-4 mb-3 border" id="postcard">
     <div class="card-header">
         <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
                 class="d-block ui-w-40 rounded-circle" alt="">
@@ -20,11 +20,11 @@
         <form method="POST" action="{{ route('dialogues.update', $dialog->id) }}">
             @csrf
             @method('PUT')
-            <textarea id="titlearea" name="new_title" class="form-control mb-3" cols="35" oninput="auto_grow(this)">{{ $dialog->title }}</textarea>
+            <textarea id="titlearea" name="new_title" class="form-control mb-3 border" cols="35" oninput="auto_grow(this)">{{ $dialog->title }}</textarea>
             @error('new_title')
                 <span class="my-2 d-block fs-6 text-danger"> {{ $message }} </span>
             @enderror
-            <textarea id="contentarea" name="new_content" class="form-control" cols="35" oninput="auto_grow(this)">{{ $dialog->content }}</textarea>
+            <textarea id="contentarea" name="new_content" class="form-control border" cols="35" oninput="auto_grow(this)">{{ $dialog->content }}</textarea>
             @error('new_content')
                 <span class="my-2 d-block fs-6 text-danger"> {{ $message }} </span>
             @enderror

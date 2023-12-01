@@ -4,8 +4,8 @@
 
 
 @forelse ($dialog->comments as $comment)
-@include('widgets.modal-delete-comment')
-<div class="card-header mb-3 comment-item">
+@include('modals.modal-delete-comment')
+<div class="card-header mb-3 comment-item ">
     <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $comment->user->getImageURL() }}"
             class="d-block ui-w-40 rounded-circle" alt="">
         <div class="media-body ml-3"> <a href="">{{ $comment->user->username }}</a>

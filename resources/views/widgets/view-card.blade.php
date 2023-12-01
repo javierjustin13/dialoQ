@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="{{ asset('css/dialogues/show.css') }}">
 @endpush
 
-@include('widgets.modal-delete-dialog')
+@include('modals.modal-delete-dialog')
 
 <div class="p-3 border rounded-4" id="midpane">
     <div class="p-3 border rounded-4 mb-3" id="postcard">

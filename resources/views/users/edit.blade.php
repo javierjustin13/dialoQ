@@ -8,7 +8,7 @@
 
 @section('content')
     <div class="edit-profile">
-        <div class="left-side">
+        <div class="left-side border">
             <form enctype="multipart/form-data" method="POST" action="{{ route('users.update', $user->id) }}">
                 @csrf
                 @method('PUT')
@@ -19,14 +19,14 @@
                     </div>
                     <div class="data-req">
                         <div class="data">
-                            <input name="username" class="input-box" type="text" id="editUsername" name="username" value="{{ $user->username }}">
+                            <input name="username" class="input-box border" type="text" id="editUsername" name="username" value="{{ $user->username }}"style="color: #FCEAFC">
                             @error('username')
                                 <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="data">
-                            <input name="name" class="input-box" type="text" id="editName" name="name"
-                                value={{ $user->name }}>
+                            <input name="name" class="input-box border" type="text" id="editName" name="name"
+                                value={{ $user->name }} style="color: #FCEAFC">
                             @error('name')
                                 <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                             @enderror
@@ -36,11 +36,11 @@
                 <div class="bottom p-4">
                     <div class="edit-pp">
                         <div class="your-input">Profile Picture :</div>
-                        <input name="image" class="input-pp form-control" type="file" accept="image/*" id="editPP">
+                        <input name="image" class="input-pp form-control border" type="file" accept="image/*" id="editPP">
                     </div>
                     <div class="edit-bio">
                         <div class="your-input">BIO :</div>
-                        <textarea class="input-bio p-3" type="text" id="editBIO" name="bio">{{ $user->bio }}</textarea>
+                        <textarea class="input-bio p-3 border" type="text" id="editBIO" name="bio" style="color: #FCEAFC">{{ $user->bio }}</textarea>
                     </div>
                     <div class="button-save">
                         <button class="button" type="submit">SAVE CHANGES</button>

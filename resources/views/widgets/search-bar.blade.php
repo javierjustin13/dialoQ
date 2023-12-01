@@ -21,7 +21,7 @@
                         <a href="{{ route('users.show', $user->id) }}">
                             <div class="media flex-wrap w-100 align-items-center">
                                 <img src="{{ $user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt="">
-                                <p class="ml-2">{{ $user->username }}</p>
+                                <p class="ml-2" style="color: #FCEAFC">{{ $user->username }}</p>
                             </div>
                         </a>
                     </div>
