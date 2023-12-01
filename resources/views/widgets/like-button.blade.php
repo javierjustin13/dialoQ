@@ -4,13 +4,13 @@
             <form action="{{ route('dialogues.unlike', $dialog->id) }}" method="POST">
                 @csrf
                 <button type="submit"><i class="bi bi-heart-fill"></i></button>
-                <span>{{ $dialog->likes_count }}</span>
+                <span class="count-likes">{{ $dialog->likes_count }}</span>
             </form>
         @else
             <form action="{{ route('dialogues.like', $dialog->id) }}" method="POST">
                 @csrf
                 <button type="submit"><i class="bi bi-heart"></i></button>
-                <span>{{ $dialog->likes_count }}</span>
+                <span class="count-likes">{{ $dialog->likes_count }}</span>
             </form>
         @endif
     @endauth

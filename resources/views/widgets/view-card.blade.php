@@ -5,7 +5,7 @@
 @include('widgets.modal-delete-dialog')
 
 <div class="p-3 border rounded-4" id="midpane">
-    <div class="p-3 border rounded-4 mb-3" id="postcard">
+    <div class="p-3 border rounded-4 mb-3 border-0" id="postcard">
         <div class="card-header">
             <div class="media w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
                     class="d-block ui-w-40 rounded-circle" alt="">
@@ -34,12 +34,12 @@
                     @include('widgets.like-button')
                     <span class="ms-3">
                         <a class="bi bi-chat-dots" href="{{ route('dialogues.show', $dialog->id) }}"></a>
-                        <span>{{ $dialog->comments->count() }}</span>
+                        <span class="count-comment">{{ $dialog->comments->count() }}</span>
                     </span>
                 </div>
                 <span class="text-muted">
                     <i class="bi bi-clock me-1"></i>
-                    <span>
+                    <span class="duration">
                         {{ $dialog->created_at->diffForHumans() }}
                     </span>
                 </span>

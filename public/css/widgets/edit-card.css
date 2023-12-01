@@ -33,7 +33,6 @@ a {
     color: #FCEAFC;
     font-family: 'eina';
 }
-a:hover {
     color: black;
 }
 p {
@@ -74,12 +73,20 @@ p {
     min-height: 100px;
 }
 
-.btn-success{
+#updatebutton{
     background-color: #6C35DE;
+    color: #FCEAFC;
+}
+
+
+#updatebutton::after{
+    border: 0;
+    border-color: #241B35;
 }
 
 .btn-danger{
     background-color: #DA004F;
+    border: 0;
 }
 
 .card-footer button{
@@ -87,3 +94,4 @@ p {
     padding-right: 5%;
 
 }
+

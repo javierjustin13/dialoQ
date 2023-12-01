@@ -29,7 +29,7 @@
                 <span class="my-2 d-block fs-6 text-danger"> {{ $message }} </span>
             @enderror
             <div class="card-footer align-items-center px-0 pt-0 pb-3">
-                <button class="btn btn-success mt-3 me-2" type="submit">UPDATE</button>
+                <button class="btn btn-dark mt-3 me-2" type="submit" id="updatebutton">UPDATE</button>
                 <button class="btn btn-danger mt-3" type="button" onclick="window.history.back()">CANCEL</button>
             </div>
         </form>
