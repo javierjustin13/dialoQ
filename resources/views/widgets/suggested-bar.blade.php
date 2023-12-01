@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/suggested-card.css') }}">
 @endpush
 
-<div class="card mb-3 border-0" style="max-width: 18rem;background-color: #4D425F">
+<div class="card mb-3 border-0" style="max-width: 18rem;background-color: #342A45">
     <div class="card-body ">
         <div class="card mb-3 border-0" style="background-color: #241B35" id="suggestedtext">
             <p>

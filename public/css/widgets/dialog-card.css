@@ -59,6 +59,25 @@ p {
     color: #FCEAFC;
 }
 
+.followingbutton {
+    background-color: #FCEAFC;
+}
+
+.followingbutton:hover {
+    background-color: #6C35DE;
+    color: #FCEAFC;
+}
+
+.followbutton{
+    background-color: #6C35DE;
+    color: #FCEAFC;
+}
+
+.followbutton:hover{
+    background-color: #FCEAFC;
+    color: #6C35DE;
+}
+
 
 .more {display: none};
 

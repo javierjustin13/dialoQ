@@ -5,7 +5,7 @@
                 <form method="POST" action="{{ route('users.unfollow', $dialog->user->id) }}">
                     @csrf
                     <button type="submit"
-                        class="btn btn-light d-flex justify-content-center align-items-center"
+                        class="btn followingbutton d-flex justify-content-center align-items-center"
                         style="font-size: 14px">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-person-fill-check" viewBox="0 0 16 16">
@@ -20,7 +20,7 @@
             @else
                 <form method="POST" action="{{ route('users.follow', $dialog->user->id) }}">
                     @csrf
-                    <button type="submit" class="btn btn-dark d-flex align-items-center align-items-center"
+                    <button type="submit" class="btn followbutton d-flex align-items-center align-items-center"
                         style="font-size: 14px">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                             fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 16">
