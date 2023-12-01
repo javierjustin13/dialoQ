@@ -13,12 +13,6 @@
         @auth()
         @can('delete', $comment)
         <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#CommentModal"> X </button>
-
-        {{-- <form method="POST" action="{{ route('dialogues.comments.destroy',[$dialog->id, $comment->id]) }}">
-            @csrf
-            @method('delete')
-            <button class="ms-1 btn btn-danger btn-sm"> X </button>
-        </form> --}}
         @endcan
         @endauth
     </div>
@@ -32,7 +26,7 @@
         </div>
     </div>
 </div>
-<hr>
+<hr style="color: #FCEAFC">
 @empty
 <p class="text-center mt-4">No Comments Found.</p>
 @endforelse

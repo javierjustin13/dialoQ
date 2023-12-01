@@ -15,10 +15,6 @@ body{
     font-family: 'eina';
 }
 
-p{
-    color: #FCEAFC;
-}
-
 .col-6 h2{
     text-align: center;
 }
@@ -107,4 +103,22 @@ p {
 
 .duration{
     color: #FCEAFC;
+}
+
+/* Bagian modal di view */
+.modal-content {
+    background-color: #241B35;
+    color: #FCEAFC;
+}
+
+#staticBackdropLabel{
+    color: #FCEAFC;
+}
+
+.modal-title{
+    color: #FCEAFC;
+}
+
+.btndelete {
+    background-color: #6C35DE;
 }
