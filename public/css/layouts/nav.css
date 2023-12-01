@@ -13,6 +13,10 @@ nav{
     font-size: 1.8rem;
 }
 
+.navbar-brand:hover{
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6;
+}
+
 .border-profile{
     box-sizing: content-box;
     width: 90%;
