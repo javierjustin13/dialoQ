@@ -7,6 +7,10 @@
     src: url(../fonts/Eina-Bold.ttf);
 }
 
+body{
+    background-color: #241B35;
+}
+
 .container{
     font-family: 'eina';
 }
@@ -24,8 +28,10 @@ p{
 }
 
 #midpane{
-    background-color: #4D425F;
+    background-color: #342A45 !important;
 }
+
+
 
 #postcard{
     background-color: #241B35;
