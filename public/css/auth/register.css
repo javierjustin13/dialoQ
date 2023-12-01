@@ -5,6 +5,13 @@
     text-decoration: none;
     list-style: none;
     font-family: 'eina';
+    color: #FCEAFC;
+}
+
+body {
+    height: 100vh;
+    /* overflow: hidden; */
+    background-color: #241B35;
 }
 
 @font-face {
@@ -17,6 +24,7 @@
 }
 
 .register-container{
+    background-color: #241B35;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +46,7 @@
 .registerimg{
     width: 325px;
     height: 475px;
-    /* box-shadow: 0px 7px 10px #000000; */
+    box-shadow: 0px 7px 10px #000000;
 }
 
 .registerimg img{
@@ -48,11 +56,12 @@
 
 .container{
     width: 475px;
-    height: 473px;
+    height: 475px;
     padding-left: 35px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #4D425F;
 }
 
 .registertitle{
@@ -74,7 +83,7 @@
 .inputbox{
     width: 400px;
     height: 25px;
-    background: #FFFFFF;
+    background-color: #342A45;
     border: 1px solid #000000;
     border-radius: 8px;
 }
@@ -85,7 +94,7 @@ input::placeholder{
 
 input[type]{
     font-size: 10px;
-    color: #000000;
+    /* color: #000000; */
     padding-left: 15px;
 }
 
@@ -94,11 +103,12 @@ input[type]{
     width: 520px;
     font-family: 'eina';
     font-size: 10px;
-    color: black;
+    color: #FCEAFC;
+
 }
 
 .question a{
-    color: black;
+    color: #FCEAFC;
     font-family: 'eina-bold';
     text-align: center;
 }
@@ -108,8 +118,8 @@ input[type]{
     background-color: black;
     width: 75px;
     height: 25px;
+    background-color: #6C35DE;
     border-radius: 8px;
-    background: #000000;
     opacity: 0.7;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     align-self: center;
@@ -124,7 +134,7 @@ input[type]{
 }
 
 .submitbtn:hover{
-    background-color: #000000;
+    background-color: #241B35;
     opacity: 1;
     transition: ease-in 0.5s;
 }
@@ -154,6 +164,7 @@ input[type]{
     }
 
     .register{
+        /* margin-top: 150px; */
         box-shadow: none;
         transition: all ease-in 0.5s;
     }
@@ -232,7 +243,7 @@ input[type]{
     .inputbox{
         width: 605px;
         height: 50px;
-        background: #FFFFFF;
+        background-color: #342A45;
         border: 1px solid #000000;
         border-radius: 15px;
         margin-bottom: 25x;
@@ -254,21 +265,17 @@ input[type]{
         width: 520px;
         font-family: 'eina';
         font-size: 23px;
-        color: black;
     }
 
     .question a{
-        color: black;
         text-align: center;
     }
 
     .submitbtn{
         margin-top: 15px;
-        background-color: black;
         width: 120px;
         height: 40px;
         border-radius: 8px;
-        background: #000000;
         opacity: 0.7;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         align-self: center;
@@ -290,7 +297,7 @@ input[type]{
         margin-top: 10px;
         padding-left: 15px;
         display: block;
-        width: 625px;
+        width: 600px;
         font-size: 25px;
     }
 }
@@ -317,6 +324,38 @@ input[type]{
 
     .container{
         width: 100%;
+    }
+
+    .inputbox{
+        width: 580px;
+        height: 50px;
+        background-color: #342A45;
+        border: 1px solid #000000;
+        border-radius: 15px;
+        margin-bottom: 25x;
+    }
+
+    input::placeholder{
+        color: #827B82;
+    }
+
+    input[type]{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        padding-left: 32px;
+    }
+
+    .error{
+        background-color: #fde8ec;
+        border-radius: 3px;
+        margin-top: 10px;
+        margin-left: 5px;
+        padding-left: 15px;
+        display: block;
+        width: 565px;
+        font-size: 25px;
     }
 }
 

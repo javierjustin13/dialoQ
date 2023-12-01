@@ -4,12 +4,12 @@
 }
 
 nav{
-    background: #545454;
+    background: #4D425F;
     font-family: 'eina';
 }
 
 .navbar-brand{
-    color: #fff;
+    color: #FCEAFC;
     font-size: 1.8rem;
 }
 
@@ -17,7 +17,7 @@ nav{
     box-sizing: content-box;
     width: 90%;
     height: 100%;
-    border: solid white;
+    border: solid #FCEAFC;
     padding: 5px;
     height: 30px;
     background-color: transparent;
@@ -40,7 +40,7 @@ nav{
 }
 
 .nav-link:hover{
-    color: white;
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6;
 }
 
 #navbarNav{
@@ -49,7 +49,7 @@ nav{
 }
 
 #active {
-    color: white;
+    color: #FCEAFC;
 }
 
 .nav-link:active{
