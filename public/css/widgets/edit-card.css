@@ -11,10 +11,10 @@
     text-align: center;
 }
 #midpane {
-    background-color: #d9d9d9;
+    background-color: #342A45;
 }
 #postcard {
-    background-color: white;
+    background-color: #241B35;
     min-height: 100px;
 }
 
@@ -30,7 +30,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: #FCEAFC;
     font-family: 'eina';
 }
 a:hover {
@@ -51,28 +51,36 @@ p {
 #titlearea{
     font-family: 'eina';
     resize: none;
-    background-color: #F5F5F5;
+    background-color: #4D425F;
     border-radius: 10px;
     border: 0;
     padding: 10px;
-    font-size: 1.5em; 
+    font-size: 1.5em;
     max-width: -webkit-fill-available;
+    color: #FCEAFC;
 }
 
 #contentarea{
     font-family: 'eina';
     resize: none;
-    background-color: #F5F5F5;
+    background-color: #4D425F;
     border-radius: 10px;
     border: 0;
     padding: 10px;
-    font-size: 1em; 
+    font-size: 1em;
     max-width: -webkit-fill-available;
     min-width: -webkit-fill-available;
-    color: #4A4A4A;
+    color: #FCEAFC;
     min-height: 100px;
 }
 
+.btn-success{
+    background-color: #6C35DE;
+}
+
+.btn-danger{
+    background-color: #DA004F;
+}
 
 .card-footer button{
     padding-left: 5%;
