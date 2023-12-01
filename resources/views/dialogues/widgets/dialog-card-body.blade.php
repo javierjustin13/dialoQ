@@ -1,3 +1,4 @@
+
 <div class="card-body pt-3">
     <h4>{{ $dialog->title }}</h4>
     @php

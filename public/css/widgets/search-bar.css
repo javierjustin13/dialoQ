@@ -20,13 +20,21 @@
 }
 
 #searchbar {
-    background-color: #d9d9d9;
+    background-color: #342A45;
+}
+
+#myInput{
+    background-color: #342A45;
+    color: #FCEAFC;
+}
+
+#myInput::placeholder{
+    color: #FCEAFC;
 }
 
 #magnifying {
     color: black;
 }
-
 
 .dropdown {
     position: relative;

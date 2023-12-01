@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: #241B35;
     width: 100%;
     height: 165vh;
     display: flex;
@@ -22,7 +22,7 @@ body{
 }
 
 .left-side{
-    background: #D9D9D9;
+    background: #342A45;
     width: 800px;
     height: 820px;
     display: flex;
@@ -65,17 +65,18 @@ body{
     height: 70px;
     border: none;
     border-radius: 5px;
-    background: #F5F5F5;
+    background: #4D425F;
 }
 
 ::placeholder{
-    color: #CFCFCF;
+    color: #FCEAFC;
+    opacity: 0.1;
     font-size: 15px;
     font-family: 'eina';
 }
 
 textarea:focus, input:focus {
-    color: black;
+    color: #4A4A4A;
     font-size: 20px;
     font-size: 'eina';
 }
@@ -92,30 +93,56 @@ textarea:focus, input:focus {
     height: 520px;
     display: flex;
     flex-direction: column;
+    gap: 3px;
 }
 
 .your-input{
     font-family: 'eina';
     font-size: 20px;
-    color: #4A4A4A;
+    color: #FCEAFC;
 }
 
-.upload-pp{
+.edit-pp{
     width: 758px;
-    height: 50px;
-    background: #F5F5F5;
+    height: 70px;
     border-radius: 5px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 10px;
 }
 
-input[type="file"]{
-    padding: 10px;
+input[type=file] {
+    width: 758px;
+    max-width: 100%;
+    color: #FCEAFC;
+    padding: 5px;
+    background: #4D425F;
+    border-radius: 5px;
+    border: none;
     font-family: 'eina';
-    color: #CFCFCF;
+  }
+
+input[type=file]::file-selector-button {
+    /* margin-top: 1px; */
+    border: none;
+    width: 100px;
+    height: 30px;
+    margin-left: 2px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #FCEAFC;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    background: #241B35;
+}
+
+/* input[type=file]::file-selector-button:hover {
+    background: #6C35DE;
+} */
+
+#editPP::placeholder{
+    opacity: 0.1;
 }
 
 .input-bio{
@@ -123,7 +150,7 @@ input[type="file"]{
     height: 300px;
     border: none;
     border-radius: 5px;
-    background: #F5F5F5;
+    background-color:  #4D425F;
     text-align: start;
 }
 
@@ -131,7 +158,7 @@ input[type="file"]{
     margin-top: 18px;
     width: 165px;
     height: 33px;
-    background-color: #4A4A4A;
+    background-color: #6C35DE;
     font-family: 'eina';
     color: white;
     border-radius: 5px;

@@ -7,7 +7,7 @@
                 <span>{{ $dialog->comments->count() }}</span>
             </span>
         </div>
-        <span class="text-muted">
+        <span>
             <i class="bi bi-clock me-1"></i>
             <span>
                 {{ $dialog->created_at->diffForHumans() }}

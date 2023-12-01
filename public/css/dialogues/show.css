@@ -7,8 +7,16 @@
     src: url(../fonts/Eina-Bold.ttf);
 }
 
+body{
+    background-color: #241B35;
+}
+
 .container{
     font-family: 'eina';
+}
+
+p{
+    color: #FCEAFC;
 }
 
 .col-6 h2{
@@ -18,11 +26,15 @@
 #midpane h2 {
     text-align: center;
 }
-#midpane {
-    background-color: #d9d9d9;
+
+#midpane{
+    background-color: #342A45 !important;
 }
-#postcard {
-    background-color: white;
+
+
+
+#postcard{
+    background-color: #241B35;
     min-height: 100px;
 }
 
@@ -38,10 +50,10 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: #FCEAFC;
 }
 a:hover {
-    color: black;
+    color: #FCEAFC;
 }
 p {
     margin-bottom: 0px;
@@ -55,7 +67,7 @@ p {
 }
 
 #formGroupExampleInput{
-    background-color: #F5F5F5;
+    background-color: #342A45;
 }
 
 .btn-secondary{
@@ -68,7 +80,31 @@ p {
 }
 
 
+#midpane{
+    background-color: #4D425F;
+}
+
+#postcard{
+    background-color: #241B35;
+}
 
 .card-body{
+    color: #FCEAFC;
     overflow-wrap: break-word;
+}
+
+#share-btn{
+    background-color: #6C35DE;
+}
+
+.count-comment{
+    color: #FCEAFC;
+}
+
+.count-likes{
+    color: #FCEAFC;
+}
+
+.duration{
+    color: #FCEAFC;
 }

@@ -2,8 +2,17 @@
     text-align: center;
 }
 #midpane {
-    background-color: #d9d9d9;
+    background-color: #342A45;
 }
+
+#midpane a, span {
+    color: #FCEAFC;
+}
+
+hr{
+    border: 1px solid #FCEAFC;
+}
+
 #postcard {
     background-color: white;
     min-height: 100px;
@@ -21,10 +30,10 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: #FCEAFC;
 }
 a:hover {
-    color: black;
+    color: #FCEAFC;
 }
 p {
     margin-bottom: 0px;
@@ -40,13 +49,35 @@ p {
 .card-body h4 {
     word-wrap: break-word;
     word-break: break-all;
+    color: #FCEAFC;
 }
 
 .card-body p {
     word-wrap: break-word;
     word-break: break-all;
     min-height: 50px;
+    color: #FCEAFC;
 }
+
+.followingbutton {
+    background-color: #FCEAFC;
+}
+
+.followingbutton:hover {
+    background-color: #6C35DE;
+    color: #FCEAFC;
+}
+
+.followbutton{
+    background-color: #6C35DE;
+    color: #FCEAFC;
+}
+
+.followbutton:hover{
+    background-color: #FCEAFC;
+    color: #6C35DE;
+}
+
 
 .more {display: none};
 

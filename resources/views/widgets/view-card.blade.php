@@ -2,9 +2,10 @@
     <link rel="stylesheet" href="{{ asset('css/dialogues/show.css') }}">
 @endpush
 
+@include('widgets.modal-delete-dialog')
 
-<div class="p-3 border rounded-4" id="midpane">
-    <div class="p-3 border rounded-4 mb-3" id="postcard">
+<div class="p-3 border rounded-4 border-0" id="midpane">
+    <div class="p-3 border rounded-4 mb-3 border-0" id="postcard">
         <div class="card-header">
             <div class="media w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
                     class="d-block ui-w-40 rounded-circle" alt="">
@@ -16,13 +17,7 @@
                     @auth()
                         @can('update', $dialog)
                             <a class="mx-2" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
-                            <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
-                                @csrf
-                                @method('delete')
-                                @can('delete', $dialog)
-                                    <button class="ms-1 btn btn-danger btn-sm"> X </button>
-                                @endcan
-                            </form>
+                            <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> X </button>
                         @endcan
                     @endauth
                 </div>
@@ -39,12 +34,12 @@
                     <livewire:shared.like-button :dialog="$dialog" :key="$dialog->id"/>
                     <span class="ms-3">
                         <a class="bi bi-chat-dots" href="{{ route('dialogues.show', $dialog->id) }}"></a>
-                        <span>{{ $dialog->comments->count() }}</span>
+                        <span class="count-comment">{{ $dialog->comments->count() }}</span>
                     </span>
                 </div>
                 <span class="text-muted">
                     <i class="bi bi-clock me-1"></i>
-                    <span>
+                    <span class="duration">
                         {{ $dialog->created_at->diffForHumans() }}
                     </span>
                 </span>

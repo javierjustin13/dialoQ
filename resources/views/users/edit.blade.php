@@ -14,7 +14,8 @@
                 @method('PUT')
                 <div class="top">
                     <div class="profile-picture">
-                        <img class="profile-img p-4" style="border-radius: 50%; height:300px; width:300px" src="{{ $user->getImageURL() }}" alt="profile picture">
+                        <img class="profile-img p-4" style="border-radius: 50%; height:300px; width:300px"
+                            src="{{ $user->getImageURL() }}" alt="profile picture">
                     </div>
                     <div class="data-req">
                         <div class="data">
@@ -35,8 +36,7 @@
                 <div class="bottom p-4">
                     <div class="edit-pp">
                         <div class="your-input">Profile Picture :</div>
-                        <input name="image" class="input-pp form-control" type="file" id="editPP"
-                            placeholder="Choose a file!">
+                        <input name="image" class="input-pp form-control" type="file" accept="image/*" id="editPP">
                     </div>
                     <div class="edit-bio">
                         <div class="your-input">BIO :</div>

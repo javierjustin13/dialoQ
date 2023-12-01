@@ -17,8 +17,14 @@
                 @guest
                     <h2 class="py-3 mb-3" style="background-color: #D9D9D9; color:#4a4a4a; border-radius:10px">LOGIN TO START YOUR DIALOG</h2>
                 @endguest
+                <div class="p-3 border rounded-4" id="midpane">
+                    @forelse ($dialogues as $dialog)
+                        @include('widgets.dialog-card')
+                    @empty
+                        <h1>There are no dialogues</h1>
+                    @endforelse
 
-                <livewire:shared.dialog-list />
+                </div>
                 {{ $dialogues->links() }}
 
             </div>
