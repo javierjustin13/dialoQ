@@ -16,8 +16,14 @@
                 <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
             @enderror
         </div>
-        <button wire.loading.attr="disabled " wire:click.prevent="storeDialog" class="btn btn-dark my-2 px-4"
-            type="submit" style="background-color: #6C35DE">Share</button>
-        <div wire:loading.delay class="ms-3 spinner-grow spinner-grow-sm text-white" role="status"></div>
+        @auth
+            <button wire.loading.attr="disabled " wire:click.prevent="storeDialog" class="btn btn-dark my-2 px-4"
+                type="submit" style="background-color: #6C35DE">Share</button>
+            <div wire:loading.delay class="ms-3 spinner-grow spinner-grow-sm text-white" role="status"></div>
+        @endauth
+        @guest
+            <a href="{{ route('login') }}" class="btn btn-dark my-2 px-4" type="submit"
+                style="background-color: #6C35DE">Share</a>
+        @endguest
     </form>
 </div>
