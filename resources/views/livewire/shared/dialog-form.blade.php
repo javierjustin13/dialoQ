@@ -22,7 +22,7 @@
             <div wire:loading.delay class="ms-3 spinner-grow spinner-grow-sm text-white" role="status"></div>
         @endauth
         @guest
-            <a href="{{ route('login') }}" class="btn btn-dark my-2 px-4" type="submit"
+            <a wire:navigate href="{{ route('login') }}" class="btn btn-dark my-2 px-4" type="submit"
                 style="background-color: #6C35DE">Share</a>
         @endguest
     </form>
