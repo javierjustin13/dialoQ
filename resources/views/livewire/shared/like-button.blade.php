@@ -17,6 +17,6 @@
 
     @guest
         <a href="{{ route('login') }}"><i class="bi bi-heart"></i></a>
-        <span>{{ $count }}</span>
+        <span style="color: #FCEAFC">{{ $count }}</span>
     @endguest
 </div>
