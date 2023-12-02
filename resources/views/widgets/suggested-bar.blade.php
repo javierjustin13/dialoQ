@@ -29,7 +29,7 @@
             @endphp
         @endguest
         @foreach ($suggestedPeople as $suggested)
-            <div class="suggestedpeople mt-4">
+            <div class="suggestedpeople mt-2">
                 <div class="suggestedname">
                     <img src="{{ $suggested->getImageURL() }}" alt="">
                     <p class="pl-2">{{ $suggested->username }}</p>
