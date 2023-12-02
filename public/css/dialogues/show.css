@@ -122,3 +122,22 @@ p {
 .btndelete {
     background-color: #6C35DE;
 }
+
+.followingbutton {
+    background-color: #FCEAFC;
+}
+
+.followingbutton:hover {
+    background-color: #6C35DE;
+    color: #FCEAFC;
+}
+
+.followbutton{
+    background-color: #6C35DE;
+    color: #FCEAFC;
+}
+
+.followbutton:hover{
+    background-color: #FCEAFC;
+    color: #6C35DE;
+}

@@ -11,7 +11,7 @@
             @php
                 if(Auth::user()->followings->count() > 0){
                     $randomPickedFollowings = Auth::user()->followings->random();
-                    if($randomPickedFollowings->followings->count() > 0){
+                    if($randomPickedFollowings->followings->count() >= 3){
                         $suggestedPeople = $randomPickedFollowings->followings->random(3)->where('id', '!=', Auth::user()->id)->whereNotIn('id', Auth::user()->followings->pluck('id'));
                     }
                     else{

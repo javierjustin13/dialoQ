@@ -1,5 +1,6 @@
 @push('head')
     <link rel="stylesheet" href="{{ asset('css/dialogues/show.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('css/widgets/suggested-card.css') }}"> --}}
 @endpush
 
     {{-- Modal --}}
