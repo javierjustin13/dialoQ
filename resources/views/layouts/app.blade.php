@@ -65,8 +65,8 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
     </script>
 
-    <script src="{{ asset('js/readMore.js') }}"></script>
-    <script src="{{ asset('js/formSubmit.js') }}"></script>
+    <script src="{{ asset('js/read-more.js') }}"></script>
+    <script src="{{ asset('js/form-submit.js') }}"></script>
     @livewireScripts
 </body>
 
