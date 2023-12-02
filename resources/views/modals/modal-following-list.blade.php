@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">Followers</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Following</h5>
                 <a wire:loading.remove wire:navigate wire:loading.attr="disabled" href="{{ route('users.show', $user->id) }}"
                     class="bi bi-x-lg"></a>
                 <div wire:loading class="spinner-grow spinner-grow-sm text-white" role="status"></div>
