@@ -28,5 +28,5 @@
 </div>
 <hr style="color: #FCEAFC">
 @empty
-<p class="text-center mt-4">No Comments Found.</p>
+<p class="text-center mt-4" style="color:#FCEAFC ">No Comments Found.</p>
 @endforelse
