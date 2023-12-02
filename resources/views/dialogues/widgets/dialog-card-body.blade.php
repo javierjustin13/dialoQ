@@ -13,7 +13,7 @@
         <p>{{ $content1 }}<span class="dots">...</span>
             <span class="more">{{ $content2 }}</span>
         </p>
-        <button onclick="readMore(this)" class="read-more-button">Read more</button>
+        <button onclick="readMore(this)" class="read-more-button border-1" style="background-color: #FFC7FF;color:#241B35">Read more</button>
     @else
         <p>{{ $dialog->content }}</p>
     @endif
