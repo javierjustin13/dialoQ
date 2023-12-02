@@ -69,6 +69,7 @@ body {
     margin-bottom: 3px;
     width: 520px;
     font-size: 15px;
+    font-family: 'eina-bold';
 }
 
 .form-group{
@@ -78,6 +79,7 @@ body {
 .inputtitle{
     margin-top: 3px;
     font-size: 10px;
+    font-family: 'eina';
 }
 
 .inputbox{
@@ -90,11 +92,11 @@ body {
 
 input::placeholder{
     color: #827B82;
+    font-family: 'eina';
 }
 
 input[type]{
     font-size: 10px;
-    /* color: #000000; */
     padding-left: 15px;
 }
 
@@ -147,6 +149,7 @@ input[type]{
     display: block;
     width: 400px;
     font-size: 10px;
+    font-family: 'eina';
 }
 
 

@@ -4,7 +4,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    font-family: 'eina';
     color: #FCEAFC;
 }
 
@@ -81,6 +80,7 @@ body {
 
 .logintitle h1{
     font-size: 15px;
+    font-family: 'eina-bold';
 }
 
 .form-group{
@@ -90,6 +90,7 @@ body {
 .inputtitle{
     margin-top: 3px;
     font-size: 10px;
+    font-family: 'eina';
 }
 
 .inputbox{
@@ -101,7 +102,10 @@ body {
 }
 
 input::placeholder{
-    color: #827B82;}
+    color: #827B82;
+    font-family: 'eina';
+}
+
 
 input[type]{
     font-size: 10px;
@@ -157,6 +161,7 @@ input[type]{
     display: block;
     width: 400px;
     font-size: 10px;
+    font-family: 'eina';
 }
 
 .success{
