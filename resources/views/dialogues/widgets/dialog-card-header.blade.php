@@ -1,4 +1,3 @@
-@include('modals.modal-delete-dialog')
 <div class="card-header">
     <div class="media w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
             class="d-block ui-w-40 rounded-circle" alt="Profile Picture">
@@ -11,7 +10,7 @@
             @auth()
                 @can('update', $dialog)
                     <a class="mx-2" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
-                    <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> X </button>
+                    <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DialogModal{{ $dialog->id }}"> X </button>
                 @endcan
             @endauth
         </div>

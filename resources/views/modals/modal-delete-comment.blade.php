@@ -1,5 +1,5 @@
 <!-- Modal -->
-<div class="modal fade" id="CommentModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+<div class="modal fade" id="CommentModal{{ $comment->id }}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
@@ -24,7 +24,7 @@
                 <form method="POST" action="{{ route('dialogues.comments.destroy',[$dialog->id, $comment->id]) }}">
                     @csrf
                     @method('delete')
-                    <button class="btn" data-bs-dismiss="modal" style="border-color: black">Yes, Delete</button>
+                    <button class="btn" data-bs-dismiss="modal" style="border-color: black;background-color:red;color: #FCEAFC">Yes, Delete</button>
                 </form>
                 </button>
             </div>

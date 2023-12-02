@@ -2,7 +2,12 @@
     <link rel="stylesheet" href="{{ asset('css/dialogues/show.css') }}">
 @endpush
 
-@include('modals.modal-delete-dialog')
+    {{-- Modal --}}
+
+    @include('modals.modal-delete-dialog')
+
+    {{-- End Modal --}}
+
 
 <div class="p-3 border rounded-4" id="midpane">
     <div class="p-3 border rounded-4 mb-3" id="postcard">
@@ -17,7 +22,7 @@
                     @auth()
                         @can('update', $dialog)
                             <a class="mx-2" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
-                            <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> X </button>
+                            <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DialogModal{{ $dialog->id }}"> X </button>
                         @endcan
                     @endauth
                 </div>

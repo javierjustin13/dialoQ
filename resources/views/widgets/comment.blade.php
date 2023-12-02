@@ -3,8 +3,14 @@
 @endpush
 
 
+
 @forelse ($dialog->comments as $comment)
-@include('modals.modal-delete-comment')
+    {{-- Modal --}}
+
+    @include('modals.modal-delete-comment')
+
+    {{-- End Modal --}}
+
 <div class="card-header mb-3 comment-item ">
     <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $comment->user->getImageURL() }}"
             class="d-block ui-w-40 rounded-circle" alt="">
@@ -12,7 +18,7 @@
         </div>
         @auth()
         @can('delete', $comment)
-        <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#CommentModal"> X </button>
+        <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#CommentModal{{ $comment->id }}"> X </button>
         @endcan
         @endauth
     </div>

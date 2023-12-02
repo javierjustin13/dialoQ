@@ -2,7 +2,11 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/edit-card.css') }}">
 @endpush
 
-@include('modals.modal-delete-dialog')
+    {{-- Modal --}}
+    @include('modals.modal-delete-dialog')
+    {{-- End Modal --}}
+
+
 
 <div class="p-3 border rounded-4 mb-3 border" id="postcard">
     <div class="card-header">
@@ -12,7 +16,7 @@
                     data-abc="true">{{ $dialog->user->username }}</a>
             </div>
             <div class="text-muted small ml-3 d-flex align-items-center">
-                <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"> X </button>
+                <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DialogModal{{ $dialog->id }}"> X </button>
             </div>
         </div>
     </div>

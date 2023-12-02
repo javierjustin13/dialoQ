@@ -78,6 +78,10 @@ p {
     color: #6C35DE;
 }
 
+.modal-content {
+    background-color: #342A45;
+    color: #FCEAFC;
+}
 
 .more {display: none};
 

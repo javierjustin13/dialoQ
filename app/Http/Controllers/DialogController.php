@@ -1,13 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-
-use App\Http\Requests\CreateDialogRequest;
 use App\Http\Requests\UpdateDialogRequest;
 use App\Models\Dialog;
 use App\Models\User;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\URL;
 
 class DialogController extends Controller
 {
@@ -45,8 +42,9 @@ class DialogController extends Controller
 
         $dialog->delete();
 
-        return redirect()->route('home')->with('success', 'Dialog deleted successfully !');
+        if(URL::previous() == route('dialogues.show', $dialog) || URL::previous() == route('dialogues.edit', $dialog)) {
+            return redirect()->route('home')->with('success', 'Dialog deleted successfully!');
+        }
+        return redirect()->back()->with('success','Dialog deleted successfully!');
     }
 }
-
-
