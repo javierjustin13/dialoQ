@@ -15,7 +15,8 @@
             <div class="col-6" id="midborder">
                 @include('widgets.success-message')
                 @guest
-                    <h2 class="py-3 mb-3" style="background-color: #241B35; color:#FCEAFC; border-radius:10px;text-align: center">LOGIN TO START YOUR DIALOG</h2>
+                    <h2 class="py-3 mb-3" style= "background-color: #342A45; border-radius: 10px; border-style: solid; border-width: 1px;
+                    border-color: white; color: #FCEAFC; text-align: center;">LOGIN TO START YOUR DIALOG</h2>
                 @endguest
                 <livewire:shared.dialog-list />
                 {{ $dialogues->links() }}
