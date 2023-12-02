@@ -29,7 +29,7 @@
                                 <img class="rounded-5" src="{{ Auth::user()->getImageUrl() }}" alt="profile picture">
                             </div>
                             <div class="username-nav">
-                                <a class="nav-link" href="{{ route('profile') }}" wire:navigate
+                                <a class="nav-link" href="{{ route('profile') }}"
                                     id="{{ Route::is('profile') ? 'active' : '' }}">{{ Auth::user()->username }}</a>
                             </div>
                         </div>

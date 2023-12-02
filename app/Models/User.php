@@ -74,6 +74,11 @@ class User extends Authenticatable
         return $this->followings()->where('user_id', $user->id)->exists();
     }
 
+    public function isFollowedBy(User $user)
+    {
+        return $this->followers()->where('follower_id', $user->id)->exists();
+    }
+
     public function likes()
     {
         return $this->belongsToMany(Dialog::class, 'likes')->withTimestamps();
