@@ -20,6 +20,7 @@
 .suggestedpeople{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .suggestedpeople p{
