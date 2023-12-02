@@ -8,12 +8,12 @@
                 <p class="modal-title font-weight-bold"> Are you sure want to delete your dialog ? </p>
             </div>
             <div class="modal-body" style="padding:5%">
-                <div class="warning-body" style="background-color: #FFE9D9;padding:2%">
+                <div class="warning-body" style="background-color: #F8D7DA;padding:2%">
                     <div class="warning-icon d-flex">
-                        <i class="bi bi-exclamation-triangle-fill mr-2" style="color: #771505"></i>
-                        <p class="font-weight-bold" style="color: #771505">Warning</p>
+                        <i class="bi bi-exclamation-triangle-fill mr-2" style="color: #721F27"></i>
+                        <p class="font-weight-bold" style="color: #721F27">Warning</p>
                     </div>
-                    <div class="warning-text" style="color: #BC4C2E">
+                    <div class="warning-text" style="color: #721F27">
                         <p>Deleting dialog will permanently delete the dialog and all of its comment.</p>
                     </div>
                 </div>
@@ -24,9 +24,11 @@
                 <form method="POST" action="{{ route('dialogues.destroy', $dialog->id) }}">
                     @csrf
                     @method('delete')
-                    <button class="btn btn-primary" data-bs-dismiss="modal" style="border-color: black">Yes, Delete</button>
+                    @can('delete', $dialog)
+                        <button class="btn btn-secondary px-3" data-bs-dismiss="modal" style="border-color: black;background-color: red">Yes, Delete</button>
+                    @endcan
                 </form>
-                </button>
+                </button> 
             </div>
         </div>
     </div>

@@ -51,7 +51,7 @@
      }
 
      .d-flex {
-         order: 5;
+         /* order: 5; */
      }
 
      .col-3 {

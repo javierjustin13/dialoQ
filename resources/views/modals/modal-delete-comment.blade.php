@@ -24,7 +24,7 @@
                 <form method="POST" action="{{ route('dialogues.comments.destroy',[$dialog->id, $comment->id]) }}">
                     @csrf
                     @method('delete')
-                    <button class="btn btn-primary" data-bs-dismiss="modal" style="border-color: black">Yes, Delete</button>
+                    <button class="btn" data-bs-dismiss="modal" style="border-color: black">Yes, Delete</button>
                 </form>
                 </button>
             </div>
