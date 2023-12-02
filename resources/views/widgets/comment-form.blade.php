@@ -7,6 +7,6 @@
         @error('comment')
             <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
         @enderror
-        <button class="btn btn-dark" type="submit" id="share-btn">SHARE</button>
+        <button class="btn btn-dark px-4" type="submit" id="share-btn">SHARE</button>
     </form>
 @endauth

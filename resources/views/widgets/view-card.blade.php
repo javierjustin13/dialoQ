@@ -46,7 +46,7 @@
             </div>
             <br>
             @include('widgets.comment-form')
-            <hr>
+            <hr style="color: #FCEAFC;border-width:2px">
             @include('widgets.comment')
 
         </div>
