@@ -67,6 +67,7 @@
 
     <script src="{{ asset('js/read-more.js') }}"></script>
     <script src="{{ asset('js/form-submit.js') }}"></script>
+    <script src="{{ asset('js/anchor-click.js') }}"></script>
     @livewireScripts
 </body>
 
