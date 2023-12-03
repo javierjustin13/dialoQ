@@ -61,6 +61,12 @@ p {
 
 .followingbutton {
     background-color: #FCEAFC;
+    font-size: 14px;
+    width: 125px;
+    height: 35px;
+    color: #6C35DE;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .followingbutton:hover {
@@ -71,11 +77,20 @@ p {
 .followbutton{
     background-color: #6C35DE;
     color: #FCEAFC;
+    font-size: 14px;
+    width: 125px;
+    height: 35px;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .followbutton:hover{
     background-color: #FCEAFC;
     color: #6C35DE;
+}
+
+.follow-text{
+    width: 60px;
 }
 
 .modal-content {

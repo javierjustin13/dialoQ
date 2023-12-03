@@ -123,7 +123,9 @@ p {
     background-color: #6C35DE;
 }
 
-.followingbutton {
+/* .followingbutton {
+    width: 70px;
+    height: 35px;
     background-color: #FCEAFC;
 }
 
@@ -140,4 +142,4 @@ p {
 .followbutton:hover{
     background-color: #FCEAFC;
     color: #6C35DE;
-}
+} */
