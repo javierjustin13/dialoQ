@@ -20,11 +20,13 @@
                                     <p class="ml-3">{{ $follower->username }}</p>
                                 </div>
                             </a>
-                            @if (Auth::user()->id == $user->id)
-                                <livewire:follow.remove-follower-list-button :user="$follower" :key="$follower->id" />
-                            @else
-                                <livewire:follow.follow-list-button :user="$follower" :key="$follower->id" />
-                            @endif
+                            @auth
+                                @if (Auth::user()->id == $user->id)
+                                    <livewire:follow.remove-follower-list-button :user="$follower" :key="$follower->id" />
+                                @else
+                                    <livewire:follow.follow-list-button :user="$follower" :key="$follower->id" />
+                                @endif
+                            @endauth
                         </div>
                     @endforeach
                 </div>
