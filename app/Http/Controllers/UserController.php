@@ -13,9 +13,8 @@ class UserController extends Controller
     public function show(User $user)
     {
         $dialogues = $user->dialogues()->get();
-        $users = User::all();
 
-        return view('users.show', compact('user', 'dialogues', 'users'));
+        return view('users.show', compact('user', 'dialogues'));
     }
 
 
