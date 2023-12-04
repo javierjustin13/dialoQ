@@ -14,7 +14,7 @@
 <div class="card-header mb-3 comment-item ">
     <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $comment->user->getImageURL() }}"
             class="d-block ui-w-40 rounded-circle" alt="">
-        <div class="media-body ml-3"> <a href="">{{ $comment->user->username }}</a>
+        <div class="media-body ml-3"> <a href="{{ route('users.show', $comment->user->id) }}">{{ $comment->user->username }}</a>
         </div>
         @auth()
         @can('delete', $comment)
