@@ -26,8 +26,9 @@
 .pagination-info{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 3px;
+    color: #FCEAFC;
 }
 
 .pagination a:hover {

@@ -32,7 +32,8 @@
             <div class="suggestedpeople mt-2">
                 <div class="suggestedname">
                     <img src="{{ $suggested->getImageURL() }}" alt="">
-                    <p class="pl-2">{{ $suggested->username }}</p>
+                    {{-- <p class="pl-2">{{ $suggested->username }}</p> --}}
+                    <p class="pl-2"><a href="{{ route('users.show', $suggested->id) }}">{{ $suggested->username }}</a></p>
                 </div>
                 <livewire:follow.follow-list-button :user="$suggested" :key="$suggested->id" />
             </div>
