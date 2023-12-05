@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="{{ asset('css/widgets/search-bar.css') }}">
 @endpush
 
-<form action="" id="search">
+<form action="" id="search" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
     <div class="p-1 border rounded rounded-pill shadow-sm mb-4 ml-1" id="searchbar">
         <div class="input-group">
             <div class="input-group-prepend">

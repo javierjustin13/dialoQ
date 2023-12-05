@@ -21,6 +21,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@multiavatar/multiavatar/multiavatar.min.js"></script>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     @stack('head')
 
     @livewireStyles
@@ -68,6 +70,11 @@
     <script src="{{ asset('js/read-more.js') }}"></script>
     <script src="{{ asset('js/form-submit.js') }}"></script>
     @livewireScripts
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 
 </html>

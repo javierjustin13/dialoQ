@@ -24,7 +24,12 @@ body {
 
 .login-container{
     /* max-height: 750px; */
-    background-color: #241B35;
+    /* background-color: #241B35; */
+    background-image: url('../../image/login-bg.jpeg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;

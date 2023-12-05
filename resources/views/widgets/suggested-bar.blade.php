@@ -2,8 +2,8 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/suggested-card.css') }}">
 @endpush
 
-<div class="card mb-3 border" style="max-width: 18rem;background-color: #342A45">
-    <div class="card-body ">
+<div class="card mb-3 border" style="max-width: 18rem;background-color: #342A45" data-aos="fade-left" data-aos-delay="200" data-aos-duration="1000">
+    <div class="card-body">
         <div class="card mb-3 border" style="background-color: #241B35" id="suggestedtext">
             <p>PEOPLE YOU MAY KNOW</p>
         </div>

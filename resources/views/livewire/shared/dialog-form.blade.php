@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/dialog-form.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
 @endpush
 
-<div class="p-3 border rounded-3">
+<div class="p-3 border rounded-3" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
     <h4>Share your dialog...</h4>
     <form>
         <input wire:model="title" class="form-control" name = "title" type="text" placeholder="Dialog Title">
