@@ -30,7 +30,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 75vw;
+    /* width: 75vw; */
 }
 
 .right-content {
@@ -40,20 +40,15 @@ body {
     justify-content: flex-start;
 }
 
-.left-content {
-    direction: flex;
-    justify-content: center;
-}
-
 .card-profile {
-    width: 850px;
+    width: 920px;
     height: auto;
     border: none;
     border-radius: 10px;
     background: linear-gradient(270deg,#6c35de 0%,rgba(108, 53, 222, 0) 110.65%);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
     padding: 1vw;
 }
 
@@ -63,7 +58,7 @@ body {
 }
 
 .profile-picture {
-    width: 300px;
+    width: 400px;
     height: 250px;
     display: flex;
     justify-content: center;
@@ -71,11 +66,11 @@ body {
 }
 
 .pp-image {
-    width: 200px;
-    height: 200px;
+    width: 230px;
+    height: 230px;
     align-items: center;
     border-radius: 50%;
-    margin-left: -50px;
+    margin-top: 10px;
 }
 
 .identity {
@@ -88,16 +83,17 @@ body {
 
 .identity button {
     padding: 5px;
-    width: 5vw;
+    width: 80px;
     background-color: #4D425F;
     color: #FFFFFF;
     border-style: solid;
     border-color: black;
     border-radius: 5px;
     border-width: 1px;
-    font-size: 10px;
-    margin-top: 2vh;
-    margin-left: -1vw;
+    font-size: 12px;
+    margin-top: 3vh;
+    margin-left: 10px;
+    /* margin-left: -1vw; */
 }
 
 .stats {
@@ -107,6 +103,7 @@ body {
     justify-content: flex-start;
     color: #000 !important;
     gap: 3vw;
+    margin-top: 5px;
 }
 
 .details-stats {
@@ -116,10 +113,10 @@ body {
 }
 
 .username {
-    font-size: 2vw;
+    font-size: 40px;
     color: #FCEAFC;
     text-decoration: underline;
-    width: 20vw;
+    width: auto;
     margin: 0;
 }
 
@@ -135,25 +132,26 @@ body {
 }
 
 .email {
-    margin-top: -2vh;
+    margin-top: -18px;
     color: #E0E0E0;
 }
 
 .stats-style {
-    font-size: 20px;
+    font-size: 23px;
     color: #FCEAFC;
 }
 
 .name-bio {
-    width: 45vw;
+    width: 920px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-left: 5vw;
+    margin-top: 10px;
 }
 
 .bio {
-    width: 40vw;
+    width: 750px;
     vertical-align: bottom;
     overflow-wrap: break-word;
     color: #FCEAFC;
@@ -228,7 +226,7 @@ body {
     border-radius: 10px;
     background: #342A45;
     padding: 2vw;
-    width: 75vw;
+    width: 920px;
     margin-bottom: 5vh;
 }
 
@@ -262,7 +260,7 @@ body {
 
     .dialogs {
         flex-direction: column;
-        width: 100%;
+        width: 85vw;
     }
 
     .right-content {
@@ -279,7 +277,6 @@ body {
         width: 70px;
         height: 70px;
         border-radius: 50%;
-        margin-left: 0;
     }
 
     .card-profile {
@@ -309,7 +306,7 @@ body {
         font-size: 8px;
         margin-top: 5px;
         margin-bottom: 5px;
-        margin-left: 0;
+        /* margin-left: 0; */
     }
 
     .stats {
@@ -321,7 +318,6 @@ body {
     }
 
     .name-bio {
-        /* margin-left: -40px; */
         margin-top: 15px;
         width: 280px;
     }
@@ -331,8 +327,6 @@ body {
         width: 275px;
         height: 20px;
         color: #000;
-        /* background-color: white;
-        opacity: 0.5; */
         margin-bottom: 2px;
     }
 
@@ -340,8 +334,6 @@ body {
         font-size: 12px;
         width: 275px;
         height: auto;
-        /* background-color: white; */
-        /* opacity: 0.5; */
         margin-bottom: 2px;
     }
 
