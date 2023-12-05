@@ -10,7 +10,7 @@ nav{
 
 .navbar-brand{
     color: #FCEAFC;
-    font-size: 1.8rem;
+    font-size: 20px;
 }
 
 .navbar-brand:hover{
@@ -39,7 +39,7 @@ nav{
 
 .nav-link{
     display: flex;
-    font-size: 1.05rem;
+    font-size: 14px;
     color: #cfcfcf;
 }
 
@@ -50,6 +50,7 @@ nav{
 #navbarNav{
     justify-content: flex-end;
     margin-right: 20px;
+    align-content: center;
 }
 
 #active {

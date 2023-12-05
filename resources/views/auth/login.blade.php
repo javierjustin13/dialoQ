@@ -25,9 +25,9 @@
 
 @section('title', 'Login')
 
-{{-- @section('success')
-@include('widgets.success-message')
-@endsection --}}
+@section('success')
+    @include('widgets.success-message')
+@endsection
 
 @section('login')
 <div class="limiter">
@@ -67,7 +67,7 @@
                 </div>
 
                 <div class="flex-col-c p-t-50">
-                    <a href="{{ route('register')}}" class="txt2">
+                    <a wire:navigate href="{{ route('register')}}" class="txt2">
                         Sign Up
                     </a>
                 </div>

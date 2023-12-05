@@ -26,7 +26,9 @@
 body, html {
 	height: 100%;
 	font-family: eina;
-  background-image: url('../../../image/bg-01.jpg');
+  background-image: url('../../../image/background-login-register.jpeg');
+  background-repeat: no-repeat; 
+  background-size: cover;
 }
 
 /*---------------------------------------------*/
