@@ -14,10 +14,11 @@
                         @auth()
                             @if (Auth::user()->id == $user->id)
                                 <a href="{{ route('users.edit', $user->id) }}">
-                                    <button type="submit">Edit profile</button>
+                                    <button type="submit" class="edit-button">Edit profile</button>
                                 </a>
                             @endif
                         @endauth
+                        @include('users.widgets.user-follow-button')
                     </div>
 
                     <span class="email pt-3">{{ $user->email }} </span>
@@ -36,7 +37,7 @@
                     <div class="bio mb-3">
                         <p>{{ $user->bio }}</p>
                     </div>
-                    @include('users.widgets.user-follow-button')
+
                 </div>
             </div>
         </div>

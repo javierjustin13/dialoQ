@@ -58,16 +58,18 @@ body {
 }
 
 .profile-picture {
-    width: 400px;
-    height: 250px;
+    width: 300px;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .pp-image {
-    width: 230px;
-    height: 230px;
+    width: 180px;
+    height: 180px;
     align-items: center;
     border-radius: 50%;
     margin-top: 10px;
@@ -81,7 +83,7 @@ body {
     justify-content: center;
 }
 
-.identity button {
+.edit-button {
     padding: 5px;
     width: 80px;
     background-color: #4D425F;
@@ -103,7 +105,7 @@ body {
     justify-content: flex-start;
     color: #000 !important;
     gap: 3vw;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .details-stats {
@@ -116,7 +118,7 @@ body {
     font-size: 40px;
     color: #FCEAFC;
     text-decoration: underline;
-    width: auto;
+    width: 400px;
     margin: 0;
 }
 
@@ -132,7 +134,7 @@ body {
 }
 
 .email {
-    margin-top: -18px;
+    margin-top: px;
     color: #E0E0E0;
 }
 
@@ -146,12 +148,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 5vw;
-    margin-top: 10px;
+    margin-left: 120px;
+    /* margin-top: 10px; */
 }
 
 .bio {
-    width: 750px;
+    width: 650px;
     vertical-align: bottom;
     overflow-wrap: break-word;
     color: #FCEAFC;
@@ -179,6 +181,10 @@ body {
     width: 146px;
     height: 43px;
 } */
+
+.btn{
+    margin-top: 2vh;
+}
 
 .btn-follow {
     width: 70px;
