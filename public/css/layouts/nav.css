@@ -58,6 +58,7 @@ nav{
 
 .nav-link:hover{
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6;
+    color: #FCEAFC;
 }
 
 .nav-link:after{
