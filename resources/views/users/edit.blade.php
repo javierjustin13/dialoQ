@@ -1,14 +1,12 @@
 @extends('layouts.app')
 
 @push('head')
-    <link rel="stylesheet" href="{{ asset('css/widgets/suggested-card.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/widgets/search-bar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/users/edit.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
 @endpush
 
 @section('content')
     <div class="edit-profile">
-        <div class="left-side border">
+        <div class="edit-box border">
             <form enctype="multipart/form-data" method="POST" action="{{ route('users.update', $user->id) }}">
                 @csrf
                 @method('PUT')
@@ -48,15 +46,16 @@
                     </div>
                 </div>
             </form>
-            <div>
-                @can('delete', $user)
-                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                        data-bs-target="#UserModal{{ $user->id }}">
-                        DELETE ACCOUNT
-                    </button>
-                    @include('modals.modal-delete-user')
-
-                @endcan
+            <div class="delete-box">
+                <div>
+                    @can('delete', $user)
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#UserModal{{ $user->id }}">
+                            DELETE ACCOUNT
+                        </button>
+                        @include('modals.modal-delete-user')
+                    @endcan
+                </div>
             </div>
         </div>
     </div>

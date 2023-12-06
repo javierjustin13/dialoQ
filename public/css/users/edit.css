@@ -1,7 +1,7 @@
 body{
     background-color: #241B35;
     width: 100%;
-    height: 165vh;
+    height: 70vw;
     display: flex;
     flex-direction: column;
 }
@@ -17,13 +17,15 @@ body{
 }
 
 .edit-profile{
+    height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
 }
 
-.left-side{
+.edit-box{
     background: #342A45;
-    width: 800px;
+    width: 920px;
     height: 820px;
     display: flex;
     flex-direction: column;
@@ -32,7 +34,7 @@ body{
 }
 
 .top{
-    width: 803px;
+    width: 915px;
     height: 305px;
     display: flex;
     flex-direction: row;
@@ -94,6 +96,7 @@ textarea:focus, input:focus {
     display: flex;
     flex-direction: column;
     gap: 3px;
+    margin-left: 55px;
 }
 
 .your-input{
@@ -137,9 +140,9 @@ input[type=file]::file-selector-button {
     background: #241B35;
 }
 
-/* input[type=file]::file-selector-button:hover {
-    background: #6C35DE;
-} */
+#input-pp:hover{
+    background: #241B35;
+}
 
 #editPP::placeholder{
     opacity: 0.1;
@@ -174,12 +177,15 @@ input[type=file]::file-selector-button {
     text-decoration: none;
 }
 
+.btn{
+    font-family: 'eina';
+    border-color: white;
+}
 
-.right-side{
-    width: 600px;
-    height: 750px;
+.delete-box{
+    margin-top: 12px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-start;
 }
 
