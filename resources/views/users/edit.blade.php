@@ -49,10 +49,5 @@
                 </div>
             </form>
         </div>
-
-        <div class="right-content col-3">
-            @include('widgets.search-bar')
-            @include('widgets.suggested-bar')
-        </div>
     </div>
 @endsection
