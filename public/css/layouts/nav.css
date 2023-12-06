@@ -3,9 +3,20 @@
     src: url('../../fonts/eina.ttf');
 }
 
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
 nav{
     background: #4D425F;
     font-family: 'eina';
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    color: #FCEAFC;
 }
 
 .navbar-brand{
@@ -15,6 +26,8 @@ nav{
 
 .navbar-brand:hover{
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6;
+    color: #FCEAFC;
+    background-color: transparent;
 }
 
 .border-profile{
@@ -40,25 +53,26 @@ nav{
 .nav-link{
     display: flex;
     font-size: 14px;
-    color: #cfcfcf;
+    color: #FCEAFC;
 }
 
 .nav-link:hover{
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6;
 }
 
-#navbarNav{
-    justify-content: flex-end;
-    margin-right: 20px;
-    align-content: center;
-}
-
-#active {
+.nav-link:after{
     color: #FCEAFC;
 }
 
-.nav-link:active{
-    color: white;
+#navbarNav{
+    justify-content: flex-end;
+    /* margin-right: 20px; */
+    align-content: center;
+    gap: 10px;
+}
+
+#active {
+    color: #D28ED3;
 }
 
 .logout{
@@ -70,6 +84,10 @@ nav{
 img{
     height: 30px;
     width: 30px;
+}
+
+.bi{
+    color: #FCEAFC;
 }
 
 button, input[type="submit"], input[type="reset"] {
