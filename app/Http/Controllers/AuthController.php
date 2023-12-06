@@ -55,12 +55,6 @@ class AuthController extends Controller
 
             return redirect()->route('home')->with('success', 'Logged in successfully!');
         }
-
-        return back()->withErrors(
-            [
-                'email' => 'Invalid credentials'
-            ]
-        );
     }
 
     public function logout()
