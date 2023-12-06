@@ -48,6 +48,16 @@
                     </div>
                 </div>
             </form>
+            <div>
+                @can('delete', $user)
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#UserModal{{ $user->id }}">
+                        DELETE ACCOUNT
+                    </button>
+                    @include('modals.modal-delete-user')
+
+                @endcan
+            </div>
         </div>
     </div>
 @endsection

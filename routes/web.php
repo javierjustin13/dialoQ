@@ -51,7 +51,7 @@ Route::delete('dialogues/{dialog}/comments/{comment}', [CommentController::class
 
 Route::get('profile', [UserController::class, 'profile'])->name('profile')->middleware('auth');
 
-Route::resource('users', UserController::class)->only('edit', 'update')->middleware('auth');
+Route::resource('users', UserController::class)->only('edit', 'update', 'destroy')->middleware('auth');
 Route::resource('users', UserController::class)->only('show');
 
 Route::post('users/{user}/follow', [UserController::class, 'follow'])->name('users.follow')->middleware('auth');

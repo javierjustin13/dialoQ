@@ -14,4 +14,13 @@ class UserPolicy
     {
         return $user->is($model);
     }
+
+    /**
+     * Determine whether the user can delete the model.
+     */
+    public function delete(User $user, User $model): bool
+    {
+        return $user->is($model);
+    }
 }
+
