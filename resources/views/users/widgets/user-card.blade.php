@@ -21,7 +21,7 @@
                         @include('users.widgets.user-follow-button')
                     </div>
 
-                    <span class="email pt-3">{{ $user->email }} </span>
+                    <span class="email">{{ $user->email }} </span>
 
                     @include('users.widgets.user-stats')
 
