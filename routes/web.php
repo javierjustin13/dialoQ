@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutUsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
@@ -7,8 +8,10 @@ use App\Http\Controllers\CommentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DialogController;
+use App\Http\Controllers\FAQController;
 use App\Http\Controllers\FeedController;
 use App\Http\Controllers\LikeController;
+use App\Http\Controllers\TermController;
 use App\Livewire\Page\HomePage;
 use App\Models\Dialog;
 use App\Models\User;
@@ -57,7 +60,9 @@ Route::resource('users', UserController::class)->only('show');
 Route::post('users/{user}/follow', [UserController::class, 'follow'])->name('users.follow')->middleware('auth');
 Route::post('users/{user}/unfollow', [UserController::class, 'unfollow'])->name('users.unfollow')->middleware('auth');
 
-
+Route::get('aboutus', AboutUsController::class)->name('aboutus');
+Route::get('terms', TermController::class)->name('terms');
+Route::get('FAQ', FAQController::class)->name('FAQ');
 
 
 
