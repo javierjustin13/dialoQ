@@ -24,11 +24,14 @@
 }
 
 body, html {
-	height: 100%;
 	font-family: eina;
-  background-image: url('../../../image/background-login-register.jpeg');
-  background-repeat: no-repeat; 
+  background: rgb(108,53,222);
+  background: linear-gradient(360deg, rgba(108,53,222,1) 0%, rgba(144,73,246,1) 47%, rgba(77,66,95,1) 100%);
+  background-repeat: no-repeat;
   background-size: cover;
+  /* height: 100%; */
+  background-position: center;
+
 }
 
 /*---------------------------------------------*/
