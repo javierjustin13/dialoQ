@@ -25,7 +25,7 @@ class UpdateUserRequest extends FormRequest
             'username' => 'required|min:3|max:20|alpha_dash|unique:users,username,' . auth()->user()->id,
             'name' => 'required|min:2|max:20',
             'bio' => 'nullable|max:150',
-            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:1024'
+            'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ];
     }
 }

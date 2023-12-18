@@ -32,10 +32,17 @@
                     </div>
                 </div>
                 <div class="bottom p-4">
-                    <div class="edit-pp">
+                    {{-- <div class="edit-pp">
                         <div class="your-input">Profile Picture :</div>
                         <input name="image" class="input-pp form-control border" type="file" accept="image/*" id="editPP">
+                    </div> --}}
+                    <div class="wrap-input">
+                        <div class="your-input">Profile Picture :</div>
+                        <input type="file" id="editPP" name="image" class="input-pp border" accept=".png, .jpg, .jpeg">
                     </div>
+                    @error('image')
+                        <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
+                    @enderror
                     <div class="edit-bio">
                         <div class="your-input">BIO :</div>
                         <textarea class="input-bio p-3 border" type="text" id="editBIO" name="bio" style="color: #FCEAFC">{{ $user->bio }}</textarea>
