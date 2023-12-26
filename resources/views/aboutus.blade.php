@@ -4,4 +4,8 @@
     <link rel="stylesheet" href="{{ asset('css/aboutus.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
 @endpush
 
-@section('title', 'Home')
+@section('title', 'About Us')
+
+@section('content')
+
+@endsection
