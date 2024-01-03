@@ -61,7 +61,7 @@ body{
     height: 295px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     margin-left: 20px;
 }
@@ -189,12 +189,121 @@ input[type=file]::file-selector-button {
     justify-content: flex-start;
 }
 
-@media screen and (max-width: 768px) {
-    /* Adjust styles for tablets */
+@media screen and (max-width: 978px) {
+    .container {
+        max-width: 1000px;
+    }
     .edit-box{
-        width: 80%; /* Adjusted width for tablets */
+        width: 80%; 
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        height: 35%;
     }
 
+    .profile-picture{
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+
+    .profile-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .data-req{
+        margin: 0;
+        width: 100%;
+        height: auto;
+        /* justify-conte    nt: center; */
+    }
+    .input-box{
+        width: auto;
+        height: 36.1px;
+    }
+
+    .bottom{
+        margin: 0;
+        /* margin-left: 31px; */
+        width: 260.8px;
+        height: 60%;
+        /* align-items: center; */
+        width: 100%;
+        padding: 10px;
+    }
+
+    .wrap-input{
+        width: 100%;
+        /* width: auto; */
+    }
+
+    .your-input{
+        width: auto;
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+
+    .input-box{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .edit-pp{
+        width: auto;
+    }
+
+    .edit-bio{
+        width: auto;
+    }
+
+    .input-bio{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    .button-save{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .button{
+        margin: 0;
+        width: 75px;
+        height: 25px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    .delete-box{
+        margin: 0;
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+
+    .btn{
+        width: 125x;
+        height: 25px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    #editPP {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    /*  
     .top{
         width: 100%;
         height: 40%;
@@ -332,7 +441,7 @@ input[type=file]::file-selector-button {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-    }
+    } */
 }
 
 @media screen and (max-width: 480px) {
@@ -375,9 +484,9 @@ input[type=file]::file-selector-button {
 
     .data-req{
         margin: 0;
-        width: auto;
+        width: 100%;
         height: auto;
-        justify-content: center;
+        /* justify-conte    nt: center; */
     }
     .input-box{
         width: auto;
@@ -386,13 +495,16 @@ input[type=file]::file-selector-button {
 
     .bottom{
         margin: 0;
-        margin-left: 31px;
+        /* margin-left: 31px; */
         width: 260.8px;
-        height: 60%;,
+        height: 60%;
+        /* align-items: center; */
+        width: 100%;
+        padding: 10px;
     }
 
     .wrap-input{
-        width: 263px;
+        width: 100%;
         /* width: auto; */
     }
 
@@ -403,7 +515,8 @@ input[type=file]::file-selector-button {
     }
 
     .input-box{
-        width: auto;
+        width: 100%;
+        font-size: 0.9rem;
     }
 
     .edit-pp{
@@ -415,7 +528,8 @@ input[type=file]::file-selector-button {
     }
 
     .input-bio{
-        width: 263px;
+        width: 100%;
+        font-size: 0.9rem;
     }
 
     .button-save{
@@ -444,5 +558,16 @@ input[type=file]::file-selector-button {
         border-radius: 5px;
         font-size: 10px;
     }
+
+    #editPP {
+        width: 100%;
+        font-size: 0.9rem;
+    }
 }
 
+@media screen and (max-width: 320px) {
+    /* .bottom{
+        align-items: center;
+        margin-left: 0;
+    } */
+}
