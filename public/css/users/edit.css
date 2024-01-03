@@ -24,7 +24,8 @@ body{
 }
 
 .edit-box{
-    background: #342A45;
+    /* background: #342A45; */
+    background: linear-gradient(270deg, #6C35DE 0%, rgba(108, 53, 222, 0.00) 110.65%);
     width: 920px;
     height: 820px;
     display: flex;
@@ -34,6 +35,7 @@ body{
 }
 
 .top{
+    margin-top: 15px;
     width: 915px;
     height: 305px;
     display: flex;
@@ -42,32 +44,36 @@ body{
 }
 
 .profile-picture{
-    width: 295px;
+    width: 275px;
     height: 295px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .profile-img{
-    width: 295px;
-    height: 295px;
+    width: 100%;
+    height: 275px;
 }
 
 .data-req{
-    width: 508px;
+    width: 550px;
     height: 295px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-right: 25px;
+    margin-left: 20px;
 }
 
 .input-box{
     margin: 4px;
-    width: 490px;
+    width: 535px;
     height: 70px;
     border: none;
     border-radius: 5px;
-    background: #4D425F;
+    background: #654579;
+
 }
 
 ::placeholder{
@@ -77,11 +83,11 @@ body{
     font-family: 'eina';
 }
 
-textarea:focus, input:focus {
+/* textarea:focus, input:focus {
     color: #4A4A4A;
     font-size: 20px;
     font-size: 'eina';
-}
+} */
 
 .input-box{
     font-family: 'eina';
@@ -100,13 +106,14 @@ textarea:focus, input:focus {
 }
 
 .your-input{
+    width: 825px;
     font-family: 'eina';
     font-size: 20px;
     color: #FCEAFC;
 }
 
 .edit-pp{
-    width: 758px;
+    width: 825px;
     height: 70px;
     border-radius: 5px;
     display: flex;
@@ -115,47 +122,40 @@ textarea:focus, input:focus {
 }
 
 input[type=file] {
-    width: 758px;
-    max-width: 100%;
+    width: 818px;
     color: #FCEAFC;
     padding: 5px;
-    background: #4D425F;
+    background: #654579;
     border-radius: 5px;
     border: none;
     font-family: 'eina';
-  }
+    font-size: 15px;
+}
 
 input[type=file]::file-selector-button {
-    /* margin-top: 1px; */
     border: none;
-    width: 100px;
-    height: 30px;
-    margin-left: 2px;
-    border-radius: 5px;
-    font-size: 15px;
     color: #FCEAFC;
-    flex-direction: column;
-    justify-content: center;
     cursor: pointer;
-    background: #241B35;
-}
-
-#input-pp:hover{
-    background: #241B35;
-}
-
-#editPP::placeholder{
-    opacity: 0.1;
+    background: #341d58;
+    font-size: 15px;
+    border-radius: 5px;
+    font-family: 'eina';
+    flex-direction: row;
+    justify-content: center;
 }
 
 .input-bio{
-    width: 758px;
+    width: 818px;
     height: 300px;
     border: none;
     border-radius: 5px;
-    background-color:  #4D425F;
+    background: #654579;
     text-align: start;
+    font-family: 'eina';
+    padding-left: 6px;
+    padding-top: 3px;
 }
+
 
 .button{
     margin-top: 18px;
@@ -188,3 +188,261 @@ input[type=file]::file-selector-button {
     flex-direction: row;
     justify-content: flex-start;
 }
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for tablets */
+    .edit-box{
+        width: 80%; /* Adjusted width for tablets */
+    }
+
+    .top{
+        width: 100%;
+        height: 40%;
+    }
+
+    .profile-picture{
+        padding: 0;
+        margin: 0;
+        width: 250px;
+        height: 250px;
+    }
+
+    .data-req{
+        width: 10%;
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-box{
+        border: none;
+        border-radius: 5px;
+        background: #654579;
+
+    }
+
+    ::placeholder{
+        color: #FCEAFC;
+        opacity: 0.1;
+        font-size: 15px;
+        font-family: 'eina';
+    }
+
+    textarea:focus, input:focus {
+        color: #4A4A4A;
+        font-size: 20px;
+        font-size: 'eina';
+    }
+
+    .input-box{
+        font-family: 'eina';
+        font-size: 20px;
+        color: black;
+        padding: 10px;
+    }
+
+    .bottom{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        margin-left: 55px;
+    }
+
+    .your-input{
+        font-family: 'eina';
+        font-size: 20px;
+        color: #FCEAFC;
+    }
+
+    .edit-pp{
+        width: 758px;
+        height: 70px;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    input[type=file] {
+        width: 758px;
+        max-width: 100%;
+        color: #FCEAFC;
+        padding: 5px;
+        background: #654579;
+        border-radius: 5px;
+        border: none;
+        font-family: 'eina';
+        font-size: 15px;
+    }
+
+    input[type=file]::file-selector-button {
+        border: none;
+        color: #FCEAFC;
+        cursor: pointer;
+        background: #341d58;
+        font-size: 15px;
+        border-radius: 5px;
+        font-family: 'eina';
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .input-bio{
+        width: 758px;
+        height: 300px;
+        border: none;
+        border-radius: 5px;
+        background: #654579;
+        text-align: start;
+        font-family: 'eina';
+        padding-left: 6px;
+        padding-top: 3px;
+    }
+
+
+    .button{
+        margin-top: 18px;
+        width: 165px;
+        height: 33px;
+        background-color: #6C35DE;
+        font-family: 'eina';
+        color: white;
+        border-radius: 5px;
+    }
+
+    .button a{
+        margin-top: 18px;
+        width: 165px;
+        height: 33px;
+        font-family: 'eina';
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+
+    .btn{
+        font-family: 'eina';
+        border-color: white;
+    }
+
+    .delete-box{
+        margin-top: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body{
+        height: 850px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edit-box {
+        width: 95%;
+        height: 710px;
+        justify-content: flex-start;
+    }
+
+    .top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        width: 100%;
+        height: 35%;
+    }
+
+    .profile-picture{
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+
+    .profile-img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .data-req{
+        margin: 0;
+        width: auto;
+        height: auto;
+        justify-content: center;
+    }
+    .input-box{
+        width: auto;
+        height: 36.1px;
+    }
+
+    .bottom{
+        margin: 0;
+        margin-left: 31px;
+        width: 260.8px;
+        height: 60%;,
+    }
+
+    .wrap-input{
+        width: 263px;
+        /* width: auto; */
+    }
+
+    .your-input{
+        width: auto;
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+
+    .input-box{
+        width: auto;
+    }
+
+    .edit-pp{
+        width: auto;
+    }
+
+    .edit-bio{
+        width: auto;
+    }
+
+    .input-bio{
+        width: 263px;
+    }
+
+    .button-save{
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .button{
+        margin: 0;
+        width: 75px;
+        height: 25px;
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    .delete-box{
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .btn{
+        width: 125x;
+        height: 25px;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+}
+

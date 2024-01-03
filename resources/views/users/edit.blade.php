@@ -12,7 +12,7 @@
                 @method('PUT')
                 <div class="top">
                     <div class="profile-picture">
-                        <img class="profile-img p-4" style="border-radius: 50%; height:300px; width:300px"
+                        <img class="profile-img" style="border-radius: 50%;"
                             src="{{ $user->getImageURL() }}" alt="profile picture">
                     </div>
                     <div class="data-req">
@@ -31,7 +31,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bottom p-4">
+                <div class="bottom">
                     {{-- <div class="edit-pp">
                         <div class="your-input">Profile Picture :</div>
                         <input name="image" class="input-pp form-control border" type="file" accept="image/*" id="editPP">
@@ -45,7 +45,7 @@
                     @enderror
                     <div class="edit-bio">
                         <div class="your-input">BIO :</div>
-                        <textarea class="input-bio p-3 border" type="text" id="editBIO" name="bio" style="color: #FCEAFC">{{ $user->bio }}</textarea>
+                        <textarea class="input-bio border" type="text" id="editBIO" name="bio" style="color: #FCEAFC; font-size: 15px;">{{ $user->bio }}</textarea>
                     </div>
                     <div class="button-save">
                         <button class="button" type="submit">SAVE CHANGES</button>
