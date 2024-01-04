@@ -18,3 +18,31 @@ body{
 .col-6 h2{
     text-align: center;
 }
+
+@media screen and (max-width: 1400px) {
+    .pl-2{
+        font-size: 0.75rem;
+    }
+    
+    .suggestedpeople{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .followbutton{
+        margin-left: 35px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #suggestedtext{
+        height: 53px !important;
+    }
+    .card .mb-3 .border {
+        height: 50px;
+    }
+    .copyright{
+        font-size: 0.8rem;
+    }
+    
+}
