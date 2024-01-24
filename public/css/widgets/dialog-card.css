@@ -59,39 +59,34 @@ p {
     color: #FCEAFC;
 }
 
-.followingbutton {
-    background-color: #FCEAFC;
-    font-size: 14px;
-    width: 125px;
-    height: 35px;
-    color: #6C35DE;
+.follow-button{
     display: flex;
-    justify-content: flex-start;
-}
-
-.followingbutton:hover {
-    background-color: #6C35DE;
-    color: #FCEAFC;
-}
-
-.followbutton{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: #6C35DE;
     color: #FCEAFC;
     font-size: 14px;
+    border-radius: 7px;
     width: 125px;
     height: 35px;
+    gap: 5px;
+}
+
+.following-button{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #6C35DE;
+    color: white;
+    font-size: 14px;
+    border-radius: 7px;
+    width: 125px;
+    height: 35px;
+    gap: 5px;
 }
 
-.followbutton:hover{
-    background-color: #FCEAFC;
-    color: #6C35DE;
-}
-
-.follow-text{
-    width: 60px;
-}
 
 .modal-content {
     background-color: #342A45;
