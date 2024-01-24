@@ -31,7 +31,6 @@
 
  @media screen and (max-width: 767px) {
      #leftpane {
-         order: 3;
          width: 100%;
      }
 
@@ -39,25 +38,15 @@
          width: 100%;
      }
 
-     #midpane {
-         order: 3;
-     }
-
      .col-6 {
-         order: 4;
          width: 100%;
-         /* margin-right: 0; */
          display: grid;
      }
 
      .d-flex {
-         /* order: 5; */
      }
 
      .col-3 {
-         /* order: 3; */
-         /* display: none; */
-         /* flex: 1; */
          width: max-content;
      }
 
@@ -67,7 +56,6 @@
 
      .row .gx-4 {
          display: grid;
-         /* grid-template-columns: repeat(3, 1fr); */
      }
 
      #search {
