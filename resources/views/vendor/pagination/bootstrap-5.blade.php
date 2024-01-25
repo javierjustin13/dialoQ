@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="{{ asset('css/pagination.css') }}">
 @endpush
 
-{{-- <div class="pagination-info">
+<div class="pagination-info">
     {!! __('Showing') !!}
     <div class="fw-semibold">{{ $paginator->firstItem() }}</div>
     {!! __('to') !!}
@@ -10,7 +10,7 @@
     {!! __('of') !!}
     <div class="fw-semibold">{{ $paginator->total() }}</div>
     {!! __('results') !!}
-</div> --}}
+</div>
 
 @if ($paginator->hasPages())
     <nav class="pagination-container">

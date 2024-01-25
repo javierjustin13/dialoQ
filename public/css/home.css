@@ -28,7 +28,6 @@
      color: #FCEAFC;
  }
 
-
  @media screen and (max-width: 767px) {
      #leftpane {
          width: 100%;
@@ -86,9 +85,8 @@
          display: block;
      }
 
-     .pagination-container {
+     /* .pagination-container {
          order: 6;
-         /* Menempatkan pagination di bawah elemen lainnya */
      }
 
      .pagination {
@@ -111,7 +109,7 @@
      .pagination a {
          padding: 5px 10px;
          font-size: 14px;
-     }
+     } */
 
  }
 
@@ -119,13 +117,13 @@
      display: none;
  }
 
- .pagination-desktop {
+ /* .pagination-desktop {
      display: block;
  }
 
  .pagination-mobile {
      display: none;
- }
+ } */
 
  @media screen and (min-width: 320px) and (max-width: 500px) {
     .col-6 a{
@@ -135,7 +133,7 @@
          max-width: 67vw;
      }
 
-     .pagination-desktop {
+     /* .pagination-desktop {
          display: none;
      }
 
@@ -151,5 +149,5 @@
 
      .pagination-mobile .page-link {
          padding: 5px 10px;
-     }
+     } */
  }
