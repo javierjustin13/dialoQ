@@ -117,6 +117,54 @@ button, input[type="submit"], input[type="reset"] {
     margin-top: 5px;
 }
 
+.navbar-toggler{
+    width: 50px;
+    height: 40px;
+    border: 1px solid #FCEAFC;
+    margin-right: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    box-shadow: 0 0 5px #fff, 0 0 5px #ff4da6;
+}
+
+.navbar-toggler-icon{
+    color: #FCEAFC;
+    background-image: none;
+}
+
+.line {
+    height: 2px;
+    width: 25px;
+    background-color: #FCEAFC; /* Set your desired color */
+    margin: 6px 0;
+    display: block;
+    transition: 0.4s;
+}
+
+.navbar-toggler-icon.active .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.navbar-toggler-icon.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler-icon.active .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.logout-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (min-width: 992px) {
     .logout-text{
         display: none;
