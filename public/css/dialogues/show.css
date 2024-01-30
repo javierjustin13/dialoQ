@@ -123,23 +123,30 @@ p {
     background-color: #6C35DE;
 }
 
-/* .followingbutton {
-    width: 70px;
+.follow-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #6C35DE;
+    color: #FCEAFC;
+    font-size: 14px;
+    border-radius: 7px;
+    width: 125px;
     height: 35px;
-    background-color: #FCEAFC;
+    gap: 5px;
 }
 
-.followingbutton:hover {
-    background-color: #6C35DE;
-    color: #FCEAFC;
-}
-
-.followbutton{
-    background-color: #6C35DE;
-    color: #FCEAFC;
-}
-
-.followbutton:hover{
-    background-color: #FCEAFC;
+.following-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     color: #6C35DE;
-} */
+    font-size: 14px;
+    border-radius: 7px;
+    width: 125px;
+    height: 35px;
+    gap: 5px;
+}
