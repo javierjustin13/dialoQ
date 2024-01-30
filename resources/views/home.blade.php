@@ -15,14 +15,13 @@
                 border-color: white; color: #FCEAFC; text-align: center;">LOGIN TO START YOUR DIALOG</h2>
             @endguest
         </div>
-        <div class="row gx-4">
+        <div class="row gx-5">
             <div class="col-3 " id="leftpane">
                 <livewire:shared.dialog-form />
             </div>
             <div class="col-6" id="midborder">
                 <livewire:shared.dialog-list />
                 {{ $dialogues->links() }}
-
             </div>
             <div class="col-3" id="rightpane">
                 @include('widgets.search-bar')

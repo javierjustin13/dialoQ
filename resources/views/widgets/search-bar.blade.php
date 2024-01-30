@@ -10,8 +10,6 @@
                     <i class="bi bi-search" id="magnifying" style="color: #FCEAFC"></i>
                 </button>
             </div>
-            {{-- <input type="search" placeholder="Search dialoQ" aria-describedby="button-addon2"
-                class="form-control border-0 rounded-pill"> --}}
             <div class="dropdown m-0">
                 <input type="search" placeholder="Search people" id="myInput" oninput="filterFunction()"
                     class="form-control border-0 rounded-pill" aria-describedby="button-addon2" autocomplete="off">
