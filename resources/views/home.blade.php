@@ -17,6 +17,7 @@
         </div>
         <div class="row gx-5">
             <div class="col-3 " id="leftpane">
+                @include('widgets.search-bar')
                 <livewire:shared.dialog-form />
             </div>
             <div class="col-6" id="midborder">
@@ -24,7 +25,7 @@
                 {{ $dialogues->links() }}
             </div>
             <div class="col-3" id="rightpane">
-                @include('widgets.search-bar')
+                {{-- @include('widgets.search-bar') --}}
                 @include('widgets.suggested-bar')
                 @include('widgets.copyright')
             </div>
