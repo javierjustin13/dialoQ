@@ -206,6 +206,10 @@ p {
          display: block;
      }
 
+     .col-3{
+        display: none;
+     }
+
  }
 
  #more {
