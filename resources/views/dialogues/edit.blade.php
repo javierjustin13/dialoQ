@@ -8,8 +8,9 @@
 
 @section('content')
 <div class="container">
-    <div class="row gx-4">
+    <div class="row gx-5">
         <div class="col-3 " id="leftpane">
+            @include('widgets.search-bar')
             <livewire:shared.dialog-form />
         </div>
         <div class="col-6 p-3 border rounded-4" id="midpane">
@@ -17,7 +18,6 @@
             @include('widgets.edit-card')
         </div>
         <div class="col-3">
-            @include('widgets.search-bar')
             @include('widgets.suggested-bar')
             @include('widgets.copyright')
         </div>

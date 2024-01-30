@@ -100,3 +100,52 @@ p {
     color: #FCEAFC;
 }
 
+@media screen and (max-width: 1400px) {
+    .pl-2{
+        font-size: 0.75rem;
+    }
+
+    .suggestedpeople{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .followbutton{
+        margin-left: 35px;
+    }
+}
+
+.more {display: none};
+
+#postcard {
+    background-color: #241B35;
+    min-height: 100px;
+    padding: 10px;
+    margin: 10px; 
+}
+
+
+
+@media screen and (max-width: 767px) {
+    #postcard {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .media img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .media img {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #postcard {
+        padding: 12px;
+        margin: 12px;
+    }
+}
