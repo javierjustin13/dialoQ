@@ -52,12 +52,6 @@
          /* display: grid; */
      }
 
-     .col-3 {
-         /* width: max-content; */
-         /* padding: 0;
-         margin: 0; */
-     }
-
      .card {
          display: none;
          visibility: hidden;
@@ -111,7 +105,8 @@
     .col-6 a{
         font-size: 0.9rem !important;
     }
-     #myInput {b
+
+     #myInput {
          max-width: 67vw;
      }
  }
