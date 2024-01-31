@@ -45,6 +45,7 @@
 
      #rightpane {
          width: 100%;
+         display: none;
      }
 
      .col-6 {
