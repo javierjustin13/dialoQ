@@ -21,7 +21,7 @@
     </div>
 </div>
 
-if(auth()->guest())
+{{-- if(auth()->guest())
 {
     return $this->redirect(route('login', true));
-}
+} --}}
