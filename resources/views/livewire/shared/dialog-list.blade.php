@@ -2,7 +2,7 @@
     <link rel="stylesheet" href="{{ asset('css/widgets/dialog-card.css') }}">
 @endpush
 
-<div class="p-3" id="midpane">
+<div class="p-3 pt-0" id="midpane">
     @forelse ($dialogues as $dialog)
         @include('dialogues.widgets.dialog-card')
     @empty

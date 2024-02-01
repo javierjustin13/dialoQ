@@ -11,8 +11,8 @@
         <div class="success-message">
             @include('widgets.success-message')
             @guest
-                <h2 class="py-3 mb-3" style= "background-color: #342A45; border-radius: 10px; border-style: solid; border-width: 1px;
-                border-color: white; color: #FCEAFC; text-align: center;">LOGIN TO START YOUR DIALOG</h2>
+                <h2 class="py-3 mb-3" style= "background-color: white; border-radius: 10px; border-style: solid; border-width: 1px;
+                border-color: white; color: #050505; text-align: center; box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);">LOGIN TO START YOUR DIALOG</h2>
             @endguest
         </div>
         <div class="row gx-5">

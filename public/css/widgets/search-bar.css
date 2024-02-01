@@ -15,19 +15,18 @@
 
 .form-control::placeholder {
     font-size: 0.95rem;
-    color: #aaa;
+    color: #050505;
     font-style: italic;
 }
 
 #searchbar {
     background-color: white;
     box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
-
 }
 
 #myInput{
     background-color: #F0F2F5;
-    color: #FCEAFC;
+    color: #050505;
 }
 
 #myInput::placeholder{
@@ -46,7 +45,7 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f6f6f6;
+    background-color: white;
     min-width: 230px;
     overflow: auto;
     border: 1px solid #ddd;

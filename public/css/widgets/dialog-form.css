@@ -29,11 +29,11 @@
 }
 
 .form-control:focus{
-    background-color: #241B35;
+    background-color: #F0F2F5;
     color: #050505;
 }
 
 .form-control:focus::placeholder{
-    color: #FCEAFC;
+    color: #050505;
     opacity: 1;
 }

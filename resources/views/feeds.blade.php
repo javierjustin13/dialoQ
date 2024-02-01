@@ -16,7 +16,7 @@
                 @include('widgets.success-message')
                 @guest
                     <h2 class="py-3 mb-3 border"
-                        style="background-color: #342A45; color:#FCEAFC; border-radius:10px; text-align:center;">LOGIN TO START
+                        style="background-color: white; color:#FCEAFC; border-radius:10px; text-align:center;box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);">LOGIN TO START
                     YOUR DIALOG</h2> @endguest
 
                 @auth

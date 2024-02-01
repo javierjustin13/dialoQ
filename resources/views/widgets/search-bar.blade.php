@@ -13,13 +13,13 @@
             <div class="dropdown m-0">
                 <input type="search" placeholder="Search people" id="myInput" oninput="filterFunction()"
                     class="form-control border-0 rounded-pill" aria-describedby="button-addon2" autocomplete="off">
-                <div id="myDropdown" class="dropdown-content" style="background-color: #342A45;border-top:0px">
+                <div id="myDropdown" class="dropdown-content" style="background-color: white;border-top:0px">
                     @foreach ($users as $user)
                     <div class="percontent">
                         <a href="{{ route('users.show', $user->id) }}">
                             <div class="media flex-wrap w-100 align-items-center">
                                 <img src="{{ $user->getImageURL() }}" class="d-block ui-w-40 rounded-circle" alt="">
-                                <p class="ml-2" style="color: #FCEAFC">{{ $user->username }}</p>
+                                <p class="ml-2" style="color: #050505">{{ $user->username }}</p>
                             </div>
                         </a>
                     </div>
