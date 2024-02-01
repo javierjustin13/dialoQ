@@ -20,11 +20,11 @@
             </div>
             <div class="modal-footer" style="margin-left: 2%;margin-right: 2%">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                    style="background-color: #039FFC;color: white;">No, Cancel</button>
+                    style="background-color: #039FFC;color: white; border: 1px solid black">No, Cancel</button>
                 <form method="POST" action="{{ route('dialogues.comments.destroy',[$dialog->id, $comment->id]) }}">
                     @csrf
                     @method('delete')
-                    <button class="btn" data-bs-dismiss="modal" style="border-color: black;background-color:red;color: #FCEAFC">Yes, Delete</button>
+                    <button class="btn" data-bs-dismiss="modal" style="border-color: black;background-color:red;color: white">Yes, Delete</button>
                 </form>
                 </button>
             </div>

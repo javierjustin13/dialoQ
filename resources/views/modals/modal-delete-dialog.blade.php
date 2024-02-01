@@ -25,7 +25,7 @@
                     @csrf
                     @method('delete')
                     @can('delete', $dialog)
-                        <button class="btn btn-secondary px-3" data-bs-dismiss="modal" style="border-color: black;background-color: red">Yes, Delete</button>
+                        <button class="btn btn-secondary px-3" data-bs-dismiss="modal" style="border-color: black;background-color: red; color: white">Yes, Delete</button>
                     @endcan
                 </form>
                 </button>
