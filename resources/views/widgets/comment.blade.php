@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <hr style="color: #FCEAFC">
+    <hr style="color: #545454">
 @empty
     <p class="text-center mt-4" style="color:#050505 ">No Comments Found.</p>
 @endforelse
