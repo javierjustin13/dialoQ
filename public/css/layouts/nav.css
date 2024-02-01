@@ -6,10 +6,11 @@
 .navbar{
     display: flex;
     align-items: center;
+    box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.5);
 }
 
 nav{
-    background: #4D425F;
+    /* background: #4D425F; */
     font-family: 'eina';
 }
 
@@ -20,7 +21,7 @@ nav{
 }
 
 .navbar-brand{
-    color: #FCEAFC;
+    color: #050505;
     font-size: 20px;
 }
 
@@ -34,7 +35,7 @@ nav{
     box-sizing: content-box;
     width: 90%;
     height: 100%;
-    border: #FCEAFC 2px solid;
+    border: #050505 1.5px solid;
     padding: 5px;
     height: 30px;
     background-color: transparent;
@@ -53,16 +54,16 @@ nav{
 .nav-link{
     display: flex;
     font-size: 14px;
-    color: #FCEAFC;
+    color: #707276;
 }
 
 .nav-link:hover{
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6;
-    color: #FCEAFC;
+    text-shadow: 0 0 20px #fff, 0 0 30px #050505;
+    color: #050505;
 }
 
 .nav-link:after{
-    color: #FCEAFC;
+    color: #707276;
 }
 
 #navbarNav{
@@ -73,7 +74,7 @@ nav{
 }
 
 #active {
-    color: #D28ED3;
+    color: #050505;
 }
 
 .logout{

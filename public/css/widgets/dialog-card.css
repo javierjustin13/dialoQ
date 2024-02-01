@@ -2,11 +2,11 @@
     text-align: center;
 }
 #midpane {
-    background-color: #342A45;
+    /* background-color: #342A45; */
 }
 
 #midpane a, span {
-    color: #FCEAFC;
+    color: #050505;
 }
 
 hr{
@@ -16,6 +16,7 @@ hr{
 #postcard {
     background-color: white;
     min-height: 100px;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
 }
 
 .media img {
@@ -49,14 +50,14 @@ p {
 .card-body h4 {
     word-wrap: break-word;
     word-break: break-all;
-    color: #FCEAFC;
+    color: #67696D;
 }
 
 .card-body p {
     word-wrap: break-word;
     word-break: break-all;
     min-height: 50px;
-    color: #FCEAFC;
+    color: #67696D;
 }
 
 .follow-button{
@@ -64,7 +65,7 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #6C35DE;
+    background-color: #039FFC;
     color: #FCEAFC;
     font-size: 14px;
     border-radius: 7px;
@@ -78,8 +79,8 @@ p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: white;
-    color: #6C35DE;
+    background-color: #050505;
+    color: #039FFC;
     font-size: 14px;
     border-radius: 7px;
     width: 125px;
@@ -93,6 +94,14 @@ p {
 }
 
 .more {display: none};
+
+.follow-text{
+    color: white;
+}
+
+.bi-heart{
+    color: #050505 !important;
+}
 
 @media screen and (max-width: 767px) {
     #postcard {

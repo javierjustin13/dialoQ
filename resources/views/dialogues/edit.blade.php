@@ -13,7 +13,7 @@
             @include('widgets.search-bar')
             <livewire:shared.dialog-form />
         </div>
-        <div class="col-6 p-3 border rounded-4" id="midpane">
+        <div class="col-6 p-3" id="midpane">
             @include('widgets.success-message')
             @include('widgets.edit-card')
         </div>

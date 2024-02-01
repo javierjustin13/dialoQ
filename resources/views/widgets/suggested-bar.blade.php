@@ -8,7 +8,7 @@
 
     <div class="card mb-3 border" style="max-width: 18rem;background-color: #342A45" data-aos="fade-left"
         data-aos-delay="200" data-aos-duration="1000">
-        <div class="suggested-card">
+        <div class="suggested-card rounded">
             @auth
                 @php
                     if (Auth::user()->followings->count() > 0) {

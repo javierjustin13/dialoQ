@@ -7,7 +7,7 @@
         <div class="input-group">
             <div class="input-group-prepend">
                 <button id="button-addon2" type="submit" class="btn btn-link text-warning">
-                    <i class="bi bi-search" id="magnifying" style="color: #FCEAFC"></i>
+                    <i class="bi bi-search" id="magnifying" style="color: #050505"></i>
                 </button>
             </div>
             <div class="dropdown m-0">

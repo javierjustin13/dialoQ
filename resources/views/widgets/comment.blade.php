@@ -27,8 +27,8 @@
         <div class="commentfooter">
             <p class=" ms-5 pl-2" id="textcomment">{{ $comment->content }}</p>
             <div class="time-box" id="timing">
-                <i class="bi bi-clock" style="color: #FCEAFC"></i>
-                <span class="time-text" style="color: #FCEAFC">
+                <i class="bi bi-clock" style="color: #050505"></i>
+                <span class="time-text" style="color: #050505">
                     {{ $comment->created_at->diffForHumans() }}
                 </span>
             </div>

@@ -1,5 +1,6 @@
 #leftpane h4{
     margin-bottom: 15px;
+    color: #050505;
 }
 
 .form-control::placeholder{
@@ -8,26 +9,28 @@
 }
 
 .rounded-3{
-    background-color: #342A45;
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
+
 }
 
 .rounded-3 h4{
-    color: #FCEAFC;
+    color: #050505;
 }
 
 .form-control::placeholder{
-    color: #FCEAFC;
+    color: #050505;
     opacity: 1;
 }
 
 .form-control{
-    background-color: #241B35;
-    color: #FCEAFC;
+    background-color: #F0F2F5;
+    color: #050505;
 }
 
 .form-control:focus{
     background-color: #241B35;
-    color: #FCEAFC;
+    color: #050505;
 }
 
 .form-control:focus::placeholder{

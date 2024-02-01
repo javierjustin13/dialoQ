@@ -44,7 +44,7 @@
                     </span>
                 </div>
                 <span class="text-muted">
-                    <i class="bi bi-clock me-1" style="color:#FCEAFC"></i>
+                    <i class="bi bi-clock me-1" style="color:#050505"></i>
                     <span class="duration">
                         {{ $dialog->created_at->diffForHumans() }}
                     </span>

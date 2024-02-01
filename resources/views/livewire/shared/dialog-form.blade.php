@@ -17,8 +17,8 @@
             @enderror
         </div>
         @auth
-            <button wire.loading.attr="disabled " wire:click.prevent="storeDialog" wire:loading.delay.remove class="btn btn-dark my-2 px-4"
-                type="submit" style="background-color: #6C35DE">Share</button>
+            <button wire.loading.attr="disabled " wire:click.prevent="storeDialog" wire:loading.delay.remove class="btn btn-dark my-2 px-4 border-0"
+                type="submit" style="background-color: #039FFC">Share</button>
             <div wire:loading.delay class="ms-3 spinner-grow spinner-grow-sm text-white" role="status"></div>
         @endauth
         @guest
