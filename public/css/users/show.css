@@ -88,16 +88,13 @@ body {
 .edit-button {
     padding: 5px;
     width: 80px;
-    background-color: #4D425F;
+    background-color: #039ffc;
     color: #FFFFFF;
-    border-style: solid;
-    border-color: black;
     border-radius: 5px;
-    border-width: 1px;
+    border: 1px solid #050505;
     font-size: 12px;
     margin-top: 3vh;
     margin-left: 10px;
-    /* margin-left: -1vw; */
 }
 
 .stats {
