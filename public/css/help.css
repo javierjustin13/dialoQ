@@ -1,4 +1,4 @@
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -29,8 +29,12 @@ Primary style
 body {
   font-size: 100%;
   font-family: "eina";
-  color: #4e5359;
-  background-color: #241B35;
+  color: #050505;
+  background-color: #F0f2f5;
+}
+
+.h1{
+    color: #050505;
 }
 
 body::after {
@@ -63,14 +67,14 @@ body.cd-overlay::after {
 }
 
 a {
-  color: #a9c056;
+  color: #050505;
   text-decoration: none;
 }
 
-/* -------------------------------- 
-  
-  Main components 
-  
+/* --------------------------------
+
+  Main components
+
   -------------------------------- */
 header {
   position: relative;
@@ -81,7 +85,7 @@ header {
 }
 
 header h1 {
-  color: #ffffff;
+  color: #050505;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 20px;

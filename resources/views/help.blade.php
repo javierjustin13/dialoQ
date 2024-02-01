@@ -9,7 +9,7 @@
 @section('content')
 
     <header>
-      <h1 style="text-align: center">HELP PAGES</h1>
+      <h1 style="text-align: center;">HELP PAGES</h1>
     </header>
     <section class="faq">
       <ul class="categories">
