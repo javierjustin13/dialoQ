@@ -38,6 +38,14 @@ body{
     box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
 }
 
+.count-comment{
+    color: #67696D;
+}
+
+.edit:active{
+    text-decoration: underline;
+}
+
 a {
     text-decoration: none;
     color: #050505;

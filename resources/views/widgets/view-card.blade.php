@@ -20,7 +20,7 @@
             <div class="text-muted small ml-3 d-flex align-items-center">
                 @auth()
                     @can('update', $dialog)
-                        <a class="mx-2" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
+                        <a class="edit mx-2" style="color: #67696D;" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
                         <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DialogModal{{ $dialog->id }}"> X </button>
                     @endcan
                 @endauth
@@ -42,8 +42,8 @@
                 </span>
             </div>
             <span class="text-muted">
-                <i class="bi bi-clock me-1" style="color:#050505"></i>
-                <span class="duration">
+                <i class="bi bi-clock me-1" style="color: #67696D"></i>
+                <span class="duration" style="color: #67696D">
                     {{ $dialog->created_at->diffForHumans() }}
                 </span>
             </span>
