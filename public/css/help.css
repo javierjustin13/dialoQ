@@ -166,6 +166,21 @@ header h1 {
   border-bottom: none;
 }
 
+/* navbar */
+
+.navbar>.container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -20px;
+    margin-right: 0;
+}
+
+.navbar>.container-fluid>button.navbar-toggler{
+    margin-left: 120px;
+}
+
+
 @media only screen and (min-width: 768px) {
   .categories {
     width: 20%;
