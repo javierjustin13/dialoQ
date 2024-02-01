@@ -18,7 +18,7 @@
             @else
                 <form method="POST" action="{{ route('users.follow', $dialog->user->id) }}">
                     @csrf
-                    <button class="follow-button" type="submit">
+                    <button class="follow-button" style="color: white" type="submit">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-person-fill-add" viewBox="0 0 16 16" style="color: white">
                             <path
