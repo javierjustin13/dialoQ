@@ -22,8 +22,8 @@
             <div wire:loading.delay class="ms-3 spinner-grow spinner-grow-sm text-white" role="status"></div>
         @endauth
         @guest
-            <a wire:navigate href="{{ route('login') }}" class="btn btn-dark my-2 px-4" type="submit"
-                style="background-color: #6C35DE">Share</a>
+            <a wire:navigate href="{{ route('login') }}" class="btn my-2 px-4" type="submit"
+                style="background-color: #039FFC; color: white;">Share</a>
         @endguest
     </form>
 </div>
