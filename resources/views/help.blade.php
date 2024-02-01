@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @push('head')
-    <link rel="stylesheet" href="{{ asset('css/faq.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
+    <link rel="stylesheet" href="{{ asset('css/help.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
 @endpush
 
-@section('title', 'FAQ')
+@section('title', 'help')
 
 @section('content')
 
     <header>
-      <h1 style="text-align: center">FAQ PAGES</h1>
+      <h1 style="text-align: center">HELP PAGES</h1>
     </header>
     <section class="faq">
       <ul class="categories">
@@ -232,6 +232,6 @@
       <a href="#0" class="cd-close-panel">Close</a>
     </section> <!-- faq -->
 
-    <script src="{{ asset('js/faq.js') }}"></script>
+    <script src="{{ asset('js/help.js') }}"></script>
     
 @endsection

@@ -6,9 +6,9 @@
     <div class="copyright-header" style="color: #FCEAFC">
         <a href="{{ route('terms') }}">Terms</a>
         <p>&nbsp|&nbsp</p>
-        <a href="{{ route('aboutus') }}">About Us</a>
-        <p>&nbsp|&nbsp</p>
-        <a href="{{ route('FAQ') }}">FAQ</a>
+        {{-- <a href="{{ route('aboutus') }}">About Us</a> --}}
+        {{-- <p>&nbsp|&nbsp</p> --}}
+        <a href="{{ route('help') }}">Help</a>
     </div>
     <div class="copyright-footer">
         &copy 2023 dialoQ by DEGJA
