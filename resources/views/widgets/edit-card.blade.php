@@ -8,11 +8,11 @@
 
 
 
-<div class="p-3 border rounded-4 mb-3 border" id="postcard">
+<div class="p-3 border rounded-4 mb-3 border" id="postcard" data-aos="fade-up" data-aos-duration="1500">
     <div class="card-header">
         <div class="media flex-wrap w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
                 class="d-block ui-w-40 rounded-circle" alt="">
-            <div class="media-body ml-3"> <a href="{{ route('users.show', $dialog->user->id) }}"
+            <div class="media-body ml-3"> <a style="color: #050505" href="{{ route('users.show', $dialog->user->id) }}"
                     data-abc="true">{{ $dialog->user->username }}</a>
             </div>
             <div class="text-muted small ml-3 d-flex align-items-center">
@@ -24,11 +24,11 @@
         <form method="POST" action="{{ route('dialogues.update', $dialog->id) }}">
             @csrf
             @method('PUT')
-            <textarea id="titlearea" name="new_title" class="form-control mb-3 border" cols="35" oninput="auto_grow(this)">{{ $dialog->title }}</textarea>
+            <textarea id="titlearea" name="new_title" class="form-control mb-3" cols="35" oninput="auto_grow(this)">{{ $dialog->title }}</textarea>
             @error('new_title')
                 <span class="my-2 d-block fs-6 text-danger"> {{ $message }} </span>
             @enderror
-            <textarea id="contentarea" name="new_content" class="form-control border" cols="35" oninput="auto_grow(this)">{{ $dialog->content }}</textarea>
+            <textarea id="contentarea" name="new_content" class="form-control" cols="35" oninput="auto_grow(this)">{{ $dialog->content }}</textarea>
             @error('new_content')
                 <span class="my-2 d-block fs-6 text-danger"> {{ $message }} </span>
             @enderror

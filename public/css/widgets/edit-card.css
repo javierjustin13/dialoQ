@@ -2,20 +2,23 @@
     font-family: 'eina';
     src: url('../fonts/eina.ttf');
 }
+
+body{
+    background-color: #F0F2F5;
+}
 @font-face {
     font-family: 'eina-bold';
     src: url('../fonts/Eina-Bold.ttf');
 }
 
-#midpane h2 {
-    text-align: center;
-}
-#midpane {
-    background-color: #342A45;
-}
 #postcard {
-    /* background-color: #241B35; */
+    background-color: white;
     min-height: 100px;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
+}
+
+.col-6{
+    margin-top: -16px;
 }
 
 .media img {
@@ -49,34 +52,34 @@ p {
 #titlearea{
     font-family: 'eina';
     resize: none;
-    background-color: #4D425F;
+    background-color: #F0F2F5;
     border-radius: 10px;
     border: 0;
     padding: 10px;
     font-size: 1.5em;
     max-width: -webkit-fill-available;
-    color: #FCEAFC;
+    color: #67696D;
 }
 
 #contentarea{
     font-family: 'eina';
     resize: none;
-    background-color: #4D425F;
+    background-color: #F0F2F5;
     border-radius: 10px;
     border: 0;
     padding: 10px;
     font-size: 1em;
     max-width: -webkit-fill-available;
     min-width: -webkit-fill-available;
-    color: #FCEAFC;
+    color: #67696D;
     min-height: 100px;
 }
 
 #updatebutton{
-    background-color: #6C35DE;
-    color: #FCEAFC;
+    background-color: #039FFC;
+    color: white;
+    border: none;
 }
-
 
 #updatebutton::after{
     border: 0;
@@ -97,7 +100,7 @@ p {
 
 .modal-content {
     background-color: #241B35;
-    color: #FCEAFC;
+    color: white;
 }
 
 @media screen and (max-width: 1400px) {
@@ -121,10 +124,8 @@ p {
     background-color: #241B35;
     min-height: 100px;
     padding: 10px;
-    margin: 10px; 
+    margin: 10px;
 }
-
-
 
 @media screen and (max-width: 767px) {
     #postcard {
