@@ -6,10 +6,10 @@
         </div>
         @include('widgets.follow-button')
         <div class="text-muted small ml-3 d-flex align-items-center">
-            <a href="{{ route('dialogues.show', $dialog->id) }}">View</a>
+            <a id= "view-icon" href="{{ route('dialogues.show', $dialog->id) }}">View</a>
             @auth()
                 @can('update', $dialog)
-                    <a class="mx-2" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
+                    <a class="mx-2" id="edit-icon" href="{{ route('dialogues.edit', $dialog->id) }}"> Edit </a>
                     <button class="ms-1 btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#DialogModal{{ $dialog->id }}"> X </button>
                 @endcan
             @endauth

@@ -6,7 +6,7 @@
 }
 
 #midpane a, span {
-    color: #050505;
+    color: #67696D;
 }
 
 hr{
@@ -29,6 +29,8 @@ hr{
     flex-direction: column;
 }
 
+
+
 a {
     text-decoration: none;
     color: #050505;
@@ -36,6 +38,15 @@ a {
 a:hover {
     color: #050505;
 }
+
+#view-icon{
+    color: #67696D;
+}
+
+#edit-icon{
+    color:#67696D;
+}
+
 p {
     margin-bottom: 0px;
 }
@@ -50,14 +61,14 @@ p {
 .card-body h4 {
     word-wrap: break-word;
     word-break: break-all;
-    color: #67696D;
+    color: #050505;
 }
 
 .card-body p {
     word-wrap: break-word;
     word-break: break-all;
     min-height: 50px;
-    color: #67696D;
+    color: #050505;
 }
 
 .follow-button{

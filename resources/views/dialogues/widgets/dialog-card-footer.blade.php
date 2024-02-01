@@ -13,7 +13,7 @@
             </span>
         </div>
         <span>
-            <i class="bi bi-clock me-1" style="color: #050505"></i>
+            <i class="bi bi-clock me-1" style="color: #67696D"></i>
             <span>
                 {{ $dialog->created_at->diffForHumans() }}
             </span>
