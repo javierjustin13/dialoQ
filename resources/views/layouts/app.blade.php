@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title> {{ config('app.name') }} </title>
+    <title> @yield('title') | {{ config('app.name') }} </title>
 
     <link rel="icon" type="image/x-icon" href="/image/dialoQ_icon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">

@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ asset('css/dialogues/show.css') }}">
 @endpush
 
-@section('title', 'Home')
+@section('title', $dialog->title)
 
 @section('content')
     <div class="container">

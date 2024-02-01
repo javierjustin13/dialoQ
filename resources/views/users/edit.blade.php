@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="{{ asset('css/users/edit.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
 @endpush
 
+@section('title', 'Edit Profile')
+
 @section('content')
     <div class="edit-profile">
         <div class="edit-box">

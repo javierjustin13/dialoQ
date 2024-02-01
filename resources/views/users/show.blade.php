@@ -5,6 +5,18 @@
 <link rel="stylesheet" href="{{ asset('css/widgets/dialog-card.css') }}">
 @endpush
 
+@auth
+    @if ($user->id == auth()->user()->id)
+        @section('title', 'My Profile')
+    @else
+        @section('title', $user->username )
+    @endif
+@endauth
+
+@guest
+    @section('title', $user->username)
+@endguest
+
 
 @section('content')
 <div class="container">

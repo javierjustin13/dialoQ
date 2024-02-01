@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="{{ asset('css/home.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
 @endpush
 
-@section('title', 'Home')
+@section('title', 'Feeds')
 
 @section('content')
     <div class="container">

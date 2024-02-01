@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="{{ asset('css/dialogues/edit.css') }}">
 @endpush
 
-@section('title', 'Home')
+@section('title', 'Edit Dialog')
 
 @section('content')
 <div class="container">
