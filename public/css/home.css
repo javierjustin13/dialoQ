@@ -23,10 +23,26 @@
      /* color: #FCEAFC; */
  }
 
- .modal-content {
-     background-color: #241B35;
-     color: #FCEAFC;
+.modal-header{
+    background-color: white;
+}
+
+ .modal-body {
+     background-color: white;
+     color: #050505;
+     box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
  }
+
+ .modal-content {
+    color: #050505;
+    background-color: white;
+    border: none;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
+}
+
+.modal-footer{
+    border: none;
+}
 
  /* @media screen and (max-width: 1024px) {
     #righpane{

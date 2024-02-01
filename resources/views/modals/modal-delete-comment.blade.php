@@ -20,7 +20,7 @@
             </div>
             <div class="modal-footer" style="margin-left: 2%;margin-right: 2%">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
-                    style="background-color: black;color: white;">No, Cancel</button>
+                    style="background-color: #039FFC;color: white;">No, Cancel</button>
                 <form method="POST" action="{{ route('dialogues.comments.destroy',[$dialog->id, $comment->id]) }}">
                     @csrf
                     @method('delete')
