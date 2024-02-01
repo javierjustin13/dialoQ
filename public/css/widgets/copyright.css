@@ -1,12 +1,16 @@
 .copyright{
-    color: #FCEAFC;
+    color: #050505;
 }
 
 .copyright a{
-    color: #FCEAFC;
+    color: #050505;
 }
 
 .copyright-header{
     display: flex;
+}
+
+.copyright-footer{
+    color: #050505;
 }
 
