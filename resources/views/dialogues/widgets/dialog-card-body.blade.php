@@ -10,7 +10,7 @@
             $content2 = Str::substr($content, 80, $contentLength);
         @endphp
         <p>{{ $content1 }}<span class="dots">...</span><span class="more">{{ $content2 }}</span></p>
-        <button onclick="readMore(this)" class="read-more-button border-1" style="background-color: #FFC7FF;color:#241B35">Read more</button>
+        <button onclick="readMore(this)" class="read-more-button border-1" style="background-color: #67696D ;color:white">Read more</button>
     @else
         <p>{{ $dialog->content }}</p>
     @endif
