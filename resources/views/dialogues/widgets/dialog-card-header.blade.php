@@ -1,7 +1,7 @@
 <div class="card-header">
     <div class="media w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
             class="d-block ui-w-40 rounded-circle" alt="Profile Picture">
-        <div class="media-body ml-3"> <a href="{{ route('users.show', $dialog->user->id) }}"
+        <div class="media-body ml-3"> <a style="color: #050505" href="{{ route('users.show', $dialog->user->id) }}"
                 data-abc="true">{{ $dialog->user->username }}</a>
         </div>
         @include('widgets.follow-button')
