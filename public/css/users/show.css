@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #241b35;
+    background-color: #F0F2F5;
     border-radius: 10px;
 }
 
@@ -45,7 +45,9 @@ body {
     height: auto;
     border: none;
     border-radius: 10px;
-    background: linear-gradient(270deg,#6c35de 0%,rgba(108, 53, 222, 0) 110.65%);
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
+    /* background: linear-gradient(270deg,#6c35de 0%,rgba(108, 53, 222, 0) 110.65%); */
     display: flex;
     flex-direction: column;
     align-items:flex-start;
@@ -116,7 +118,7 @@ body {
 
 .username {
     font-size: 40px;
-    color: #FCEAFC;
+    color: #050505;
     text-decoration: underline;
     width: 400px;
     margin: 0;
@@ -135,12 +137,12 @@ body {
 
 .email {
     margin-top: 10px;
-    color: #E0E0E0;
+    color: #67696D;
 }
 
 .stats-style {
     font-size: 23px;
-    color: #FCEAFC;
+    color: #050505;
 }
 
 .name-bio {
@@ -156,7 +158,7 @@ body {
     width: 650px;
     vertical-align: bottom;
     overflow-wrap: break-word;
-    color: #FCEAFC;
+    color: #050505;
 }
 
 /* .follow button{
@@ -228,11 +230,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 2vw;
+    gap: 1vw;
     border-radius: 10px;
-    background: #342A45;
-    padding: 2vw;
-    width: 920px;
+    width: 950px;
     margin-bottom: 5vh;
 }
 

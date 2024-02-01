@@ -9,7 +9,7 @@
 @section('content')
 <div class="container">
     @include('users.widgets.user-card')
-    <div class="dialogs border">
+    <div class="dialogs">
         @if ($dialogues->count() == 0)
             <h1 style="text-align: center; color:#FCEAFC">There are no dialogues</h1>
         @else
