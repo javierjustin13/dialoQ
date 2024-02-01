@@ -97,6 +97,10 @@ body {
     margin-left: 10px;
 }
 
+.btn.btn-dark.d-flex.align-items-center{
+    background-color: #039ffc;
+}
+
 .stats {
     display: flex;
     flex-direction: row;
