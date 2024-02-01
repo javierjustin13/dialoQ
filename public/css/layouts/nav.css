@@ -27,9 +27,8 @@ nav{
 }
 
 .navbar-brand:hover{
-    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6;
-    color: #FCEAFC;
-    background-color: transparent;
+    text-shadow: 0 0 20px #fff, 0 0 30px #050505;
+    color: #050505;
 }
 
 .border-profile{
