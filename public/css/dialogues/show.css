@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: #241B35;
+    background-color: #F0F2F5;
 }
 
 .container{
@@ -18,16 +18,6 @@ body{
 .col-6 h2{
     text-align: center;
 }
-
-#midpane h2 {
-    text-align: center;
-}
-
-#midpane{
-    background-color: #342A45 !important;
-}
-
-
 
 #postcard{
     /* background-color: #241B35; */
@@ -44,12 +34,16 @@ body{
     flex-direction: column;
 }
 
+.view-card{
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
+}
+
 a {
     text-decoration: none;
-    color: #FCEAFC;
+    color: #050505;
 }
 a:hover {
-    color: #FCEAFC;
+    color: #050505;
 }
 p {
     margin-bottom: 0px;
@@ -63,7 +57,7 @@ p {
 }
 
 #formGroupExampleInput{
-    background-color: #342A45;
+    background-color: #F0F2F5;
 }
 
 .btn-secondary{
@@ -75,48 +69,32 @@ p {
     display: flex;
 }
 
-
-#midpane{
-    background-color: #4D425F;
-}
-
-#postcard{
-    background-color: #241B35;
-}
-
 .card-body{
-    color: #FCEAFC;
+    color: #050505;
     overflow-wrap: break-word;
 }
 
 #share-btn{
-    background-color: #6C35DE;
+    background-color: #039FFC;
+    border: none;
 }
 
-.count-comment{
-    color: #FCEAFC;
-}
-
-.count-likes{
-    color: #FCEAFC;
-}
-
-.duration{
-    color: #FCEAFC;
+#textcomment.ms-5.pl-2{
+    color: #050505;
 }
 
 /* Bagian modal di view */
 .modal-content {
     background-color: #241B35;
-    color: #FCEAFC;
+    color: #050505;
 }
 
 #staticBackdropLabel{
-    color: #FCEAFC;
+    color: #050505;
 }
 
 .modal-title{
-    color: #FCEAFC;
+    color: #050505;
 }
 
 .btndelete {
@@ -129,7 +107,7 @@ p {
     justify-content: center;
     align-items: center;
     background-color: #039FFC;
-    color: #FCEAFC;
+    color: #050505;
     font-size: 14px;
     border-radius: 7px;
     width: 125px;
