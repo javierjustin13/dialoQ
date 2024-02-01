@@ -4,10 +4,10 @@
             <livewire:shared.like-button :key="$dialog->id" :dialog="$dialog" />
             <span class="ms-3">
                 @auth
-                    <a class="bi bi-chat-dots" href="{{ route('dialogues.show', $dialog->id) }}"></a>
+                    <a class="bi bi-chat-dots" style="color: #67696D;" href="{{ route('dialogues.show', $dialog->id) }}"></a>
                 @endauth
                 @guest
-                    <a class="bi bi-chat-dots" href="{{ route('login') }}"></a>
+                    <a class="bi bi-" href="{{ route('login') }}"></a>
                 @endguest
                 <span>{{ $dialog->comments->count() }}</span>
             </span>
