@@ -140,7 +140,6 @@ a {
     font-size: 1.5em;
     line-height: 1.3em;
     padding: 20px;
-    background-color: white;
     border: none;
 }
 
@@ -163,10 +162,9 @@ a {
     .card {
         margin-top: 100px;
         margin-bottom: 100px;
-        height: 2050px;
+        height: auto;
         width: 1000px;
         border-radius: 30px;
-        background-color: #333541;
         margin-left: auto;
         margin-right: auto;
     }
@@ -176,10 +174,9 @@ a {
     .card {
         margin-top: 100px;
         margin-bottom: 100px;
-        height: 2350px;
+        height: auto;
         width: 705px;
         border-radius: 30px;
-        background-color: #333541;
         margin-left: auto;
         margin-right: auto;
     }
@@ -189,10 +186,8 @@ a {
     .card {
         margin-top: 100px;
         margin-bottom: 100px;
-        height: 2950px;
+        height: auto;
         width: 600px;
-        border-radius: 30px;
-        background-color: #333541;
         margin-left: auto;
         margin-right: auto;
     }
@@ -210,10 +205,8 @@ a {
     .card {
         margin-top: 100px;
         margin-bottom: 100px;
-        height: 3850px;
+        height: auto;
         width: 450px;
-        border-radius: 30px;
-        background-color: #333541;
         margin-left: auto;
         margin-right: auto;
     }
@@ -235,10 +228,8 @@ a {
     .card {
         margin-top: 100px;
         margin-bottom: 100px;
-        height: 5050px;
+        height: auto;
         width: 350px;
-        border-radius: 30px;
-        background-color: #333541;
         margin-left: auto;
         margin-right: auto;
     }
@@ -252,10 +243,8 @@ a {
     .card {
         margin-top: 100px;
         margin-bottom: 100px;
-        height: 6300px;
+        height: auto;
         width: 290px;
-        border-radius: 30px;
-        background-color: #333541;
         margin-left: auto;
         margin-right: auto;
     }

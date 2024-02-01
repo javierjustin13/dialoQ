@@ -1,7 +1,8 @@
 @extends('layouts.app')
 
 @push('head')
-    <link rel="stylesheet" href="{{ asset('css/terms.css') }}"> {{-- ini buat nyambungin home.css ke home blade nya --}}
+    <link rel="stylesheet" href="{{ asset('css/terms.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
 @endpush
 
 @section('title', 'Terms')
@@ -9,7 +10,7 @@
 @section('content')
 
     <section id="terms-of-service">
-        <div class="card" style="">
+        <div class="card">
             <h1 class="primary-heading">Terms of Service</h1>
             <p class="paragraph">
                 By accessing and using our application, you agree to abide by these terms and conditions. You are solely
