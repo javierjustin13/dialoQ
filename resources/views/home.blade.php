@@ -25,7 +25,6 @@
                 {{ $dialogues->links() }}
             </div>
             <div class="col-3" id="rightpane">
-                {{-- @include('widgets.search-bar') --}}
                 @include('widgets.suggested-bar')
                 @include('widgets.copyright')
             </div>

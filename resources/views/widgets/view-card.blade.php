@@ -9,7 +9,7 @@
 
     {{-- End Modal --}}
 
-<div class="view-card p-3 border rounded-4 mb-3" style="background-color: white" id="postcard">
+<div class="view-card p-3 border rounded-4 mb-3" style="background-color: white" id="postcard" data-aos="fade-up" data-aos-duration="1500">
     <div class="card-header">
         <div class="media w-100 align-items-center"> <img src="{{ $dialog->user->getImageURL() }}"
                 class="d-block ui-w-40 rounded-circle" alt="">
