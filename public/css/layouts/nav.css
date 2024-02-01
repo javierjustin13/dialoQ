@@ -121,7 +121,7 @@ button, input[type="submit"], input[type="reset"] {
 .navbar-toggler{
     width: 50px;
     height: 40px;
-    border: 1px solid #FCEAFC;
+    border: 1px solid #050505;
     margin-right: 21px;
     display: flex;
     flex-direction: row;
@@ -130,18 +130,18 @@ button, input[type="submit"], input[type="reset"] {
 
 .navbar-toggler:focus{
     box-shadow: none;
-    box-shadow: 0 0 5px #fff, 0 0 5px #ff4da6;
+    box-shadow: 0 0 5px #fff, 0 0 5px #050505;
 }
 
 .navbar-toggler-icon{
-    color: #FCEAFC;
+    color: #050505;
     background-image: none;
 }
 
 .line {
     height: 2px;
     width: 25px;
-    background-color: #FCEAFC; /* Set your desired color */
+    background-color: #050505; /* Set your desired color */
     margin: 6px 0;
     display: block;
     transition: 0.4s;
