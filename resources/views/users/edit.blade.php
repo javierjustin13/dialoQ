@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="edit-profile">
-        <div class="edit-box border">
+        <div class="edit-box">
             <form enctype="multipart/form-data" method="POST" action="{{ route('users.update', $user->id) }}">
                 @csrf
                 @method('PUT')
@@ -17,14 +17,14 @@
                     </div>
                     <div class="data-req">
                         <div class="data">
-                            <input name="username" class="input-box border" type="text" id="editUsername" name="username" value="{{ $user->username }}"style="color: #FCEAFC">
+                            <input name="username" class="input-box border" type="text" id="editUsername" name="username" value="{{ $user->username }}"style="color: #67696D">
                             @error('username')
                                 <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                             @enderror
                         </div>
                         <div class="data">
                             <input name="name" class="input-box border" type="text" id="editName" name="name"
-                                value={{ $user->name }} style="color: #FCEAFC">
+                                value={{ $user->name }} style="color: #67696D">
                             @error('name')
                                 <span class="d-block fs-6 text-danger my-2">{{ $message }}</span>
                             @enderror
@@ -45,7 +45,7 @@
                     @enderror
                     <div class="edit-bio">
                         <div class="your-input">BIO :</div>
-                        <textarea class="input-bio border" type="text" id="editBIO" name="bio" style="color: #FCEAFC; font-size: 15px;">{{ $user->bio }}</textarea>
+                        <textarea class="input-bio border" type="text" id="editBIO" name="bio" style="color: #67696D; font-size: 15px;">{{ $user->bio }}</textarea>
                     </div>
                     <div class="button-save">
                         <button class="button" type="submit">SAVE CHANGES</button>

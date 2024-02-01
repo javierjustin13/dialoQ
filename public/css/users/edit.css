@@ -1,5 +1,5 @@
 body{
-    background-color: #241B35;
+    background-color: #F0F2F5;
     width: 100%;
     height: 70vw;
     display: flex;
@@ -26,13 +26,15 @@ body{
 
 .edit-box{
     /* background: #342A45; */
-    background: linear-gradient(270deg, #6C35DE 0%, rgba(108, 53, 222, 0.00) 110.65%);
+    /* background: linear-gradient(270deg, #6C35DE 0%, rgba(108, 53, 222, 0.00) 110.65%); */
+    background-color: white;
     width: 920px;
     height: 820px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
 }
 
 .top{
@@ -73,12 +75,12 @@ body{
     height: 70px;
     border: none;
     border-radius: 5px;
-    background: #654579;
-
+    background: #F2F0F5;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
 }
 
 ::placeholder{
-    color: #FCEAFC;
+    color: #67696D;
     opacity: 0.1;
     font-size: 15px;
     font-family: 'eina';
@@ -110,7 +112,7 @@ body{
     width: 825px;
     font-family: 'eina';
     font-size: 20px;
-    color: #FCEAFC;
+    color: #050505;
 }
 
 .edit-pp{
@@ -124,25 +126,27 @@ body{
 
 input[type=file] {
     width: 818px;
-    color: #FCEAFC;
+    color: #67696D;
     padding: 5px;
-    background: #654579;
+    background: #F0F2F5;
     border-radius: 5px;
     border: none;
     font-family: 'eina';
     font-size: 15px;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
 }
 
 input[type=file]::file-selector-button {
     border: none;
-    color: #FCEAFC;
+    color: white;
     cursor: pointer;
-    background: #341d58;
+    background: #050505;
     font-size: 15px;
     border-radius: 5px;
     font-family: 'eina';
     flex-direction: row;
     justify-content: center;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
 }
 
 .input-bio{
@@ -150,19 +154,19 @@ input[type=file]::file-selector-button {
     height: 300px;
     border: none;
     border-radius: 5px;
-    background: #654579;
+    background: #F0F2F5;
     text-align: start;
     font-family: 'eina';
     padding-left: 6px;
     padding-top: 3px;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
 }
-
 
 .button{
     margin-top: 18px;
     width: 165px;
     height: 33px;
-    background-color: #6C35DE;
+    background-color: #039FFC;
     font-family: 'eina';
     color: white;
     border-radius: 5px;
