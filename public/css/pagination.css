@@ -3,8 +3,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 3px;
-    color: #FCEAFC;
-    margin-top: 20px;
+    color: #050505;
 }
 
 .pagination-container {
@@ -27,10 +26,11 @@
 }
 
 .page-link {
-    color: white;
-    background-color: #4D425F;
+    color: #050505;
+    background-color: white;
     border: 1px solid white;
     border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(222,224,227,1);
 }
 .page-item:first-child .page-link{
     border-radius: 10px;
@@ -40,12 +40,12 @@
 }
 
 .page-link:hover {
-    background-color:#6C35DE;
+    background-color:#039FFC;
     color: #ffffff;
 }
 
 .page-item.active .page-link {
-    background-color: #6C35DE;
+    background-color: #039FFC;
     color: #ffffff;
     border: 1px solid #ffffff;
 }
