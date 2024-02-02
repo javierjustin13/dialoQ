@@ -26,7 +26,6 @@ body{
     justify-content: center;
 }
 
-
 @media screen and (max-width: 1024px) {
     body{
         width: 1030px;
