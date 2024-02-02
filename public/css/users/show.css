@@ -282,6 +282,15 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+/* fixed delete dialog card */
+.text-muted.small.ml-3.btn.btn-dark.d-flex.align-items-center{
+
+}
+
+.ms-1.btn.btn-danger.btn-sm{
+    margin-top: -2px;
+}
+
 @media screen and (max-width: 1024px) {
     body{
         width: 1200px;
