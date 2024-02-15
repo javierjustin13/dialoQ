@@ -8,9 +8,9 @@
 
 @section('content')
 
-    <header>
+    {{-- <header>
       <h1 style="text-align: center;">HELP PAGES</h1>
-    </header>
+    </header> --}}
     <section class="faq">
       <ul class="categories">
         <li><a class="selected" href="#basics">Basics</a></li>
