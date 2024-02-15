@@ -12,14 +12,14 @@
       <h1 style="text-align: center;">HELP PAGES</h1>
     </header> --}}
     <section class="faq">
-      <ul class="categories">
+      <div class="categories">
         <li><a class="selected" href="#basics">Basics</a></li>
         <li><a href="#mobile">Mobile</a></li>
         <li><a href="#account">Account</a></li>
         <li><a href="#payments">Payments</a></li>
         <li><a href="#privacy">Privacy</a></li>
         <li><a href="#delivery">Delivery</a></li>
-      </ul> <!-- categories -->
+      </div> <!-- categories -->
 
       <div class="faq-items">
         <ul id="basics" class="faq-group">
