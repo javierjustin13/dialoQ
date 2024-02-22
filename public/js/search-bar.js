@@ -21,7 +21,7 @@
 
         for (i = 0; i < a.length; i++) {
             txtValue = a[i].textContent || a[i].innerText;
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            if (txtValue.toUpperCase().indexOf(filter) > -1 && filter !== " ") {
                 a[i].style.display = "";
                 foundCount++;
             } else {
