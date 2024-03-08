@@ -1,70 +1,44 @@
-<p align="center">
+## dialoQ
+
+p align="center">
     <a href="http://app.dialoq.tech" target="_blank">
         <img src="https://github.com/javierjustin13/dialoQ/assets/88891911/64e18f02-5667-42da-a1f0-4799870b2253" width="400" alt="dialoQ Logo">
     </a>
 </p>
+
 ## Team 
 
 - [Javier Justin](https://github.com/javierjustin13)
-- [Ferren Andrea]()
+- [Ferren Andrea](https://github.com/lefren)
 - [Gladys Jessica Ruslim](https://github.com/gladysruslim)
 - [Delvin Setiamin Salim](https://github.com/Interblues88)
 - [Kezia Revalina Tan](https://github.com/sparkel124)
 
-## About Laravel
+## About dialoQ
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Social media app that allows you to start dialogues with others
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+dialoQ: Your go-to platform for engaging discussions and insightful conversations! Explore a vibrant community-driven space where users share knowledge, ask questions, and exchange perspectives. Whether you're seeking advice, sparking debates, or simply curious, DialoQ offers a seamless experience for fostering meaningful interactions. Join us in shaping the dialogue of tomorrow!
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Website
 
-## Learning Laravel
+Explore the website yourself!
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+http://app.dialoq.tech/
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Preview
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Login Page
+![app dialoq tech_login](https://github.com/javierjustin13/dialoQ/assets/88891911/7b2793be-3953-47a0-800b-aafa25f6fb08)
 
-## Laravel Sponsors
+### Register Page
+![app dialoq tech_login (1)](https://github.com/javierjustin13/dialoQ/assets/88891911/aaf8e2f5-750b-40d0-885e-aabd172b5d2f)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### Home Page
+![app dialoq tech_home (1)](https://github.com/javierjustin13/dialoQ/assets/88891911/0ce747d9-dba4-410c-840d-b8294569b69a)
 
-### Premium Partners
+### Feeds Page
+![app dialoq tech_feeds](https://github.com/javierjustin13/dialoQ/assets/88891911/20557307-9c3d-447e-be27-3a41d821975c)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Profile Page
+![app dialoq tech_profile](https://github.com/javierjustin13/dialoQ/assets/88891911/6aee2d96-7cc4-4176-9ffa-233b2ae23ab7)
