@@ -1,5 +1,8 @@
-<p align="center"><a href="http://app.dialoq.tech" target="_blank"><img src="github.com/javierjustin13/dialoQ/blob/main/public/image/dialoQ_icon.png
-" width="400" alt="dialoQ Logo"></a></p>
+<p align="center">
+    <a href="http://app.dialoq.tech" target="_blank">
+        <img src="github.com/javierjustin13/dialoQ/blob/main/public/image/dialoQ_icon.png" width="400" alt="dialoQ Logo">
+    </a>
+</p>
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
