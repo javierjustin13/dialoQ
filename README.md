@@ -1,8 +1,11 @@
 <p align="center">
     <a href="http://app.dialoq.tech" target="_blank">
-        <img src="github.com/javierjustin13/dialoQ/blob/main/public/image/dialoQ_icon.png" width="400" alt="dialoQ Logo">
+<!--         <img src="github.com/javierjustin13/dialoQ/blob/main/public/image/dialoQ_icon.png" width="400" alt="dialoQ Logo"> -->
+        ![image](https://github.com/javierjustin13/dialoQ/assets/88891911/64e18f02-5667-42da-a1f0-4799870b2253)
     </a>
 </p>
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
