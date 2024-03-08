@@ -1,6 +1,6 @@
 ## dialoQ
 
-p align="center">
+<p align="center">
     <a href="http://app.dialoq.tech" target="_blank">
         <img src="https://github.com/javierjustin13/dialoQ/assets/88891911/64e18f02-5667-42da-a1f0-4799870b2253" width="400" alt="dialoQ Logo">
     </a>
