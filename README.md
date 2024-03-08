@@ -42,3 +42,5 @@ http://app.dialoq.tech/
 
 ### Profile Page
 ![app dialoq tech_profile](https://github.com/javierjustin13/dialoQ/assets/88891911/6aee2d96-7cc4-4176-9ffa-233b2ae23ab7)
+
+### and bunch of other pages, [click here](http://app.dialoq.tech) to explore yourself 
