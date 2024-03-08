@@ -1,4 +1,4 @@
-<p align="center"><a href="[https://laravel.com](http://app.dialoq.tech/)" target="_blank"><img src="https://github.com/javierjustin13/dialoQ/blob/main/public/image/dialoQ_icon.png
+<p align="center"><a href="[https://laravel.com](http://app.dialoq.tech/)" target="_blank"><img src="github.com/javierjustin13/dialoQ/blob/main/public/image/dialoQ_icon.png
 " width="400" alt="dialoQ Logo"></a></p>
 ## About Laravel
 
